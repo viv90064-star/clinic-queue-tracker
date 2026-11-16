@@ -4,8 +4,8 @@
  * 
  * Purpose:
  * Single source of truth for queue data calculations and queue progression.
- * Supports sample tokens 021-025 with 021 initially being served.
- * Advances queue when staff calls next patient.
+ * Connects directly to Cloud Firestore when Firebase is live,
+ * with automatic local storage fallback for offline/instant testing.
  */
 
 const QUEUE_STORAGE_KEY = "clinic_queue_state";
@@ -27,6 +27,8 @@ const DEFAULT_QUEUE_STATE = {
     { token_id: "025", order: 5, status: "waiting", note: "In waiting area (Demo target token)" }
   ]
 };
+
+let firestoreListenerActive = false;
 
 /**
  * Retrieves the current queue state from storage or initializes defaults.
@@ -62,12 +64,71 @@ function saveQueueState(state) {
 }
 
 /**
+ * Syncs the entire queue state to Firestore.
+ * @param {object} state 
+ */
+async function syncToFirestore(state) {
+  if (!window.FirebaseBridge || !window.FirebaseBridge.isFirebaseConfigured()) {
+    return;
+  }
+  try {
+    const { doc, setDoc } = await import("https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js");
+    const fb = await window.FirebaseBridge.initializeFirebase();
+    if (fb && fb.db) {
+      await setDoc(doc(fb.db, "metadata", "clinic_queue"), {
+        current_token: state.current_token,
+        current_status: state.current_status,
+        next_token: state.next_token,
+        total_waiting: state.total_waiting,
+        doctor_room: state.doctor_room,
+        avg_mins_per_patient: state.avg_mins_per_patient,
+        last_updated: state.last_updated,
+        tokens: state.tokens
+      }, { merge: true });
+      console.log("☁️ Real-time Firestore queue synchronized.");
+    }
+  } catch (err) {
+    console.warn("Firestore sync error (check firestore.rules):", err);
+  }
+}
+
+/**
+ * Initializes a real-time listener to Firestore to keep patients and staff updated.
+ */
+async function initFirestoreListener() {
+  if (firestoreListenerActive) return;
+  if (!window.FirebaseBridge || !window.FirebaseBridge.isFirebaseConfigured()) return;
+
+  try {
+    const { doc, onSnapshot } = await import("https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js");
+    const fb = await window.FirebaseBridge.initializeFirebase();
+    if (fb && fb.db) {
+      firestoreListenerActive = true;
+      onSnapshot(doc(fb.db, "metadata", "clinic_queue"), (snapshot) => {
+        if (snapshot.exists()) {
+          const remoteData = snapshot.data();
+          if (remoteData && remoteData.tokens) {
+            saveQueueState(remoteData);
+            console.log("📡 Received real-time queue update from Cloud Firestore.");
+          }
+        }
+      }, (error) => {
+        console.warn("Firestore snapshot listener error:", error);
+      });
+    }
+  } catch (err) {
+    console.warn("Could not start Firestore listener:", err);
+  }
+}
+
+/**
  * Resets the queue state to initial default (021 calling, 022-025 waiting).
  */
 function resetQueueState() {
   const fresh = JSON.parse(JSON.stringify(DEFAULT_QUEUE_STATE));
   fresh.last_updated = new Date().toISOString();
   saveQueueState(fresh);
+  syncToFirestore(fresh);
   return fresh;
 }
 
@@ -116,8 +177,9 @@ function callPatient(tokenId) {
   const waitingCount = state.tokens.filter(t => t.status === "waiting").length;
   state.total_waiting = waitingCount;
 
-  // 6. Save and notify
+  // 6. Save locally and sync to Cloud Firestore
   saveQueueState(state);
+  syncToFirestore(state);
 
   return {
     success: true,
@@ -252,11 +314,20 @@ function getTokenQueueInfo(tokenId) {
   };
 }
 
+// Start listener if Firebase is available
+if (typeof window !== "undefined") {
+  window.addEventListener("DOMContentLoaded", () => {
+    initFirestoreListener();
+  });
+}
+
 // Export for app scripts
 window.QueueService = {
   getQueueState,
   saveQueueState,
   resetQueueState,
   callPatient,
-  getTokenQueueInfo
+  getTokenQueueInfo,
+  syncToFirestore,
+  initFirestoreListener
 };
