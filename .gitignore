@@ -6,10 +6,19 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Node / dependencies (if any added later)
+# Node / dependencies
 node_modules/
 package-lock.json
 
-# Environment variables & local secrets
+# Environment variables & private keys
 .env
 .env.local
+.env.*.local
+serviceAccountKey.json
+*.pem
+*.key
+
+# Firebase local cache & logs
+.firebase/
+firebase-debug.log
+firestore-debug.log
