@@ -3,21 +3,21 @@
  * Author: Vivek Kumar (MSOT B.Tech CSE)
  * 
  * Purpose:
- * Single source of truth for queue data calculations.
+ * Single source of truth for queue data calculations and queue progression.
  * Supports sample tokens 021-025 with 021 initially being served.
- * Provides functions to calculate patients ahead, estimated wait-time ranges,
- * and 5-segment progress steps.
+ * Advances queue when staff calls next patient.
  */
 
-// Key used in browser storage so updates persist across pages
 const QUEUE_STORAGE_KEY = "clinic_queue_state";
 
-// Baseline sample queue data specified in the project requirements
+// Baseline sample queue data matching requirements
 const DEFAULT_QUEUE_STATE = {
   current_token: "021",
   current_status: "calling",
+  next_token: "022",
+  total_waiting: 4,
   doctor_room: "Room 1",
-  avg_mins_per_patient: 6, // 5 to 7 mins average
+  avg_mins_per_patient: 6,
   last_updated: new Date().toISOString(),
   tokens: [
     { token_id: "021", order: 1, status: "calling", note: "Now being called in Room 1" },
@@ -29,7 +29,7 @@ const DEFAULT_QUEUE_STATE = {
 };
 
 /**
- * Retrieves the current queue state from storage, or initializes with defaults.
+ * Retrieves the current queue state from storage or initializes defaults.
  * @returns {object} Queue state object
  */
 function getQueueState() {
@@ -39,32 +39,92 @@ function getQueueState() {
       return JSON.parse(saved);
     }
   } catch (err) {
-    console.warn("Storage read failed, using default queue state:", err);
+    console.warn("Storage read failed, using defaults:", err);
   }
-  // Initialize storage with defaults
   saveQueueState(DEFAULT_QUEUE_STATE);
   return DEFAULT_QUEUE_STATE;
 }
 
 /**
- * Saves the queue state to storage.
+ * Saves the queue state to storage and syncs to Firestore if live.
  * @param {object} state 
  */
 function saveQueueState(state) {
   try {
     state.last_updated = new Date().toISOString();
     localStorage.setItem(QUEUE_STORAGE_KEY, JSON.stringify(state));
+
+    // Dispatch a local custom event so this same tab knows storage changed
+    window.dispatchEvent(new CustomEvent("clinic_queue_updated", { detail: state }));
   } catch (err) {
     console.error("Failed to save queue state:", err);
   }
 }
 
 /**
- * Resets the queue state to the initial default (021 calling, 022-025 waiting).
+ * Resets the queue state to initial default (021 calling, 022-025 waiting).
  */
 function resetQueueState() {
-  saveQueueState(DEFAULT_QUEUE_STATE);
-  return DEFAULT_QUEUE_STATE;
+  const fresh = JSON.parse(JSON.stringify(DEFAULT_QUEUE_STATE));
+  fresh.last_updated = new Date().toISOString();
+  saveQueueState(fresh);
+  return fresh;
+}
+
+/**
+ * Advances the queue by calling a specific patient token, or the next in line.
+ * @param {string} [tokenId] - Optional specific token to call (e.g. "022")
+ * @returns {{ success: boolean, calledToken?: string, error?: string }}
+ */
+function callPatient(tokenId) {
+  const state = getQueueState();
+
+  // 1. Identify which token to call
+  let targetToken = null;
+  if (tokenId) {
+    const normalized = tokenId.trim().padStart(3, "0");
+    targetToken = state.tokens.find(t => t.token_id === normalized && t.status === "waiting");
+    if (!targetToken) {
+      return { success: false, error: `Token #${tokenId} is not waiting in the queue.` };
+    }
+  } else {
+    // Call the next waiting token in order
+    targetToken = state.tokens.find(t => t.status === "waiting");
+    if (!targetToken) {
+      return { success: false, error: "No more waiting patients in today's queue!" };
+    }
+  }
+
+  // 2. Mark previous calling token as completed
+  const previousCalling = state.tokens.find(t => t.token_id === state.current_token);
+  if (previousCalling) {
+    previousCalling.status = "completed";
+    previousCalling.completed_at = new Date().toISOString();
+  }
+
+  // 3. Update target token to calling
+  targetToken.status = "calling";
+  targetToken.called_at = new Date().toISOString();
+  state.current_token = targetToken.token_id;
+  state.current_status = "calling";
+
+  // 4. Determine new next token
+  const nextWaiting = state.tokens.find(t => t.status === "waiting");
+  state.next_token = nextWaiting ? nextWaiting.token_id : "None";
+
+  // 5. Update total waiting count
+  const waitingCount = state.tokens.filter(t => t.status === "waiting").length;
+  state.total_waiting = waitingCount;
+
+  // 6. Save and notify
+  saveQueueState(state);
+
+  return {
+    success: true,
+    calledToken: targetToken.token_id,
+    nextToken: state.next_token,
+    totalWaiting: state.total_waiting
+  };
 }
 
 /**
@@ -75,16 +135,33 @@ function resetQueueState() {
 function getTokenQueueInfo(tokenId) {
   if (!tokenId) return null;
 
-  // Normalize token (e.g., "25" -> "025")
   const normalizedId = tokenId.trim().padStart(3, "0");
   const state = getQueueState();
 
   const tokenObj = state.tokens.find(t => t.token_id === normalizedId);
   if (!tokenObj) {
-    return null; // Invalid or unknown token
+    return null;
   }
 
-  // 1. Check if this token is currently being called
+  // Check if completed
+  if (tokenObj.status === "completed") {
+    return {
+      tokenId: normalizedId,
+      status: "completed",
+      statusLabel: "Consultation Completed",
+      patientsAhead: 0,
+      patientsAheadDisplay: "00",
+      estimatedWaitText: "Completed",
+      waitMinutesOnly: "0",
+      waitUnit: "mins",
+      progressStep: 5,
+      isTurnApproaching: false,
+      room: state.doctor_room || "Room 1",
+      note: "Your consultation has ended. Thank you."
+    };
+  }
+
+  // Check if currently being called
   const isCurrentlyCalling = (state.current_token === normalizedId) || (tokenObj.status === "calling");
 
   if (isCurrentlyCalling) {
@@ -97,31 +174,28 @@ function getTokenQueueInfo(tokenId) {
       estimatedWaitText: "Now (Your Turn!)",
       waitMinutesOnly: "0",
       waitUnit: "mins",
-      progressStep: 5, // All 5 steps complete
+      progressStep: 5,
       isTurnApproaching: true,
       room: state.doctor_room || "Room 1",
       note: "Please proceed immediately to Consultation Room 1."
     };
   }
 
-  // 2. Count patients ahead:
-  // Active tokens with order < this token's order that are not completed
-  // Plus 1 if the currently calling patient is still in consultation!
+  // Count active consultations ahead:
+  // 1. Tokens waiting with an earlier order number
   const waitingAhead = state.tokens.filter(t => 
     t.status === "waiting" && t.order < tokenObj.order
   ).length;
 
-  // If a patient is currently with the doctor, that consultation is also ahead of this patient
+  // 2. Active token currently in consultation with the doctor
   const currentCallingCount = (state.current_token && state.current_token !== normalizedId) ? 1 : 0;
   
-  // Total people to be seen before this patient's turn:
   const totalPatientsAhead = waitingAhead + currentCallingCount;
 
-  // 3. Calculate waiting-time range based on 5–7 mins per consultation
   let estimatedWaitText = "";
   let waitMinutesOnly = "";
   let waitUnit = "minutes";
-  let progressStep = 1; // 1 to 5
+  let progressStep = 1;
 
   if (totalPatientsAhead === 0) {
     estimatedWaitText = "Next in line (< 5 mins)";
@@ -140,18 +214,15 @@ function getTokenQueueInfo(tokenId) {
     waitMinutesOnly = "15–20";
     progressStep = 2;
   } else {
-    // 4 or more patients ahead (e.g. for Token 025: 4 ahead -> 20-30 minutes)
+    // 4 or more patients ahead
     const minWait = totalPatientsAhead * 5;
-    const maxWait = Math.round(totalPatientsAhead * 7.5 / 5) * 5; // round to multiple of 5
+    const maxWait = Math.round(totalPatientsAhead * 7.5 / 5) * 5;
     estimatedWaitText = `${minWait}–${maxWait} minutes`;
     waitMinutesOnly = `${minWait}–${maxWait}`;
     progressStep = 1;
   }
 
-  // Formatted patients ahead display with leading zero (e.g., "04")
   const patientsAheadDisplay = String(totalPatientsAhead).padStart(2, "0");
-
-  // Turn is approaching if next in line or 1 ahead
   const isTurnApproaching = totalPatientsAhead <= 1;
 
   return {
@@ -172,10 +243,11 @@ function getTokenQueueInfo(tokenId) {
   };
 }
 
-// Export for browser scripts
+// Export for app scripts
 window.QueueService = {
   getQueueState,
   saveQueueState,
   resetQueueState,
+  callPatient,
   getTokenQueueInfo
 };

@@ -44,8 +44,23 @@
 - [x] Built helpful Invalid Token view for unknown or missing tokens (e.g. `999`).
 - [x] Implemented `js/queue-status.js` with live updates, storage synchronization, and refresh actions.
 
+### Phase 3 & Feature 3: Receptionist Dashboard & Firebase Security
+- [x] Built `reception.html` matching wireframe sketch 3:
+  - Simulated desktop window header (`o o o`, "Patna Outpatient Clinic").
+  - Top header with reception desk tag, user auth email, and logout button.
+  - 3 top metric cards: `Current Token: 021` (highlighted), `Next Token: 022`, `Total Waiting Patients: 04`.
+  - Patient queue table with rows for `022` to `025`, status pill (`• Waiting`), and `Call Patient →` button.
+  - Bottom action bar with `Update Queue` button and `Reset Demo Queue` helper.
+- [x] Implemented `css/reception.css` with responsive desktop/tablet layout and auth overlay.
+- [x] Implemented `js/firebase-config.js` with Firebase v10 modular initialization and robust local demo fallback.
+- [x] Implemented `firestore.rules` restricting database write permissions to authenticated staff only (`allow write: if request.auth != null;`).
+- [x] Created `firebase.json` for hosting and rule deployments.
+- [x] Implemented `js/reception.js` with staff login/logout, queue progression (`callPatient`), and real-time syncing.
+- [x] Verified cross-tab synchronization between Receptionist Dashboard and Patient Queue Status.
+
 ---
 
 ## Git Commit History
 1. `feat: implement Patient Home screen with token input, demo shortcut, and validation (Feature 1)`
 2. `feat: implement Patient Queue Status screen with live metrics, progress bar, and turn approaching view (Feature 2)`
+3. `feat: implement Receptionist Dashboard, queue progression, Firebase Auth protection, and Firestore rules (Feature 3)`

@@ -1,0 +1,26 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper function: Checks if the user is authenticated via Firebase Auth
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // 1. Metadata Collection (contains current_token, next_token, total_waiting)
+    // Patients can read queue status without login.
+    // ONLY logged-in clinic staff can update queue state.
+    match /metadata/{document=**} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    // 2. Tokens Collection (contains individual patient token docs 021 to 025)
+    // Patients can look up their own token status.
+    // ONLY logged-in clinic staff can modify token statuses or advance queue.
+    match /tokens/{tokenId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+  }
+}

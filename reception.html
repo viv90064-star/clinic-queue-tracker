@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receptionist Dashboard - Clinic Queue System</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/reception.css">
+</head>
+<body style="align-items: center; justify-content: flex-start; padding-top: 32px;">
+
+  <!-- Desktop Window Container (Matches Wireframe Sketch 3) -->
+  <main class="desktop-wrapper" role="main">
+    
+    <!-- Desktop Titlebar (Matches Wireframe "o o o") -->
+    <div class="window-titlebar">
+      <div class="window-dots" aria-hidden="true">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+      </div>
+      <span class="window-title-text">Patna Outpatient Clinic — Reception Queue Control</span>
+    </div>
+
+    <!-- Header Bar -->
+    <header class="reception-header">
+      <div>
+        <span class="clinic-tag" style="font-size: 0.95rem;">Outpatient Clinic</span>
+      </div>
+      <div class="auth-user-bar">
+        <span class="badge-reception-desk">• Reception desk</span>
+        <span id="staffUserEmail" style="font-size: 0.78rem; color: #64748b; font-weight: 600;">Not logged in</span>
+        <button type="button" id="signOutBtn" class="btn-signout" style="display: none;">Log Out</button>
+      </div>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <div class="reception-body">
+      
+      <!-- Headings -->
+      <div class="reception-title-group">
+        <h1 class="reception-title">Receptionist Dashboard</h1>
+        <p class="reception-subtitle">Manage today's patient queue.</p>
+      </div>
+
+      <!-- Live Sync / Status Notification Alert (Hidden by default) -->
+      <div id="receptionAlert" class="alert-box" style="margin-bottom: 20px;"></div>
+
+      <!-- 1. Three Top Metric Cards (Wireframe Sketch 3) -->
+      <div class="reception-metrics-grid">
+        
+        <!-- Card 1: Current Token (Highlighted) -->
+        <div class="reception-card highlight">
+          <span class="rc-label">Current Token</span>
+          <div id="rcCurrentToken" class="rc-value">021</div>
+          <span class="rc-sub">Now being called</span>
+        </div>
+
+        <!-- Card 2: Next Token -->
+        <div class="reception-card">
+          <span class="rc-label">Next Token</span>
+          <div id="rcNextToken" class="rc-value">022</div>
+          <span class="rc-sub">Next in line</span>
+        </div>
+
+        <!-- Card 3: Total Waiting Patients -->
+        <div class="reception-card">
+          <span class="rc-label">Total Waiting Patients</span>
+          <div id="rcTotalWaiting" class="rc-value">04</div>
+          <span class="rc-sub">In the waiting area</span>
+        </div>
+
+      </div>
+
+      <!-- 2. Patient Queue Table Section (Sketch 3) -->
+      <section class="queue-table-section">
+        <div class="table-header-bar">
+          <h2 class="table-title">Patient queue</h2>
+          <span id="rcWaitingBadge" class="waiting-badge">4 waiting</span>
+        </div>
+
+        <table class="patient-table" aria-label="Waiting patients queue table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 25%;">Token Number</th>
+              <th scope="col" style="width: 40%;">Status</th>
+              <th scope="col" class="col-action" style="width: 35%;">Action</th>
+            </tr>
+          </thead>
+          <tbody id="queueTableBody">
+            <!-- Dynamically populated rows for 022, 023, 024, 025 -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 3. Bottom Action Bar (Sketch 3) -->
+      <footer class="reception-footer-bar">
+        <p class="footer-instruction-text">
+          Call the next patient to move the queue forward.
+        </p>
+        
+        <div class="footer-actions-group">
+          <!-- Reset Demo Data Button -->
+          <button type="button" id="resetDemoBtn" class="btn-reset-demo" title="Reset sample queue to Token 021 calling and 022-025 waiting">
+            ↺ Reset Demo Queue
+          </button>
+
+          <!-- Primary Update Queue Button -->
+          <button type="button" id="updateQueueBtn" class="btn-update-queue">
+            Update Queue
+          </button>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- ============================================================
+         4. Authentication Modal (Protects Receptionist Access)
+         ============================================================ -->
+    <div id="authModal" class="auth-modal-overlay visible" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <div class="auth-card">
+        <h2 id="authTitle" class="auth-title">Staff Sign In</h2>
+        <p class="auth-sub">Sign in with clinic credentials to access the receptionist queue dashboard.</p>
+
+        <!-- Auth Error Alert -->
+        <div id="authErrorAlert" class="alert-box alert-error"></div>
+
+        <form id="staffLoginForm" novalidate>
+          <div class="form-group">
+            <label for="staffEmail" class="form-label">Receptionist Email</label>
+            <input 
+              type="email" 
+              id="staffEmail" 
+              class="form-input" 
+              placeholder="reception@clinic.com"
+              required
+              autocomplete="username"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="staffPassword" class="form-label">Password</label>
+            <input 
+              type="password" 
+              id="staffPassword" 
+              class="form-input" 
+              placeholder="••••••••"
+              required
+              autocomplete="current-password"
+            >
+          </div>
+
+          <button type="submit" id="loginSubmitBtn" class="btn-primary" style="margin-top: 10px;">
+            Sign In to Dashboard
+          </button>
+        </form>
+
+        <div class="auth-demo-hint">
+          <strong>🔒 Security Notice:</strong> Write actions to the queue are restricted to authenticated reception staff.
+          <button type="button" id="autofillDemoBtn" class="btn-autofill-demo">
+            Quick-fill demo credentials (reception@clinic.com)
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Client Scripts -->
+  <script src="js/firebase-config.js"></script>
+  <script src="js/queue-service.js"></script>
+  <script src="js/reception.js"></script>
+</body>
+</html>

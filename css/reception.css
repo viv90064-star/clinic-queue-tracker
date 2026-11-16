@@ -1,0 +1,424 @@
+/* ==========================================================================
+   Receptionist Dashboard Styling (Wireframe Sketch 3)
+   Author: Vivek Kumar (MSOT B.Tech CSE)
+   ========================================================================== */
+
+/* 1. Desktop Window Wrapper */
+.desktop-wrapper {
+  width: 100%;
+  max-width: 880px;
+  background-color: var(--bg-card);
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 620px;
+  position: relative;
+}
+
+/* Simulated desktop window title bar (matches sketch 3 "o o o") */
+.window-titlebar {
+  background-color: #f8fafc;
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.window-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.dot-red { background-color: #f87171; }
+.dot-yellow { background-color: #fbbf24; }
+.dot-green { background-color: #4ade80; }
+
+.window-title-text {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+/* 2. Reception Header */
+.reception-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.auth-user-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge-reception-desk {
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: #f1f5f9;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  letter-spacing: 0.04em;
+}
+
+.btn-signout {
+  background: none;
+  border: 1px solid #cbd5e1;
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-signout:hover {
+  background-color: #fee2e2;
+  border-color: #f87171;
+  color: #dc2626;
+}
+
+/* 3. Reception Content Area */
+.reception-body {
+  padding: 28px;
+  flex: 1;
+}
+
+.reception-title-group {
+  margin-bottom: 24px;
+}
+
+.reception-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.reception-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* 4. Three Top Summary Cards (Sketch 3) */
+.reception-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.reception-card {
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Highlighted current token card matching wireframe hatched pattern */
+.reception-card.highlight {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-color: #0f172a;
+  box-shadow: 0 3px 8px rgba(15, 23, 42, 0.08);
+}
+
+.rc-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.rc-value {
+  font-family: var(--font-mono);
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.rc-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* 5. Patient Queue Table Section */
+.queue-table-section {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+}
+
+.table-header-bar {
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-subtle);
+}
+
+.table-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.waiting-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #2563eb;
+  background-color: #eff6ff;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  border: 1px solid #bfdbfe;
+}
+
+.patient-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.patient-table th {
+  background-color: #f8fafc;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  text-align: left;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.patient-table th.col-action {
+  text-align: right;
+}
+
+.patient-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.92rem;
+  vertical-align: middle;
+}
+
+.patient-table tr:last-child td {
+  border-bottom: none;
+}
+
+.patient-table tr:hover {
+  background-color: #fbfcfe;
+}
+
+.token-cell-number {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+/* Call Patient Action Button in Table Row */
+.btn-call-patient {
+  background-color: #ffffff;
+  color: var(--text-main);
+  border: 2px solid var(--border-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.btn-call-patient:hover {
+  background-color: #1e293b;
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
+.btn-call-patient:active {
+  transform: scale(0.97);
+}
+
+/* 6. Bottom Action Bar (Sketch 3) */
+.reception-footer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: var(--bg-subtle);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.footer-instruction-text {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.footer-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-update-queue {
+  background: repeating-linear-gradient(
+    -45deg,
+    #1e293b,
+    #1e293b 8px,
+    #0f172a 8px,
+    #0f172a 16px
+  );
+  color: #ffffff;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.15);
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.btn-update-queue:hover {
+  opacity: 0.92;
+}
+
+.btn-update-queue:active {
+  transform: scale(0.98);
+}
+
+.btn-reset-demo {
+  background: transparent;
+  border: 1px dashed var(--border-color);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.btn-reset-demo:hover {
+  background-color: #ffffff;
+  border-color: var(--border-dark);
+  color: var(--text-main);
+}
+
+/* 7. Authentication Modal Overlay */
+.auth-modal-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-modal-overlay.visible {
+  display: flex;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.25);
+  padding: 32px 28px;
+}
+
+.auth-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+.auth-sub {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.auth-demo-hint {
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  font-size: 0.78rem;
+  color: #475569;
+  margin-top: 18px;
+  line-height: 1.4;
+}
+
+.btn-autofill-demo {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 0.78rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  margin-top: 4px;
+  display: block;
+}
+
+/* 8. Responsive Adjustments for Mobile & Tablet */
+@media (max-width: 768px) {
+  .reception-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .reception-footer-bar {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+  .footer-actions-group {
+    width: 100%;
+    flex-direction: column;
+  }
+  .btn-update-queue {
+    width: 100%;
+  }
+}

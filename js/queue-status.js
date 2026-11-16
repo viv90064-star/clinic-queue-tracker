@@ -168,12 +168,16 @@ refreshBtn.addEventListener("click", () => {
 });
 
 // Real-time synchronization:
-// If another tab or the receptionist dashboard updates localStorage,
-// this event automatically triggers and updates the patient's screen!
+// If another tab, the receptionist dashboard, or storage changes,
+// this event automatically triggers and updates the patient screen!
 window.addEventListener("storage", (event) => {
   if (event.key === "clinic_queue_state") {
     renderQueueStatus();
   }
+});
+
+window.addEventListener("clinic_queue_updated", () => {
+  renderQueueStatus();
 });
 
 // Initial render on page load
