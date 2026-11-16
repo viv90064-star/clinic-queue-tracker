@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic Queue Tracker - Check Your Status</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/patient.css">
+</head>
+<body>
+
+  <!-- Mobile Screen Frame (Matches Wireframe 1: Patient Home) -->
+  <main class="mobile-wrapper" role="main">
+    
+    <!-- Top Header Bar -->
+    <header class="clinic-header">
+      <span class="clinic-tag">Outpatient Clinic</span>
+      <span class="system-tag">• Queue tracker</span>
+    </header>
+
+    <!-- Main Card Content -->
+    <section class="card-content">
+      
+      <!-- Screen 01 Welcome Tag -->
+      <div class="section-badge">01 / Welcome</div>
+
+      <!-- Main Headings -->
+      <h1 class="page-title">Clinic Queue<br>Tracker</h1>
+      <p class="page-subtitle">Check your waiting status</p>
+
+      <hr class="divider">
+
+      <!-- Form Error Container (Hidden by default) -->
+      <div id="errorAlert" class="alert-box alert-error" role="alert" aria-live="polite">
+        <!-- Error text dynamically populated by JavaScript -->
+      </div>
+
+      <!-- Token Lookup Form -->
+      <form id="tokenForm" novalidate>
+        <div class="form-group">
+          <label for="tokenInput" class="form-label">Enter your token number</label>
+          <div class="token-input-wrapper">
+            <input 
+              type="text" 
+              id="tokenInput" 
+              name="tokenNumber" 
+              class="form-input" 
+              placeholder="e.g. 025" 
+              maxlength="6"
+              autocomplete="off"
+              inputmode="numeric"
+              aria-describedby="tokenHelper errorAlert"
+            >
+            <span class="token-input-icon">#</span>
+          </div>
+          <span id="tokenHelper" class="form-helper">You'll find this on your registration slip.</span>
+        </div>
+
+        <!-- Primary Call to Action Button -->
+        <button type="submit" id="checkQueueBtn" class="btn-primary btn-wireframe-shaded">
+          <span>Check Queue</span>
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </button>
+      </form>
+
+      <!-- Demo Shortcut (Matches Wireframe) -->
+      <div class="demo-shortcut-container">
+        <button type="button" id="demoShortcutBtn" class="demo-shortcut-btn">
+          • Try it out with sample token 025
+        </button>
+      </div>
+
+      <!-- Bottom Reassurance Note -->
+      <footer class="card-footer">
+        <p class="footer-quote-title">Your time is valuable</p>
+        <p class="footer-quote-sub">We'll help you keep track of it.</p>
+      </footer>
+
+    </section>
+
+  </main>
+
+  <!-- Feature 1 Client Script -->
+  <script src="js/patient-home.js"></script>
+</body>
+</html>

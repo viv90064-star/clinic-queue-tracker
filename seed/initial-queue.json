@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "clinic_name": "Outpatient Clinic Patna",
+    "current_token": "021",
+    "current_status": "Calling",
+    "next_token": "022",
+    "total_waiting": 4,
+    "avg_mins_per_patient": 6,
+    "last_updated": "2026-11-16T10:00:00Z"
+  },
+  "sample_tokens": [
+    {
+      "token_id": "021",
+      "order": 1,
+      "status": "calling",
+      "note": "Currently with doctor in Room 1"
+    },
+    {
+      "token_id": "022",
+      "order": 2,
+      "status": "waiting",
+      "note": "Next in line"
+    },
+    {
+      "token_id": "023",
+      "order": 3,
+      "status": "waiting",
+      "note": "In waiting area"
+    },
+    {
+      "token_id": "024",
+      "order": 4,
+      "status": "waiting",
+      "note": "In waiting area"
+    },
+    {
+      "token_id": "025",
+      "order": 5,
+      "status": "waiting",
+      "note": "In waiting area (Demo target token)"
+    }
+  ]
+}

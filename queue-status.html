@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queue Status - Clinic Queue Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/patient.css">
+</head>
+<body>
+
+  <!-- Mobile Screen Frame Placeholder for Feature 2 -->
+  <main class="mobile-wrapper" role="main">
+    
+    <header class="clinic-header">
+      <span class="clinic-tag">Outpatient Clinic</span>
+      <span class="system-tag">• Queue tracker</span>
+    </header>
+
+    <section class="card-content">
+      <div class="section-badge">02 / Your place in line</div>
+
+      <h1 class="page-title">Your Queue Status</h1>
+      <p class="page-subtitle">You're registered. We'll take it from here.</p>
+
+      <hr class="divider">
+
+      <div style="background: #f8fafc; border: 2px dashed #cbd5e1; border-radius: 12px; padding: 24px; text-align: center; margin: 16px 0;">
+        <span style="font-size: 0.85rem; font-weight: 700; color: #64748b; letter-spacing: 0.05em;">TOKEN NUMBER</span>
+        <div id="displayToken" style="font-size: 2.75rem; font-family: var(--font-mono); font-weight: 700; color: #0f172a; margin: 8px 0;">
+          ---
+        </div>
+        <p style="font-size: 0.9rem; color: #475569;">
+          ✅ <strong>Feature 1 Passed!</strong> Your token lookup was successful.
+        </p>
+        <p style="font-size: 0.8rem; color: #64748b; margin-top: 8px;">
+          Feature 2 will render the live waiting position, people ahead, estimated wait time, and progress bar here.
+        </p>
+      </div>
+
+      <a href="index.html" class="btn-primary" style="margin-top: 16px;">
+        ← Back to Home
+      </a>
+
+      <footer class="card-footer">
+        <p class="footer-quote-sub">Estimated times may vary. Thank you for your patience.</p>
+      </footer>
+    </section>
+
+  </main>
+
+  <script>
+    // Extract token from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const token = urlParams.get('token') || sessionStorage.getItem('clinic_current_token') || '---';
+    document.getElementById('displayToken').textContent = token;
+  </script>
+</body>
+</html>
