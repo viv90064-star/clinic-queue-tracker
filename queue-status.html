@@ -33,6 +33,17 @@
         <h1 class="page-title">Your Queue Status</h1>
         <p id="queueStatusSubtitle" class="page-subtitle">You're registered. We'll take it from here.</p>
 
+        <!-- Dynamic Inline Turn Approaching / Your Turn Alert (Appears when turn is close) -->
+        <div id="inlineTurnAlert" class="inline-turn-alert" role="alert" aria-live="polite">
+          <span id="turnAlertIcon" class="turn-alert-icon">🔔</span>
+          <div class="turn-alert-content">
+            <div id="turnAlertTitle" class="turn-alert-title">Your turn is approaching!</div>
+            <div id="turnAlertMsg" class="turn-alert-msg">
+              You are next in line. Please stay near Consultation Room 1.
+            </div>
+          </div>
+        </div>
+
         <!-- 1. Hero Token Box -->
         <div class="token-hero-card">
           <span class="token-hero-label">Token Number</span>
@@ -45,7 +56,7 @@
 
         <!-- 2. Side-by-Side Metrics Grid -->
         <div class="metrics-row">
-          <!-- Metric 1: Patients Ahead -->
+          <!-- Metric 1: Patients Ahead of You -->
           <div class="metric-box">
             <span class="metric-label">Patients ahead of you</span>
             <div class="metric-value-container">
@@ -55,7 +66,10 @@
 
           <!-- Metric 2: Estimated Waiting Time -->
           <div class="metric-box">
-            <span class="metric-label">Estimated Waiting Time</span>
+            <span class="metric-label">
+              Estimated Waiting Time
+              <span class="metric-estimate-tag">*Estimate</span>
+            </span>
             <div class="metric-value-container">
               <span id="waitTimeDisplay" class="metric-value">--</span>
               <span id="waitUnitDisplay" class="metric-unit">minutes</span>
@@ -63,7 +77,7 @@
           </div>
         </div>
 
-        <!-- 3. Five-Segment Progress Bar -->
+        <!-- 3. Five-Segment Progress Bar (Wireframe Sketch 2) -->
         <div class="queue-progress-wrapper">
           <div class="progress-header-row">
             <span>Queue progress</span>
@@ -98,19 +112,21 @@
           </a>
         </div>
 
-        <!-- Manual Refresh Indicator -->
+        <!-- Manual Refresh Control (Prominent and clear) -->
         <div class="refresh-control-container">
           <button type="button" id="refreshBtn" class="btn-refresh" title="Check for queue updates">
-            <span aria-hidden="true">↻</span> Check for updates
+            <span aria-hidden="true">↻</span> Refresh queue status
           </button>
         </div>
 
-        <!-- Reassurance & Disclaimer Footer -->
+        <!-- Explicit Disclaimer Card -->
+        <div class="disclaimer-card">
+          <strong>*Disclaimer:</strong> Waiting times are approximate estimates only (calculated at ~5–7 mins per consultation) and may vary depending on patient care needs and doctor availability.
+        </div>
+
+        <!-- Reassurance Footer -->
         <footer class="card-footer">
-          <p class="footer-quote-sub" style="margin-bottom: 4px;">
-            This is an estimate and may change depending on queue movement and doctor availability.
-          </p>
-          <p class="footer-quote-sub" style="font-size: 0.7rem; color: #94a3b8;">
+          <p class="footer-quote-sub">
             Estimated times may vary. Thank you for your patience.
           </p>
         </footer>
@@ -146,8 +162,8 @@
 
         <div class="approaching-banner">
           <div class="approaching-icon" aria-hidden="true">🔔</div>
-          <h3 class="approaching-title">Your Turn is Approaching!</h3>
-          <p class="approaching-text">
+          <h3 id="approachingViewTitle" class="approaching-title">Your Turn is Approaching!</h3>
+          <p id="approachingViewDesc" class="approaching-text">
             Token <strong id="approachingTokenDisplay" style="font-family: var(--font-mono); font-size: 1.25rem;">025</strong> is close to consultation. Please make your way toward the doctor's room.
           </p>
           <div class="room-highlight-box">
@@ -166,7 +182,7 @@
 
   </main>
 
-  <!-- Scripts -->
+  <!-- Client Scripts -->
   <script src="js/queue-service.js"></script>
   <script src="js/queue-status.js"></script>
 </body>

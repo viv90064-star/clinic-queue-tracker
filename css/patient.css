@@ -77,10 +77,64 @@
 }
 
 /* ==========================================================================
-   Feature 2: Queue Status Screen Components
+   Queue Status Screen Components (Wireframe Sketch 2)
    ========================================================================== */
 
-/* 1. Hero Token Box (Wireframe Sketch 2) */
+/* 1. Inline Turn Approaching Alert Banner */
+.inline-turn-alert {
+  display: none;
+  align-items: flex-start;
+  gap: 12px;
+  background-color: #fef3c7;
+  border: 2px solid #f59e0b;
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.12);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.inline-turn-alert.visible {
+  display: flex;
+}
+
+.inline-turn-alert.calling {
+  background-color: #dcfce7;
+  border-color: #22c55e;
+  box-shadow: 0 2px 6px rgba(34, 197, 94, 0.15);
+}
+
+.turn-alert-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.turn-alert-content {
+  flex: 1;
+}
+
+.turn-alert-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #78350f;
+  margin-bottom: 2px;
+}
+
+.inline-turn-alert.calling .turn-alert-title {
+  color: #14532d;
+}
+
+.turn-alert-msg {
+  font-size: 0.82rem;
+  color: #92400e;
+  line-height: 1.35;
+}
+
+.inline-turn-alert.calling .turn-alert-msg {
+  color: #166534;
+}
+
+/* 2. Hero Token Box */
 .token-hero-card {
   border: 2px solid var(--border-dark);
   border-radius: var(--radius-md);
@@ -136,6 +190,12 @@
   animation: pulseCalling 1.5s infinite;
 }
 
+.status-pill.completed {
+  background-color: #f1f5f9;
+  color: #475569;
+  border-color: #cbd5e1;
+}
+
 .status-dot {
   width: 7px;
   height: 7px;
@@ -149,10 +209,10 @@
   100% { transform: scale(1); }
 }
 
-/* 2. Side-by-Side Metrics Grid (People Ahead & Estimated Wait Time) */
+/* 3. Side-by-Side Metrics Grid (People Ahead & Estimated Wait Time) */
 .metrics-row {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: 1fr 1.35fr;
   gap: 12px;
   margin-bottom: 24px;
 }
@@ -171,8 +231,15 @@
   font-weight: 600;
   color: var(--text-muted);
   margin-bottom: 6px;
-  min-height: 2.2em; /* keeps cards aligned even if label wraps */
+  min-height: 2.2em;
   line-height: 1.25;
+}
+
+.metric-estimate-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #64748b;
+  display: block;
 }
 
 .metric-value-container {
@@ -196,7 +263,7 @@
   color: var(--text-muted);
 }
 
-/* 3. Five-Segment Progress Bar (Wireframe Sketch 2) */
+/* 4. Five-Segment Progress Bar (Wireframe Sketch 2) */
 .queue-progress-wrapper {
   margin-bottom: 24px;
   padding: 14px 16px;
@@ -218,6 +285,7 @@
 .progress-status-text {
   color: #2563eb;
   font-size: 0.75rem;
+  font-weight: 700;
 }
 
 .progress-segments-container {
@@ -248,7 +316,7 @@
   font-weight: 500;
 }
 
-/* 4. Action Area & Refresh Indicator */
+/* 5. Action Area & Refresh Indicator */
 .action-buttons-group {
   display: flex;
   flex-direction: column;
@@ -258,29 +326,42 @@
 
 .refresh-control-container {
   text-align: center;
-  margin: 12px 0 6px 0;
+  margin: 14px 0 6px 0;
 }
 
 .btn-refresh {
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-size: 0.78rem;
-  font-weight: 500;
+  background-color: #f1f5f9;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  font-size: 0.82rem;
+  font-weight: 600;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  padding: 4px 8px;
-  border-radius: 4px;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
 }
 
 .btn-refresh:hover {
-  color: var(--text-main);
   background-color: #e2e8f0;
+  border-color: var(--border-dark);
 }
 
-/* 5. Turn Approaching Screen / Modal Overlay (Screen 4 from PDF) */
+/* 6. Explicit Disclaimer Card (Requested by User Feedback) */
+.disclaimer-card {
+  background-color: #f8fafc;
+  border-left: 3px solid #64748b;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 8px 12px;
+  margin-top: 18px;
+  font-size: 0.75rem;
+  color: #475569;
+  line-height: 1.4;
+}
+
+/* 7. Turn Approaching Screen / Modal Overlay (Screen 4 from PDF) */
 .turn-approaching-view {
   display: none;
   position: absolute;
@@ -337,7 +418,7 @@
   color: #0f172a;
 }
 
-/* 6. Invalid Token State Card */
+/* 8. Invalid Token State Card */
 .invalid-token-card {
   display: none;
   text-align: center;

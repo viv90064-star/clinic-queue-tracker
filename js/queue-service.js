@@ -24,7 +24,7 @@ const DEFAULT_QUEUE_STATE = {
     { token_id: "022", order: 2, status: "waiting", note: "Next in line" },
     { token_id: "023", order: 3, status: "waiting", note: "In waiting area" },
     { token_id: "024", order: 4, status: "waiting", note: "In waiting area" },
-    { token_id: "025", order: 5, status: "waiting", note: "In waiting area" }
+    { token_id: "025", order: 5, status: "waiting", note: "In waiting area (Demo target token)" }
   ]
 };
 
@@ -54,7 +54,7 @@ function saveQueueState(state) {
     state.last_updated = new Date().toISOString();
     localStorage.setItem(QUEUE_STORAGE_KEY, JSON.stringify(state));
 
-    // Dispatch a local custom event so this same tab knows storage changed
+    // Dispatch a local custom event so this same tab/window knows storage changed
     window.dispatchEvent(new CustomEvent("clinic_queue_updated", { detail: state }));
   } catch (err) {
     console.error("Failed to save queue state:", err);
@@ -74,7 +74,7 @@ function resetQueueState() {
 /**
  * Advances the queue by calling a specific patient token, or the next in line.
  * @param {string} [tokenId] - Optional specific token to call (e.g. "022")
- * @returns {{ success: boolean, calledToken?: string, error?: string }}
+ * @returns {{ success: boolean, calledToken?: string, nextToken?: string, totalWaiting?: number, error?: string }}
  */
 function callPatient(tokenId) {
   const state = getQueueState();
@@ -88,7 +88,7 @@ function callPatient(tokenId) {
       return { success: false, error: `Token #${tokenId} is not waiting in the queue.` };
     }
   } else {
-    // Call the next waiting token in order
+    // Call the first waiting token in order
     targetToken = state.tokens.find(t => t.status === "waiting");
     if (!targetToken) {
       return { success: false, error: "No more waiting patients in today's queue!" };
@@ -143,7 +143,7 @@ function getTokenQueueInfo(tokenId) {
     return null;
   }
 
-  // Check if completed
+  // 1. If completed
   if (tokenObj.status === "completed") {
     return {
       tokenId: normalizedId,
@@ -156,12 +156,13 @@ function getTokenQueueInfo(tokenId) {
       waitUnit: "mins",
       progressStep: 5,
       isTurnApproaching: false,
+      isYourTurn: false,
       room: state.doctor_room || "Room 1",
-      note: "Your consultation has ended. Thank you."
+      note: "Your consultation has ended. Thank you for visiting."
     };
   }
 
-  // Check if currently being called
+  // 2. If currently being called by doctor
   const isCurrentlyCalling = (state.current_token === normalizedId) || (tokenObj.status === "calling");
 
   if (isCurrentlyCalling) {
@@ -176,22 +177,27 @@ function getTokenQueueInfo(tokenId) {
       waitUnit: "mins",
       progressStep: 5,
       isTurnApproaching: true,
+      isYourTurn: true,
       room: state.doctor_room || "Room 1",
-      note: "Please proceed immediately to Consultation Room 1."
+      note: "It's your turn! Please proceed to Consultation Room 1 now."
     };
   }
 
-  // Count active consultations ahead:
-  // 1. Tokens waiting with an earlier order number
+  // 3. Count active consultations ahead:
+  // a) Tokens in line waiting with an earlier order number
   const waitingAhead = state.tokens.filter(t => 
     t.status === "waiting" && t.order < tokenObj.order
   ).length;
 
-  // 2. Active token currently in consultation with the doctor
-  const currentCallingCount = (state.current_token && state.current_token !== normalizedId) ? 1 : 0;
+  // b) Active token currently in consultation with the doctor (if any)
+  const activeDoctorConsultation = state.tokens.find(t => 
+    t.token_id === state.current_token && t.status === "calling"
+  );
+  const currentCallingCount = (activeDoctorConsultation && activeDoctorConsultation.token_id !== normalizedId) ? 1 : 0;
   
   const totalPatientsAhead = waitingAhead + currentCallingCount;
 
+  // 4. Calculate estimated waiting-time range (5 to 7.5 mins per consultation)
   let estimatedWaitText = "";
   let waitMinutesOnly = "";
   let waitUnit = "minutes";
@@ -214,21 +220,23 @@ function getTokenQueueInfo(tokenId) {
     waitMinutesOnly = "15–20";
     progressStep = 2;
   } else {
-    // 4 or more patients ahead
+    // 4 or more patients ahead (e.g. 4 ahead -> 20-30 mins)
     const minWait = totalPatientsAhead * 5;
-    const maxWait = Math.round(totalPatientsAhead * 7.5 / 5) * 5;
+    const maxWait = Math.round((totalPatientsAhead * 7.5) / 5) * 5;
     estimatedWaitText = `${minWait}–${maxWait} minutes`;
     waitMinutesOnly = `${minWait}–${maxWait}`;
     progressStep = 1;
   }
 
   const patientsAheadDisplay = String(totalPatientsAhead).padStart(2, "0");
+  
+  // Turn approaching when 1 patient ahead or next in line
   const isTurnApproaching = totalPatientsAhead <= 1;
 
   return {
     tokenId: normalizedId,
     status: tokenObj.status,
-    statusLabel: tokenObj.status === "waiting" ? "Waiting" : tokenObj.status,
+    statusLabel: "Waiting",
     patientsAhead: totalPatientsAhead,
     patientsAheadDisplay: patientsAheadDisplay,
     estimatedWaitText: estimatedWaitText,
@@ -236,9 +244,10 @@ function getTokenQueueInfo(tokenId) {
     waitUnit: waitUnit,
     progressStep: progressStep,
     isTurnApproaching: isTurnApproaching,
+    isYourTurn: false,
     room: state.doctor_room || "Room 1",
     note: isTurnApproaching
-      ? "Your turn is approaching! Please stay near the consultation room."
+      ? "Your turn is approaching! Please stay near Consultation Room 1."
       : "You're registered. We'll take it from here."
   };
 }

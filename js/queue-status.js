@@ -1,17 +1,22 @@
 /**
- * Clinic Queue Tracking System - Feature 2: Patient Queue Status
+ * Clinic Queue Tracking System - Feature 2 & 4: Patient Queue Status
  * Author: Vivek Kumar (MSOT B.Tech CSE)
  * 
  * Purpose:
- * Reads the patient's token from URL parameters, looks up live queue metrics
- * (patients ahead, estimated wait time, status, progress segments),
- * and handles the "Turn Approaching" alert view.
+ * Reads patient token from URL, queries QueueService, renders live metrics,
+ * displays inline and full Turn Approaching messages when turn is near,
+ * and synchronizes automatically on refresh or queue updates.
  */
 
 // 1. DOM Elements
 const queueStatusView = document.getElementById("queueStatusView");
 const invalidTokenView = document.getElementById("invalidTokenView");
 const invalidTokenDesc = document.getElementById("invalidTokenDesc");
+
+const inlineTurnAlert = document.getElementById("inlineTurnAlert");
+const turnAlertIcon = document.getElementById("turnAlertIcon");
+const turnAlertTitle = document.getElementById("turnAlertTitle");
+const turnAlertMsg = document.getElementById("turnAlertMsg");
 
 const tokenNumberDisplay = document.getElementById("tokenNumberDisplay");
 const tokenStatusPill = document.getElementById("tokenStatusPill");
@@ -32,15 +37,16 @@ const progressSegments = [
 const viewTurnStatusBtn = document.getElementById("viewTurnStatusBtn");
 const turnApproachingView = document.getElementById("turnApproachingView");
 const closeTurnStatusBtn = document.getElementById("closeTurnStatusBtn");
+const approachingViewTitle = document.getElementById("approachingViewTitle");
+const approachingViewDesc = document.getElementById("approachingViewDesc");
 const approachingTokenDisplay = document.getElementById("approachingTokenDisplay");
 const approachingRoomDisplay = document.getElementById("approachingRoomDisplay");
 const refreshBtn = document.getElementById("refreshBtn");
 
-// 2. State
 let currentTokenId = null;
 
 /**
- * Parses the token number from the URL or browser session storage.
+ * Extracts the active token number from URL params or storage.
  * @returns {string|null}
  */
 function getActiveTokenId() {
@@ -57,9 +63,9 @@ function getActiveTokenId() {
 }
 
 /**
- * Updates the 5-segment visual progress bar.
+ * Renders the 5-segment visual progress bar.
  * @param {number} activeStep - 1 through 5
- * @param {boolean} isCalling - Whether token is currently called
+ * @param {boolean} isCalling - Whether currently calling
  */
 function renderProgressBar(activeStep, isCalling) {
   progressSegments.forEach((seg, index) => {
@@ -76,25 +82,26 @@ function renderProgressBar(activeStep, isCalling) {
   } else if (activeStep >= 4) {
     progressStatusText.textContent = "Almost there!";
     progressStatusText.style.color = "#d97706";
+  } else if (activeStep >= 2) {
+    progressStatusText.textContent = "Moving forward";
+    progressStatusText.style.color = "#2563eb";
   } else {
     progressStatusText.textContent = "You're in line";
-    progressStatusText.style.color = "#2563eb";
+    progressStatusText.style.color = "#64748b";
   }
 }
 
 /**
- * Main render function: Queries QueueService and populates the UI.
+ * Main render function: Computes and displays queue status.
  */
 function renderQueueStatus() {
   currentTokenId = getActiveTokenId();
 
-  // Validate presence
   if (!currentTokenId) {
     showInvalidToken("No token number provided. Please enter your token from your clinic registration slip.");
     return;
   }
 
-  // Fetch metrics from QueueService
   const info = window.QueueService.getTokenQueueInfo(currentTokenId);
 
   if (!info) {
@@ -102,16 +109,18 @@ function renderQueueStatus() {
     return;
   }
 
-  // Token is valid: Show status view, hide invalid view
+  // Token is valid: Show status view
   queueStatusView.style.display = "block";
   invalidTokenView.classList.remove("visible");
 
-  // 1. Hero Token Box
+  // 1. Hero Token Card
   tokenNumberDisplay.textContent = info.tokenId;
   tokenStatusText.textContent = info.statusLabel;
 
   if (info.status === "calling") {
     tokenStatusPill.className = "status-pill calling";
+  } else if (info.status === "completed") {
+    tokenStatusPill.className = "status-pill completed";
   } else {
     tokenStatusPill.className = "status-pill waiting";
   }
@@ -124,20 +133,42 @@ function renderQueueStatus() {
   // 3. 5-Segment Progress Bar
   renderProgressBar(info.progressStep, info.status === "calling");
 
-  // 4. Populate Turn Approaching Screen
-  approachingTokenDisplay.textContent = info.tokenId;
-  approachingRoomDisplay.textContent = `Consultation ${info.room}`;
+  // 4. Simple Turn Approaching Message (Inline Alert)
+  if (info.isYourTurn) {
+    // Patient is currently being called
+    inlineTurnAlert.className = "inline-turn-alert visible calling";
+    turnAlertIcon.textContent = "🎉";
+    turnAlertTitle.textContent = "It's Your Turn Now!";
+    turnAlertMsg.textContent = `Token #${info.tokenId}: Please proceed into Consultation ${info.room} immediately.`;
 
-  // If token is already being called, update button text
-  if (info.status === "calling") {
+    approachingViewTitle.textContent = "It's Your Turn!";
+    approachingViewDesc.innerHTML = `Token <strong>${info.tokenId}</strong> is being called right now.`;
     viewTurnStatusBtn.querySelector("span:first-child").textContent = "Proceed to Room Now";
+  } else if (info.isTurnApproaching) {
+    // Patient is next in line or 1 ahead
+    inlineTurnAlert.className = "inline-turn-alert visible";
+    turnAlertIcon.textContent = "🔔";
+    turnAlertTitle.textContent = "Your turn is approaching!";
+    turnAlertMsg.textContent = `You are next in line. Please stay near Consultation ${info.room}.`;
+
+    approachingViewTitle.textContent = "Your Turn is Approaching!";
+    approachingViewDesc.innerHTML = `Token <strong>${info.tokenId}</strong> is next in line. Please stay near the consultation room.`;
+    viewTurnStatusBtn.querySelector("span:first-child").textContent = "View Turn Status";
   } else {
+    // Normal waiting state (2+ patients ahead)
+    inlineTurnAlert.className = "inline-turn-alert";
+    approachingViewTitle.textContent = "Your Turn Status";
+    approachingViewDesc.innerHTML = `Token <strong>${info.tokenId}</strong> is currently waiting. ${info.patientsAheadDisplay} patients are ahead of you.`;
     viewTurnStatusBtn.querySelector("span:first-child").textContent = "View Turn Status";
   }
+
+  // Full Screen 4 details
+  approachingTokenDisplay.textContent = info.tokenId;
+  approachingRoomDisplay.textContent = `Consultation ${info.room}`;
 }
 
 /**
- * Displays the invalid token error card.
+ * Displays the invalid token error view.
  * @param {string} message 
  */
 function showInvalidToken(message) {
@@ -146,30 +177,29 @@ function showInvalidToken(message) {
   invalidTokenDesc.textContent = message;
 }
 
-// 3. Event Listeners
+// 2. Event Listeners
 
-// Open Turn Approaching view (Screen 4)
+// Open Turn Approaching screen (Screen 4)
 viewTurnStatusBtn.addEventListener("click", () => {
   turnApproachingView.classList.add("visible");
 });
 
-// Close Turn Approaching view and return to Queue Status
+// Close Turn Approaching screen
 closeTurnStatusBtn.addEventListener("click", () => {
   turnApproachingView.classList.remove("visible");
 });
 
 // Manual refresh button
 refreshBtn.addEventListener("click", () => {
-  refreshBtn.innerHTML = "<span>↻ Updating...</span>";
+  refreshBtn.innerHTML = "<span>↻ Checking...</span>";
   setTimeout(() => {
     renderQueueStatus();
-    refreshBtn.innerHTML = '<span aria-hidden="true">↻</span> Check for updates';
-  }, 300);
+    refreshBtn.innerHTML = '<span aria-hidden="true">↻</span> Refresh queue status';
+  }, 250);
 });
 
 // Real-time synchronization:
-// If another tab, the receptionist dashboard, or storage changes,
-// this event automatically triggers and updates the patient screen!
+// Listens to cross-window storage events and local custom events
 window.addEventListener("storage", (event) => {
   if (event.key === "clinic_queue_state") {
     renderQueueStatus();
@@ -180,5 +210,5 @@ window.addEventListener("clinic_queue_updated", () => {
   renderQueueStatus();
 });
 
-// Initial render on page load
+// Initial load
 document.addEventListener("DOMContentLoaded", renderQueueStatus);

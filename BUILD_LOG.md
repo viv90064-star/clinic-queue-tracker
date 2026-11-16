@@ -56,7 +56,20 @@
 - [x] Implemented `firestore.rules` restricting database write permissions to authenticated staff only (`allow write: if request.auth != null;`).
 - [x] Created `firebase.json` for hosting and rule deployments.
 - [x] Implemented `js/reception.js` with staff login/logout, queue progression (`callPatient`), and real-time syncing.
-- [x] Verified cross-tab synchronization between Receptionist Dashboard and Patient Queue Status.
+
+### Phase 4 & Feature 4: Full System Integration & Workflow Verification
+- [x] Connected Patient Home (`index.html`), Queue Status (`queue-status.html`), and Receptionist Dashboard (`reception.html`) into one cohesive workflow.
+- [x] Added inline Turn Approaching notification alert (`🔔 Your turn is approaching!`) that appears automatically when `patientsAhead <= 1`.
+- [x] Enhanced wait-time estimation labeling with explicit disclaimer cards and notices.
+- [x] Added manual refresh control (`↻ Refresh queue status`) alongside automatic storage and custom event listeners for instant and on-demand updates.
+- [x] Added seamless navigation links between Patient Home and Staff Reception Desk.
+- [x] Executed end-to-end programmatic verification across all sample tokens (`021` to `025`):
+  1. Initial state: Token `025` shows 4 patients ahead, 20–30 mins wait.
+  2. Reception calls `022`: Token `025` updates to 3 patients ahead, 15–20 mins wait.
+  3. Reception calls `023`: Token `025` updates to 2 patients ahead, 10–15 mins wait.
+  4. Reception calls `024`: Token `025` updates to 1 patient ahead, 5–10 mins wait, Turn Approaching alert triggers.
+  5. Reception calls `025`: Token `025` updates to 0 ahead, status "Now Being Called", 5/5 progress bar, and "It's Your Turn Now!" banner.
+  6. Demo reset verified.
 
 ---
 
@@ -64,3 +77,4 @@
 1. `feat: implement Patient Home screen with token input, demo shortcut, and validation (Feature 1)`
 2. `feat: implement Patient Queue Status screen with live metrics, progress bar, and turn approaching view (Feature 2)`
 3. `feat: implement Receptionist Dashboard, queue progression, Firebase Auth protection, and Firestore rules (Feature 3)`
+4. `feat: connect full clinic queue workflow, inline turn alerts, dynamic wait-time estimation, and verification (Feature 4)`
