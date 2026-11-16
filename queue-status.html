@@ -3,57 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Queue Status - Clinic Queue Tracker</title>
+  <title>Your Queue Status - Clinic Queue Tracker</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/patient.css">
 </head>
 <body>
 
-  <!-- Mobile Screen Frame Placeholder for Feature 2 -->
+  <!-- Mobile Screen Frame (Matches Wireframe Sketch 2) -->
   <main class="mobile-wrapper" role="main">
     
+    <!-- Top Header Bar -->
     <header class="clinic-header">
       <span class="clinic-tag">Outpatient Clinic</span>
       <span class="system-tag">• Queue tracker</span>
     </header>
 
+    <!-- Content Section -->
     <section class="card-content">
-      <div class="section-badge">02 / Your place in line</div>
+      
+      <!-- ============================================================
+           VIEW A: Valid Queue Status View (Sketch 2)
+           ============================================================ -->
+      <div id="queueStatusView">
+        
+        <!-- Step Tag -->
+        <div class="section-badge">02 / Your place in line</div>
 
-      <h1 class="page-title">Your Queue Status</h1>
-      <p class="page-subtitle">You're registered. We'll take it from here.</p>
+        <!-- Headings -->
+        <h1 class="page-title">Your Queue Status</h1>
+        <p id="queueStatusSubtitle" class="page-subtitle">You're registered. We'll take it from here.</p>
 
-      <hr class="divider">
-
-      <div style="background: #f8fafc; border: 2px dashed #cbd5e1; border-radius: 12px; padding: 24px; text-align: center; margin: 16px 0;">
-        <span style="font-size: 0.85rem; font-weight: 700; color: #64748b; letter-spacing: 0.05em;">TOKEN NUMBER</span>
-        <div id="displayToken" style="font-size: 2.75rem; font-family: var(--font-mono); font-weight: 700; color: #0f172a; margin: 8px 0;">
-          ---
+        <!-- 1. Hero Token Box -->
+        <div class="token-hero-card">
+          <span class="token-hero-label">Token Number</span>
+          <div id="tokenNumberDisplay" class="token-hero-number">---</div>
+          <div id="tokenStatusPill" class="status-pill waiting">
+            <span class="status-dot"></span>
+            <span id="tokenStatusText">Waiting</span>
+          </div>
         </div>
-        <p style="font-size: 0.9rem; color: #475569;">
-          ✅ <strong>Feature 1 Passed!</strong> Your token lookup was successful.
-        </p>
-        <p style="font-size: 0.8rem; color: #64748b; margin-top: 8px;">
-          Feature 2 will render the live waiting position, people ahead, estimated wait time, and progress bar here.
-        </p>
+
+        <!-- 2. Side-by-Side Metrics Grid -->
+        <div class="metrics-row">
+          <!-- Metric 1: Patients Ahead -->
+          <div class="metric-box">
+            <span class="metric-label">Patients ahead of you</span>
+            <div class="metric-value-container">
+              <span id="patientsAheadDisplay" class="metric-value">--</span>
+            </div>
+          </div>
+
+          <!-- Metric 2: Estimated Waiting Time -->
+          <div class="metric-box">
+            <span class="metric-label">Estimated Waiting Time</span>
+            <div class="metric-value-container">
+              <span id="waitTimeDisplay" class="metric-value">--</span>
+              <span id="waitUnitDisplay" class="metric-unit">minutes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Five-Segment Progress Bar -->
+        <div class="queue-progress-wrapper">
+          <div class="progress-header-row">
+            <span>Queue progress</span>
+            <span id="progressStatusText" class="progress-status-text">You're in line</span>
+          </div>
+          
+          <div class="progress-segments-container" aria-label="Queue progress 5-step indicator">
+            <div id="seg1" class="progress-segment active" title="Step 1: Registered"></div>
+            <div id="seg2" class="progress-segment" title="Step 2: Waiting"></div>
+            <div id="seg3" class="progress-segment" title="Step 3: Mid-queue"></div>
+            <div id="seg4" class="progress-segment" title="Step 4: Next in line"></div>
+            <div id="seg5" class="progress-segment" title="Step 5: Your turn"></div>
+          </div>
+
+          <div class="progress-labels-row">
+            <span>Registered</span>
+            <span>Your turn</span>
+          </div>
+        </div>
+
+        <!-- 4. Action Buttons Group -->
+        <div class="action-buttons-group">
+          <!-- Primary: View Turn Status (Opens Screen 4) -->
+          <button type="button" id="viewTurnStatusBtn" class="btn-primary btn-wireframe-shaded">
+            <span>View Turn Status</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </button>
+
+          <!-- Secondary: Back to Home -->
+          <a href="index.html" class="btn-secondary">
+            ← Back to Home
+          </a>
+        </div>
+
+        <!-- Manual Refresh Indicator -->
+        <div class="refresh-control-container">
+          <button type="button" id="refreshBtn" class="btn-refresh" title="Check for queue updates">
+            <span aria-hidden="true">↻</span> Check for updates
+          </button>
+        </div>
+
+        <!-- Reassurance & Disclaimer Footer -->
+        <footer class="card-footer">
+          <p class="footer-quote-sub" style="margin-bottom: 4px;">
+            This is an estimate and may change depending on queue movement and doctor availability.
+          </p>
+          <p class="footer-quote-sub" style="font-size: 0.7rem; color: #94a3b8;">
+            Estimated times may vary. Thank you for your patience.
+          </p>
+        </footer>
+
       </div>
 
-      <a href="index.html" class="btn-primary" style="margin-top: 16px;">
-        ← Back to Home
-      </a>
+      <!-- ============================================================
+           VIEW B: Invalid / Unknown Token State
+           ============================================================ -->
+      <div id="invalidTokenView" class="invalid-token-card">
+        <div class="invalid-token-icon" aria-hidden="true">⚠️</div>
+        <h2 class="invalid-token-title">Token Not Found</h2>
+        <p id="invalidTokenDesc" class="invalid-token-desc">
+          The requested token could not be found in today's active clinic queue. Please verify your token number on your registration slip.
+        </p>
+        <a href="index.html" class="btn-primary">
+          ← Enter Token Again
+        </a>
+      </div>
 
-      <footer class="card-footer">
-        <p class="footer-quote-sub">Estimated times may vary. Thank you for your patience.</p>
-      </footer>
+      <!-- ============================================================
+           VIEW C: Turn Approaching View (Screen 4 from Product Plan)
+           ============================================================ -->
+      <div id="turnApproachingView" class="turn-approaching-view" aria-modal="true" role="dialog">
+        <div class="clinic-header" style="margin: -24px -24px 20px -24px;">
+          <span class="clinic-tag">Outpatient Clinic</span>
+          <span class="system-tag">• Queue tracker</span>
+        </div>
+
+        <div class="section-badge">03 / Turn Approaching</div>
+        
+        <h2 class="page-title">Turn Status</h2>
+
+        <div class="approaching-banner">
+          <div class="approaching-icon" aria-hidden="true">🔔</div>
+          <h3 class="approaching-title">Your Turn is Approaching!</h3>
+          <p class="approaching-text">
+            Token <strong id="approachingTokenDisplay" style="font-family: var(--font-mono); font-size: 1.25rem;">025</strong> is close to consultation. Please make your way toward the doctor's room.
+          </p>
+          <div class="room-highlight-box">
+            👉 <span id="approachingRoomDisplay">Consultation Room 1</span>
+          </div>
+        </div>
+
+        <div style="margin-top: auto; padding-top: 20px;">
+          <button type="button" id="closeTurnStatusBtn" class="btn-primary">
+            ← Back to Queue Status
+          </button>
+        </div>
+      </div>
+
     </section>
 
   </main>
 
-  <script>
-    // Extract token from URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const token = urlParams.get('token') || sessionStorage.getItem('clinic_current_token') || '---';
-    document.getElementById('displayToken').textContent = token;
-  </script>
+  <!-- Scripts -->
+  <script src="js/queue-service.js"></script>
+  <script src="js/queue-status.js"></script>
 </body>
 </html>

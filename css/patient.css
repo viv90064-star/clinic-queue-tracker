@@ -25,6 +25,31 @@
   );
 }
 
+/* Secondary outline button (e.g. Back to Home) */
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: transparent;
+  color: var(--text-main);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #f1f5f9;
+  border-color: #0f172a;
+}
+
 /* Arrow icon in button */
 .btn-arrow {
   font-size: 1.15rem;
@@ -49,4 +74,296 @@
   font-size: 0.9rem;
   font-weight: 600;
   pointer-events: none;
+}
+
+/* ==========================================================================
+   Feature 2: Queue Status Screen Components
+   ========================================================================== */
+
+/* 1. Hero Token Box (Wireframe Sketch 2) */
+.token-hero-card {
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: 20px 16px;
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+}
+
+.token-hero-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.token-hero-number {
+  font-family: var(--font-mono);
+  font-size: 3.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+/* Status Pill Badges */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 14px;
+  border-radius: 9999px;
+  margin-top: 8px;
+  border: 1px solid transparent;
+}
+
+.status-pill.waiting {
+  background-color: var(--status-waiting-bg);
+  color: var(--status-waiting-text);
+  border-color: #fde68a;
+}
+
+.status-pill.calling {
+  background-color: var(--status-calling-bg);
+  color: var(--status-calling-text);
+  border-color: #bbf7d0;
+  animation: pulseCalling 1.5s infinite;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+@keyframes pulseCalling {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+/* 2. Side-by-Side Metrics Grid (People Ahead & Estimated Wait Time) */
+.metrics-row {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.metric-box {
+  background-color: #ffffff;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  min-height: 2.2em; /* keeps cards aligned even if label wraps */
+  line-height: 1.25;
+}
+
+.metric-value-container {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-top: auto;
+}
+
+.metric-value {
+  font-size: 1.85rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--text-main);
+  line-height: 1;
+}
+
+.metric-unit {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* 3. Five-Segment Progress Bar (Wireframe Sketch 2) */
+.queue-progress-wrapper {
+  margin-bottom: 24px;
+  padding: 14px 16px;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.progress-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.progress-status-text {
+  color: #2563eb;
+  font-size: 0.75rem;
+}
+
+.progress-segments-container {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.progress-segment {
+  flex: 1;
+  height: 9px;
+  border-radius: 6px;
+  background-color: #e2e8f0;
+  border: 1px solid #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+.progress-segment.active {
+  background-color: #1e293b;
+  border-color: #0f172a;
+}
+
+.progress-labels-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* 4. Action Area & Refresh Indicator */
+.action-buttons-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.refresh-control-container {
+  text-align: center;
+  margin: 12px 0 6px 0;
+}
+
+.btn-refresh {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.btn-refresh:hover {
+  color: var(--text-main);
+  background-color: #e2e8f0;
+}
+
+/* 5. Turn Approaching Screen / Modal Overlay (Screen 4 from PDF) */
+.turn-approaching-view {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 50;
+  padding: 24px;
+  flex-direction: column;
+}
+
+.turn-approaching-view.visible {
+  display: flex;
+}
+
+.approaching-banner {
+  background-color: #fef3c7;
+  border: 2px solid #f59e0b;
+  border-radius: var(--radius-md);
+  padding: 24px 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.approaching-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.approaching-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #78350f;
+  margin-bottom: 8px;
+}
+
+.approaching-text {
+  font-size: 0.95rem;
+  color: #92400e;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.room-highlight-box {
+  background-color: #ffffff;
+  border: 2px solid #d97706;
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+/* 6. Invalid Token State Card */
+.invalid-token-card {
+  display: none;
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.invalid-token-card.visible {
+  display: block;
+}
+
+.invalid-token-icon {
+  font-size: 3rem;
+  color: #dc2626;
+  margin-bottom: 12px;
+}
+
+.invalid-token-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.invalid-token-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-bottom: 24px;
 }
