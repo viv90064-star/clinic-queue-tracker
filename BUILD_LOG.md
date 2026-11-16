@@ -2,7 +2,9 @@
 
 **Author:** Vivek Kumar (B.Tech Computer Science, MSOT)  
 **Project:** Clinic Queue Tracking MVP  
-**Stack:** HTML, CSS, JavaScript, Firebase Firestore, Firebase Auth  
+**Stack:** HTML, CSS, JavaScript, Firebase Firestore, Firebase Auth, Firebase Hosting  
+**Live Production URL:** [https://clinic-queue-tracker-a3b1b.web.app](https://clinic-queue-tracker-a3b1b.web.app)  
+**GitHub Repository:** [https://github.com/viv90064-star/clinic-queue-tracker](https://github.com/viv90064-star/clinic-queue-tracker)  
 
 ---
 
@@ -63,14 +65,14 @@
 - [x] Enhanced wait-time estimation labeling with explicit disclaimer cards and notices.
 - [x] Added manual refresh control (`↻ Refresh queue status`) alongside automatic storage and custom event listeners for instant and on-demand updates.
 - [x] Added seamless navigation links between Patient Home and Staff Reception Desk.
-- [x] Linked to Firebase Project `clinic-queue-tracker-a3b1b` with production Hosting configuration.
-- [x] Executed end-to-end programmatic verification across all sample tokens (`021` to `025`):
-  1. Initial state: Token `025` shows 4 patients ahead, 20–30 mins wait.
-  2. Reception calls `022`: Token `025` updates to 3 patients ahead, 15–20 mins wait.
-  3. Reception calls `023`: Token `025` updates to 2 patients ahead, 10–15 mins wait.
-  4. Reception calls `024`: Token `025` updates to 1 patient ahead, 5–10 mins wait, Turn Approaching alert triggers.
-  5. Reception calls `025`: Token `025` updates to 0 ahead, status "Now Being Called", 5/5 progress bar, and "It's Your Turn Now!" banner.
-  6. Demo reset verified.
+- [x] Executed end-to-end programmatic verification across all sample tokens (`021` to `025`).
+
+### Phase 5: Production Deployment (Firebase Hosting)
+- [x] Linked project to Firebase Project `clinic-queue-tracker-a3b1b`.
+- [x] Configured `.firebaserc`, `firebase.json` with `cleanUrls`, and `firestore.indexes.json`.
+- [x] Resolved Apple Silicon architecture dependencies and verified Firebase CLI.
+- [x] Deployed web application to Firebase Hosting free tier (Spark plan).
+- [x] Verified live public URLs on mobile and desktop viewports.
 
 ---
 
@@ -79,3 +81,5 @@
 2. `feat: implement Patient Queue Status screen with live metrics, progress bar, and turn approaching view (Feature 2)`
 3. `feat: implement Receptionist Dashboard, queue progression, Firebase Auth protection, and Firestore rules (Feature 3)`
 4. `feat: connect full clinic queue workflow, inline turn alerts, dynamic wait-time estimation, and verification (Feature 4)`
+5. `docs: create comprehensive README with wireframe mapping, security rules, and testing guide`
+6. `chore(deploy): link project to clinic-queue-tracker-a3b1b and deploy to Firebase Hosting`
