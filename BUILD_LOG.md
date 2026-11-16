@@ -63,6 +63,7 @@
 - [x] Enhanced wait-time estimation labeling with explicit disclaimer cards and notices.
 - [x] Added manual refresh control (`↻ Refresh queue status`) alongside automatic storage and custom event listeners for instant and on-demand updates.
 - [x] Added seamless navigation links between Patient Home and Staff Reception Desk.
+- [x] Linked to Firebase Project `clinic-queue-tracker-a3b1b` with production Hosting configuration.
 - [x] Executed end-to-end programmatic verification across all sample tokens (`021` to `025`):
   1. Initial state: Token `025` shows 4 patients ahead, 20–30 mins wait.
   2. Reception calls `022`: Token `025` updates to 3 patients ahead, 15–20 mins wait.

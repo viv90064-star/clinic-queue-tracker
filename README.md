@@ -4,6 +4,7 @@ A lightweight, mobile-first web application designed for outpatient clinics in P
 
 Developed by **Vivek Kumar** (1st Year B.Tech Computer Science, MSOT).
 
+* **Live Web App (Firebase Hosting):** [https://clinic-queue-tracker-a3b1b.web.app](https://clinic-queue-tracker-a3b1b.web.app)
 * **GitHub Repository:** [https://github.com/viv90064-star/clinic-queue-tracker](https://github.com/viv90064-star/clinic-queue-tracker)
 * **Figma Prototype:** [https://sip-format-11274582.figma.site/](https://sip-format-11274582.figma.site/)
 
