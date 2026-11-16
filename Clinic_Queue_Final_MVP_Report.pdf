@@ -3,7 +3,7 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R] /Count 9 >>
+<< /Type /Pages /Kids [6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R] /Count 12 >>
 endobj
 3 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
@@ -15,33 +15,42 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
 endobj
 6 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 15 0 R >>
-endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 16 0 R >>
-endobj
-8 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 17 0 R >>
-endobj
-9 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 18 0 R >>
 endobj
-10 0 obj
+7 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 19 0 R >>
 endobj
-11 0 obj
+8 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 20 0 R >>
 endobj
-12 0 obj
+9 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 21 0 R >>
 endobj
-13 0 obj
+10 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 22 0 R >>
 endobj
-14 0 obj
+11 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 23 0 R >>
 endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 24 0 R >>
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 25 0 R >>
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 26 0 R >>
+endobj
 15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 27 0 R >>
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 28 0 R >>
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 29 0 R >>
+endobj
+18 0 obj
 << /Length 2560 >>
 stream
 1 w 0.06 0.1 0.2 rg 40.00 785.00 515.00 4.00 re f
@@ -80,498 +89,688 @@ stream
 1 w 0.06 0.1 0.2 rg 40.00 55.00 515.00 4.00 re f
 endstream
 endobj
-16 0 obj
-<< /Length 4822 >>
-stream
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 380.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
-0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
-0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
-0.35 0.4 0.45 rg BT /F1 8.5 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
-0.2 0.3 0.4 rg BT /F2 8.5 Tf 510.00 30.00 Td (Page 2 of 9) Tj ET
-0.06 0.1 0.2 rg BT /F2 14 Tf 40.00 770.00 Td (1. LIVE MVP AND VERIFIED GITHUB LINKS) Tj ET
-0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
-1 w 0.2 0.45 0.85 RG 0.93 0.96 1.0 rg 40.00 720.00 515.00 34.00 re B
-0.1 0.3 0.7 rg BT /F2 9.5 Tf 50.00 738.00 Td (VERIFIED DEPLOYED SYSTEM: The complete web MVP is deployed live on Google Cloud Firebase Hosting.) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 50.00 726.00 Td (Both patient and receptionist portals are operational with active Cloud Firestore persistence.) Tj ET
-1 w 0.85 0.88 0.92 RG 0.98 0.98 0.99 rg 40.00 666.00 515.00 38.00 re B
-0.06 0.1 0.2 rg BT /F2 9.5 Tf 50.00 690.00 Td (Public Web Application URL:) Tj ET
-0.15 0.4 0.85 rg BT /F2 9.5 Tf 215.00 690.00 Td (https://clinic-queue-tracker-a3b1b.web.app) Tj ET
-0.4 0.45 0.5 rg BT /F3 8.5 Tf 50.00 674.00 Td (Purpose: Main patient lookup and queue status) Tj ET
-1 w 0.85 0.88 0.92 RG 0.98 0.98 0.99 rg 40.00 620.00 515.00 38.00 re B
-0.06 0.1 0.2 rg BT /F2 9.5 Tf 50.00 644.00 Td (Alternative Hosting Domain:) Tj ET
-0.15 0.4 0.85 rg BT /F2 9.5 Tf 215.00 644.00 Td (https://clinic-queue-tracker-a3b1b.firebaseapp.com) Tj ET
-0.4 0.45 0.5 rg BT /F3 8.5 Tf 50.00 628.00 Td (Purpose: Secondary Firebase global SSL domain) Tj ET
-1 w 0.85 0.88 0.92 RG 0.98 0.98 0.99 rg 40.00 574.00 515.00 38.00 re B
-0.06 0.1 0.2 rg BT /F2 9.5 Tf 50.00 598.00 Td (Receptionist Portal URL:) Tj ET
-0.15 0.4 0.85 rg BT /F2 9.5 Tf 215.00 598.00 Td (https://clinic-queue-tracker-a3b1b.web.app/reception.html) Tj ET
-0.4 0.45 0.5 rg BT /F3 8.5 Tf 50.00 582.00 Td (Purpose: Staff portal \(reception@clinic.com / clinic123\)) Tj ET
-1 w 0.85 0.88 0.92 RG 0.98 0.98 0.99 rg 40.00 528.00 515.00 38.00 re B
-0.06 0.1 0.2 rg BT /F2 9.5 Tf 50.00 552.00 Td (Verified GitHub Repository:) Tj ET
-0.15 0.4 0.85 rg BT /F2 9.5 Tf 215.00 552.00 Td (https://github.com/viv90064-star/clinic-queue-tracker) Tj ET
-0.4 0.45 0.5 rg BT /F3 8.5 Tf 50.00 536.00 Td (Purpose: Full source code, 9 commits, and build log) Tj ET
-1 w 0.85 0.88 0.92 RG 0.98 0.98 0.99 rg 40.00 482.00 515.00 38.00 re B
-0.06 0.1 0.2 rg BT /F2 9.5 Tf 50.00 506.00 Td (Clickable Figma Prototype:) Tj ET
-0.15 0.4 0.85 rg BT /F2 9.5 Tf 215.00 506.00 Td (https://sip-format-11274582.figma.site/) Tj ET
-0.4 0.45 0.5 rg BT /F3 8.5 Tf 50.00 490.00 Td (Purpose: Original 4-screen interactive low-fi wireframe) Tj ET
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 462.00 Td (Summary of What the Live Website Does) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 446.00 Td (The Clinic Queue Tracking System is a mobile-responsive web application designed to solve waiting-time) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 432.00 Td (uncertainty for registered patients at busy outpatient department \(OPD\) clinics.) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 418.00 Td () Tj ET
-0.1 0.15 0.25 rg BT /F2 9 Tf 45.00 404.00 Td (1. Patient Experience \(Mobile-First\): Patients complete in-person front desk registration, receiving a paper) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 390.00 Td (   slip with their token number \(e.g. 021, 022, 023, 024, 025\). On their smartphones, they navigate to the) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 376.00 Td (   website, enter their token, and view live status: their exact place in line, number of patients ahead, an) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 362.00 Td (   approximate wait time \(e.g. 20-30 mins\), an intuitive 5-segment progress bar, and doctor delay disclaimers.) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 348.00 Td () Tj ET
-0.1 0.15 0.25 rg BT /F2 9 Tf 45.00 334.00 Td (2. Turn Approaching Alert: When a patient is next in line or being called, an eye-catching banner notifies) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 320.00 Td (   them immediately to proceed to Consultation Room 1, reducing waiting-hall crowding.) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 306.00 Td () Tj ET
-0.1 0.15 0.25 rg BT /F2 9 Tf 45.00 292.00 Td (3. Receptionist Queue Control: Clinic receptionists log into a password-protected dashboard to call the next) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 278.00 Td (   patient with one click. Queue advancement propagates to patient screens instantly without manual reloads.) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 264.00 Td () Tj ET
-0.1 0.15 0.25 rg BT /F2 9 Tf 45.00 250.00 Td (4. Data Privacy & Zero PHI: The system requires no patient accounts, app installs, or sensitive medical records.) Tj ET
-endstream
-endobj
-17 0 obj
-<< /Length 5325 >>
-stream
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 380.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
-0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
-0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
-0.35 0.4 0.45 rg BT /F1 8.5 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
-0.2 0.3 0.4 rg BT /F2 8.5 Tf 510.00 30.00 Td (Page 3 of 9) Tj ET
-0.06 0.1 0.2 rg BT /F2 14 Tf 40.00 770.00 Td (2. PRODUCT BRIEF & MVP SCOPE) Tj ET
-0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 748.00 Td (2.1 Problem Statement & Healthcare Context) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 732.00 Td (In busy outpatient department \(OPD\) sessions in Patna, Bihar, patients register and receive paper tokens but) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 719.00 Td (face complete uncertainty over when their consultation will occur. Because consultation durations vary, patients) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 706.00 Td (suffer acute anxiety, crowd clinic corridors, and repeatedly interrupt receptionists with status inquiries.) Tj ET
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 684.00 Td (2.2 Target Users & One-Line MVP Scope Statement) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 668.00 Td (Primary Users: Registered clinic patients and accompanying family caregivers waiting for OPD consultations.) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 655.00 Td (Secondary Users: Clinic front-desk reception staff managing daily patient flow.) Tj ET
-1 w 0.2 0.25 0.35 RG 0.95 0.96 0.98 rg 40.00 611.00 515.00 28.00 re B
-0.06 0.1 0.2 rg BT /F2 9 Tf 50.00 625.00 Td (One-Line MVP Scope: "A simple web page where a registered patient enters a token number to see their) Tj ET
-0.06 0.1 0.2 rg BT /F2 9 Tf 50.00 615.00 Td (queue position and an approximate waiting-time range, kept up to date through a basic reception dashboard.") Tj ET
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 595.00 Td (2.3 Seven-Step Registered Patient User Journey \(from Assignment 1\)) Tj ET
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 579.00 Td (Step 1: Arrive at clinic) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 579.00 Td (Patient visits the healthcare clinic for a consultation during a busy OPD session.) Tj ET
-0.9 0.92 0.94 RG 0.5 w 45.00 575.00 m 550.00 575.00 l S
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 562.00 Td (Step 2: Register & get token) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 562.00 Td (Patient completes front-desk registration and receives a physical paper token \(e.g. 025\).) Tj ET
-0.9 0.92 0.94 RG 0.5 w 45.00 558.00 m 550.00 558.00 l S
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 545.00 Td (Step 3: Open queue page) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 545.00 Td (Patient opens the clinic's queue-tracking URL on their smartphone browser.) Tj ET
-0.9 0.92 0.94 RG 0.5 w 45.00 541.00 m 550.00 541.00 l S
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 528.00 Td (Step 4: Enter token number) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 528.00 Td (Patient inputs token number into the simple field \(or taps demo shortcut\).) Tj ET
-0.9 0.92 0.94 RG 0.5 w 45.00 524.00 m 550.00 524.00 l S
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 511.00 Td (Step 5: Check queue info) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 511.00 Td (Page displays queue status, count of patients ahead, and approximate waiting range.) Tj ET
-0.9 0.92 0.94 RG 0.5 w 45.00 507.00 m 550.00 507.00 l S
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 494.00 Td (Step 6: See queue updates) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 494.00 Td (When reception calls patients, the page displays updated positions and lower wait times.) Tj ET
-0.9 0.92 0.94 RG 0.5 w 45.00 490.00 m 550.00 490.00 l S
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 477.00 Td (Step 7: Return when turn is near) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 477.00 Td (Turn Approaching alert prompts patient to return to Consultation Room 1 on time.) Tj ET
-0.9 0.92 0.94 RG 0.5 w 45.00 473.00 m 550.00 473.00 l S
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 450.00 Td (2.4 The Four Original Must-Have Features \(MoSCoW Prioritization\)) Tj ET
-0.8 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 414.00 515.00 23.00 re B
-0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 425.00 Td (1. Patient token lookup) Tj ET
-0.3 0.35 0.4 rg BT /F1 8.5 Tf 210.00 425.00 Td (Simple, low-friction token input without registration or login requirements.) Tj ET
-0.8 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 388.00 515.00 23.00 re B
-0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 399.00 Td (2. Current queue position) Tj ET
-0.3 0.35 0.4 rg BT /F1 8.5 Tf 210.00 399.00 Td (Directly resolves uncertainty by displaying exact count of patients ahead in line.) Tj ET
-0.8 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 362.00 515.00 23.00 re B
-0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 373.00 Td (3. Approximate waiting-time range) Tj ET
-0.3 0.35 0.4 rg BT /F1 8.5 Tf 210.00 373.00 Td (Helps patients plan their time; explicitly presented as an estimate \(~5-7 min/patient\).) Tj ET
-0.8 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 336.00 515.00 23.00 re B
-0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 347.00 Td (4. Receptionist queue dashboard) Tj ET
-0.3 0.35 0.4 rg BT /F1 8.5 Tf 210.00 347.00 Td (Staff portal to call next patient and advance the queue so patient data stays current.) Tj ET
-endstream
-endobj
-18 0 obj
-<< /Length 5925 >>
-stream
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 380.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
-0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
-0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
-0.35 0.4 0.45 rg BT /F1 8.5 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
-0.2 0.3 0.4 rg BT /F2 8.5 Tf 510.00 30.00 Td (Page 4 of 9) Tj ET
-0.06 0.1 0.2 rg BT /F2 14 Tf 40.00 770.00 Td (3. IMPLEMENTATION PLAN & TECHNOLOGY STACK \(1 / 2\)) Tj ET
-0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 748.00 Td (3.1 Technology Stack & Architectural Decisions) Tj ET
-1 w 0.9 0.93 0.96 rg 40.00 717.00 515.00 18.00 re f
-0.1 0.2 0.3 rg BT /F2 8.5 Tf 48.00 726.00 Td (TIER) Tj ET
-0.1 0.2 0.3 rg BT /F2 8.5 Tf 150.00 726.00 Td (TECHNOLOGY) Tj ET
-0.1 0.2 0.3 rg BT /F2 8.5 Tf 330.00 726.00 Td (ENGINEERING RATIONALE) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 694.00 515.00 20.00 re B
-0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 704.00 Td (Frontend Layer) Tj ET
-0.15 0.2 0.3 rg BT /F1 8.5 Tf 150.00 704.00 Td (HTML5, CSS3, Vanilla JavaScript \(ES6+\)) Tj ET
-0.35 0.4 0.45 rg BT /F3 8 Tf 330.00 704.00 Td (Zero build-step overhead, light payload, fast mobile performance) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 672.00 515.00 20.00 re B
-0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 682.00 Td (Database Engine) Tj ET
-0.15 0.2 0.3 rg BT /F1 8.5 Tf 150.00 682.00 Td (Firebase Cloud Firestore \(NoSQL\)) Tj ET
-0.35 0.4 0.45 rg BT /F3 8 Tf 330.00 682.00 Td (Real-time document sync, offline caching, zero server setup) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 650.00 515.00 20.00 re B
-0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 660.00 Td (Authentication) Tj ET
-0.15 0.2 0.3 rg BT /F1 8.5 Tf 150.00 660.00 Td (Firebase Authentication) Tj ET
-0.35 0.4 0.45 rg BT /F3 8 Tf 330.00 660.00 Td (Email/password security locking receptionist dashboard write actions) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 628.00 515.00 20.00 re B
-0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 638.00 Td (Hosting & CDN) Tj ET
-0.15 0.2 0.3 rg BT /F1 8.5 Tf 150.00 638.00 Td (Firebase Hosting \(Free Spark Tier\)) Tj ET
-0.35 0.4 0.45 rg BT /F3 8 Tf 330.00 638.00 Td (Global CDN, automated SSL certificates, custom domain ready) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 606.00 515.00 20.00 re B
-0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 616.00 Td (Version Control) Tj ET
-0.15 0.2 0.3 rg BT /F1 8.5 Tf 150.00 616.00 Td (Git & GitHub) Tj ET
-0.35 0.4 0.45 rg BT /F3 8 Tf 330.00 616.00 Td (Strict conventional feature commits and public repository delivery) Tj ET
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 592.00 Td (3.2 Repository Directory & File Structure) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 576.00 Td (index.html) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 576.00 Td (-  Screen 1: Patient Home \(Token input, demo shortcut, input validation\)) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 562.50 Td (queue-status.html) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 562.50 Td (-  Screen 2: Patient Queue Status & Screen 4: Turn Approaching view) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 549.00 Td (reception.html) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 549.00 Td (-  Screen 3: Receptionist Dashboard with staff authentication guard) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 535.50 Td (css/styles.css) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 535.50 Td (-  Shared design system, CSS custom properties, responsive mobile container) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 522.00 Td (css/patient.css) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 522.00 Td (-  Patient mobile components, split metric boxes, 5-segment progress bar) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 508.50 Td (css/reception.css) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 508.50 Td (-  Reception desktop window layout, status pills, waiting queue table) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 495.00 Td (js/firebase-config.js) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 495.00 Td (-  Firebase v10 modular initialization, auth bridge, and offline fallback) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 481.50 Td (js/queue-service.js) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 481.50 Td (-  Single source of truth for queue data, wait math, and Firestore sync) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 468.00 Td (js/patient-home.js) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 468.00 Td (-  Client input validation, token normalization \(25 -> 025\), navigation) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 454.50 Td (js/queue-status.js) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 454.50 Td (-  DOM controller for queue status, progress animation, and turn alerts) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 441.00 Td (js/reception.js) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 441.00 Td (-  Receptionist login controller, queue advancement, and reset logic) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 427.50 Td (seed/initial-queue.json) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 427.50 Td (-  Canonical baseline configuration for sample tokens 021-025) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 414.00 Td (firestore.rules) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 414.00 Td (-  Cloud Firestore security rules enforcing authenticated staff writes) Tj ET
-0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 400.50 Td (firebase.json / .firebaserc) Tj ET
-0.25 0.3 0.35 rg BT /F1 8 Tf 180.00 400.50 Td (-  Hosting rewrite configuration \(cleanUrls\) and project mapping) Tj ET
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 377.00 Td (3.3 Six-Phase Development Methodology) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 40.00 361.00 Td (Development followed a strict feature-driven pipeline where each feature was completed, locally verified,) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 40.00 349.00 Td (and committed to Git before proceeding: Planning -> Scaffolding -> Patient UI -> Reception -> Sync -> Deploy.) Tj ET
-endstream
-endobj
 19 0 obj
-<< /Length 4055 >>
+<< /Length 4815 >>
 stream
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 380.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 360.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
 0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
 0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
-0.35 0.4 0.45 rg BT /F1 8.5 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
-0.2 0.3 0.4 rg BT /F2 8.5 Tf 510.00 30.00 Td (Page 5 of 9) Tj ET
-0.06 0.1 0.2 rg BT /F2 14 Tf 40.00 770.00 Td (3. IMPLEMENTATION PLAN & DATABASE DESIGN \(2 / 2\)) Tj ET
+0.35 0.4 0.45 rg BT /F1 8 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
+0.2 0.3 0.4 rg BT /F2 8 Tf 500.00 30.00 Td (Page 2 of 12) Tj ET
+0.06 0.1 0.2 rg BT /F2 13.5 Tf 40.00 770.00 Td (1. LIVE MVP AND VERIFIED GITHUB LINKS) Tj ET
 0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 748.00 Td (3.4 Cloud Firestore Database Schema) Tj ET
-0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 732.00 Td (The database structure is organized into two document models balancing public reads with protected writes:) Tj ET
-1 w 0.8 0.85 0.9 RG 0.97 0.98 0.99 rg 40.00 639.00 515.00 80.00 re B
-0.06 0.1 0.2 rg BT /F2 9 Tf 50.00 704.00 Td (Document Path: metadata/clinic_queue \(Summary State\)) Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 689.00 Td (  current_token: '021'          // String: Token currently in consultation with doctor) Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 677.00 Td (  current_status: 'calling'      // String: 'calling' | 'in_consultation') Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 665.00 Td (  next_token: '022'             // String: Token next in line) Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 653.00 Td (  total_waiting: 4              // Number: Count of tokens in waiting area) Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 641.00 Td (  doctor_room: 'Room 1'         // String: Room guidance for patients) Tj ET
-1 w 0.8 0.85 0.9 RG 0.97 0.98 0.99 rg 40.00 549.00 515.00 75.00 re B
-0.06 0.1 0.2 rg BT /F2 9 Tf 50.00 609.00 Td (Collection Path: tokens/{tokenId} \(e.g. tokens/025\)) Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 594.00 Td (  token_id: '025'               // String: Normalized 3-digit token reference) Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 582.00 Td (  order: 5                      // Number: Sequence order in queue) Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 570.00 Td (  status: 'waiting'             // String: 'waiting' | 'calling' | 'completed') Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 558.00 Td (  created_at: Timestamp         // Timestamp: Token issuance time) Tj ET
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 529.00 Td (3.5 Mathematical Waiting-Time & Position Algorithm) Tj ET
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 40.00 513.00 Td (1. Patients Ahead \(N\) = Waiting Tokens Ahead + \(1 if doctor actively seeing patient, else 0\)) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 40.00 500.00 Td (   Example for Token 025: 3 waiting ahead \(022, 023, 024\) + 1 with doctor \(021\) = 4 patients ahead.) Tj ET
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 40.00 485.00 Td (2. Wait-Time Range: Calculated at ~5 to 7.5 minutes per consultation:) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 40.00 472.00 Td (   For N=4: Min = 4 x 5 = 20 mins; Max = Round\(4 x 7.5 / 5\) x 5 = 30 mins -> Displays '20-30 minutes'.) Tj ET
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 40.00 457.00 Td (3. Turn Approaching Trigger: When N <= 1, inline alert activates: 'Your turn is approaching!') Tj ET
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 435.00 Td (3.6 Backend Security Rules Specification \(firestore.rules\)) Tj ET
-1 w 0.7 0.75 0.8 RG 0.95 0.96 0.98 rg 40.00 344.00 515.00 80.00 re B
-0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 409.00 Td (rules_version = '2';) Tj ET
-0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 398.00 Td (service cloud.firestore {) Tj ET
-0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 387.00 Td (  match /databases/{database}/documents {) Tj ET
-0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 376.00 Td (    match /metadata/{document=**} { allow read: if true; allow write: if request.auth != null; }) Tj ET
-0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 365.00 Td (    match /tokens/{tokenId}        { allow read: if true; allow write: if request.auth != null; }) Tj ET
-0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 354.00 Td (  }) Tj ET
-0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 343.00 Td (}) Tj ET
+1 w 0.2 0.45 0.85 RG 0.93 0.96 1.0 rg 40.00 722.00 515.00 34.00 re B
+0.1 0.3 0.7 rg BT /F2 9.5 Tf 50.00 740.00 Td (VERIFIED DEPLOYED SYSTEM: The complete web MVP is deployed live on Google Cloud Firebase Hosting.) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 50.00 728.00 Td (Both patient and receptionist portals are operational with active Cloud Firestore persistence.) Tj ET
+1 w 0.85 0.88 0.92 RG 0.98 0.98 0.99 rg 40.00 668.00 515.00 38.00 re B
+0.06 0.1 0.2 rg BT /F2 9.5 Tf 50.00 692.00 Td (Public Web Application URL:) Tj ET
+0.15 0.4 0.85 rg BT /F2 9.5 Tf 215.00 692.00 Td (https://clinic-queue-tracker-a3b1b.web.app) Tj ET
+0.4 0.45 0.5 rg BT /F3 8.5 Tf 50.00 676.00 Td (Purpose: Main patient lookup and queue status) Tj ET
+1 w 0.85 0.88 0.92 RG 0.98 0.98 0.99 rg 40.00 622.00 515.00 38.00 re B
+0.06 0.1 0.2 rg BT /F2 9.5 Tf 50.00 646.00 Td (Alternative Hosting Domain:) Tj ET
+0.15 0.4 0.85 rg BT /F2 9.5 Tf 215.00 646.00 Td (https://clinic-queue-tracker-a3b1b.firebaseapp.com) Tj ET
+0.4 0.45 0.5 rg BT /F3 8.5 Tf 50.00 630.00 Td (Purpose: Secondary Firebase global SSL domain) Tj ET
+1 w 0.85 0.88 0.92 RG 0.98 0.98 0.99 rg 40.00 576.00 515.00 38.00 re B
+0.06 0.1 0.2 rg BT /F2 9.5 Tf 50.00 600.00 Td (Receptionist Portal URL:) Tj ET
+0.15 0.4 0.85 rg BT /F2 9.5 Tf 215.00 600.00 Td (https://clinic-queue-tracker-a3b1b.web.app/reception.html) Tj ET
+0.4 0.45 0.5 rg BT /F3 8.5 Tf 50.00 584.00 Td (Purpose: Staff portal \(reception@clinic.com / clinic123\)) Tj ET
+1 w 0.85 0.88 0.92 RG 0.98 0.98 0.99 rg 40.00 530.00 515.00 38.00 re B
+0.06 0.1 0.2 rg BT /F2 9.5 Tf 50.00 554.00 Td (Verified GitHub Repository:) Tj ET
+0.15 0.4 0.85 rg BT /F2 9.5 Tf 215.00 554.00 Td (https://github.com/viv90064-star/clinic-queue-tracker) Tj ET
+0.4 0.45 0.5 rg BT /F3 8.5 Tf 50.00 538.00 Td (Purpose: Full source code, 9 commits, and build log) Tj ET
+1 w 0.85 0.88 0.92 RG 0.98 0.98 0.99 rg 40.00 484.00 515.00 38.00 re B
+0.06 0.1 0.2 rg BT /F2 9.5 Tf 50.00 508.00 Td (Clickable Figma Prototype:) Tj ET
+0.15 0.4 0.85 rg BT /F2 9.5 Tf 215.00 508.00 Td (https://sip-format-11274582.figma.site/) Tj ET
+0.4 0.45 0.5 rg BT /F3 8.5 Tf 50.00 492.00 Td (Purpose: Original 4-screen interactive low-fi wireframe) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 464.00 Td (Summary of What the Live Website Does) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 449.00 Td (The Clinic Queue Tracking System is a mobile-responsive web application designed to solve waiting-time) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 435.00 Td (uncertainty for registered patients at busy outpatient department \(OPD\) clinics.) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 421.00 Td () Tj ET
+0.1 0.15 0.25 rg BT /F2 9 Tf 45.00 407.00 Td (1. Patient Experience \(Mobile-First\): Patients complete in-person front desk registration, receiving a paper) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 393.00 Td (   slip with their token number \(e.g. 021, 022, 023, 024, 025\). On their smartphones, they navigate to the) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 379.00 Td (   website, enter their token, and view live status: their exact place in line, number of patients ahead, an) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 365.00 Td (   approximate wait time \(e.g. 20-30 mins\), an intuitive 5-segment progress bar, and doctor delay disclaimers.) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 351.00 Td () Tj ET
+0.1 0.15 0.25 rg BT /F2 9 Tf 45.00 337.00 Td (2. Turn Approaching Alert: When a patient is next in line or being called, an eye-catching banner notifies) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 323.00 Td (   them immediately to proceed to Consultation Room 1, reducing waiting-hall crowding.) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 309.00 Td () Tj ET
+0.1 0.15 0.25 rg BT /F2 9 Tf 45.00 295.00 Td (3. Receptionist Queue Control: Clinic receptionists log into a password-protected dashboard to call the next) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 281.00 Td (   patient with one click. Queue advancement propagates to patient screens instantly without manual reloads.) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 45.00 267.00 Td () Tj ET
+0.1 0.15 0.25 rg BT /F2 9 Tf 45.00 253.00 Td (4. Data Privacy & Zero PHI: The system requires no patient accounts, app installs, or sensitive medical records.) Tj ET
 endstream
 endobj
 20 0 obj
-<< /Length 4512 >>
+<< /Length 5312 >>
 stream
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 380.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 360.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
 0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
 0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
-0.35 0.4 0.45 rg BT /F1 8.5 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
-0.2 0.3 0.4 rg BT /F2 8.5 Tf 510.00 30.00 Td (Page 6 of 9) Tj ET
-0.06 0.1 0.2 rg BT /F2 14 Tf 40.00 770.00 Td (4. BUILD LOG -- ANTIGRAVITY ENGINEERING RECORD \(1 / 2\)) Tj ET
+0.35 0.4 0.45 rg BT /F1 8 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
+0.2 0.3 0.4 rg BT /F2 8 Tf 500.00 30.00 Td (Page 3 of 12) Tj ET
+0.06 0.1 0.2 rg BT /F2 13.5 Tf 40.00 770.00 Td (2. PRODUCT BRIEF & MVP SCOPE) Tj ET
 0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 40.00 748.00 Td (This build log documents actual prompts, code actions, technical bottlenecks, and verified resolutions.) Tj ET
-0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 668.00 515.00 66.00 re B
-0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 720.00 Td (Session 1) Tj ET
-0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 710.00 Td (Nov 16) Tj ET
-0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 720.00 Td (Task: Analyze PDFs & Figma prototype; generate implementation-plan) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 708.00 Td (Worked: Extracted 4 wireframe screens; synthesized MoSCoW table; designed database ) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 698.00 Td (schema.) Tj ET
-0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 686.00 Td (What Broke: None.) Tj ET
-0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 676.00 Td (How Fixed: Approved by student before coding.) Tj ET
-0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 594.00 515.00 66.00 re B
-0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 646.00 Td (Session 2) Tj ET
-0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 636.00 Td (Nov 16) Tj ET
-0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 646.00 Td (Task: Build Feature 1: Patient Home screen with token input & Chec) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 634.00 Td (Worked: Created index.html, styles.css, patient.css, and patient-home.js. Added dem) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 624.00 Td (o shortcut \(025\).) Tj ET
-0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 612.00 Td (What Broke: git status failed \('not a git repo'\).) Tj ET
-0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 602.00 Td (How Fixed: Ran git init, configured user, made initial commit \(26fc493\).) Tj ET
-0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 520.00 515.00 66.00 re B
-0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 572.00 Td (Session 3) Tj ET
-0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 562.00 Td (Nov 16) Tj ET
-0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 572.00 Td (Task: Verify token input validation logic and demo shortcut auto-f) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 560.00 Td (Worked: Validated input trimming, digit format, and sample token whitelist \(021-025) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 550.00 Td (\).) Tj ET
-0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 538.00 Td (What Broke: Node.js test script threw 'command not found: node'.) Tj ET
-0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 528.00 Td (How Fixed: Replaced test with native Python 3.9 script.) Tj ET
-0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 446.00 515.00 66.00 re B
-0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 498.00 Td (Session 4) Tj ET
-0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 488.00 Td (Nov 16) Tj ET
-0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 498.00 Td (Task: Build Feature 2: Patient Queue Status screen matching Sketch) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 486.00 Td (Worked: Built queue-status.html and queue-service.js. Added 5-step progress bar and) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 476.00 Td ( disclaimer.) Tj ET
-0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 464.00 Td (What Broke: Generic label 'People Ahead' was unclear to testers.) Tj ET
-0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 454.00 Td (How Fixed: Updated label to 'Patients ahead of you' \(7d1eb24\).) Tj ET
-0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 372.00 515.00 66.00 re B
-0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 424.00 Td (Session 5) Tj ET
-0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 414.00 Td (Nov 16) Tj ET
-0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 424.00 Td (Task: Build Feature 3: Receptionist Dashboard with auth and Firest) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 412.00 Td (Worked: Built reception.html desktop view, metric cards, queue table with Call Pati) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 402.00 Td (ent buttons.) Tj ET
-0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 390.00 Td (What Broke: Firebase credentials not yet created by student.) Tj ET
-0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 380.00 Td (How Fixed: Engineered transparent local storage bridge with demo login \(ab01f58\).) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 750.00 Td (2.1 Problem Statement & Healthcare Context) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 735.00 Td (In busy outpatient department \(OPD\) sessions in Patna, Bihar, patients register and receive paper tokens but) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 722.00 Td (face complete uncertainty over when their consultation will occur. Because consultation durations vary, patients) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 709.00 Td (suffer acute anxiety, crowd clinic corridors, and repeatedly interrupt receptionists with status inquiries.) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 687.00 Td (2.2 Target Users & One-Line MVP Scope Statement) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 672.00 Td (Primary Users: Registered clinic patients and accompanying family caregivers waiting for OPD consultations.) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 659.00 Td (Secondary Users: Clinic front-desk reception staff managing daily patient flow.) Tj ET
+1 w 0.2 0.25 0.35 RG 0.95 0.96 0.98 rg 40.00 615.00 515.00 28.00 re B
+0.06 0.1 0.2 rg BT /F2 9 Tf 50.00 629.00 Td (One-Line MVP Scope: "A simple web page where a registered patient enters a token number to see their) Tj ET
+0.06 0.1 0.2 rg BT /F2 9 Tf 50.00 619.00 Td (queue position and an approximate waiting-time range, kept up to date through a basic reception dashboard.") Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 599.00 Td (2.3 Seven-Step Registered Patient User Journey \(from Assignment 1\)) Tj ET
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 584.00 Td (Step 1: Arrive at clinic) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 584.00 Td (Patient visits the healthcare clinic for a consultation during a busy OPD session.) Tj ET
+0.9 0.92 0.94 RG 0.5 w 45.00 580.00 m 550.00 580.00 l S
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 567.00 Td (Step 2: Register & get token) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 567.00 Td (Patient completes front-desk registration and receives a physical paper token \(e.g. 025\).) Tj ET
+0.9 0.92 0.94 RG 0.5 w 45.00 563.00 m 550.00 563.00 l S
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 550.00 Td (Step 3: Open queue page) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 550.00 Td (Patient opens the clinic's queue-tracking URL on their smartphone browser.) Tj ET
+0.9 0.92 0.94 RG 0.5 w 45.00 546.00 m 550.00 546.00 l S
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 533.00 Td (Step 4: Enter token number) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 533.00 Td (Patient inputs token number into the simple field \(or taps demo shortcut\).) Tj ET
+0.9 0.92 0.94 RG 0.5 w 45.00 529.00 m 550.00 529.00 l S
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 516.00 Td (Step 5: Check queue info) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 516.00 Td (Page displays queue status, count of patients ahead, and approximate waiting range.) Tj ET
+0.9 0.92 0.94 RG 0.5 w 45.00 512.00 m 550.00 512.00 l S
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 499.00 Td (Step 6: See queue updates) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 499.00 Td (When reception calls patients, the page displays updated positions and lower wait times.) Tj ET
+0.9 0.92 0.94 RG 0.5 w 45.00 495.00 m 550.00 495.00 l S
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 482.00 Td (Step 7: Return when turn is near) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 185.00 482.00 Td (Turn Approaching alert prompts patient to return to Consultation Room 1 on time.) Tj ET
+0.9 0.92 0.94 RG 0.5 w 45.00 478.00 m 550.00 478.00 l S
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 455.00 Td (2.4 The Four Original Must-Have Features \(MoSCoW Prioritization\)) Tj ET
+0.8 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 420.00 515.00 23.00 re B
+0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 431.00 Td (1. Patient token lookup) Tj ET
+0.3 0.35 0.4 rg BT /F1 8.5 Tf 210.00 431.00 Td (Simple, low-friction token input without registration or login requirements.) Tj ET
+0.8 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 394.00 515.00 23.00 re B
+0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 405.00 Td (2. Current queue position) Tj ET
+0.3 0.35 0.4 rg BT /F1 8.5 Tf 210.00 405.00 Td (Directly resolves uncertainty by displaying exact count of patients ahead in line.) Tj ET
+0.8 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 368.00 515.00 23.00 re B
+0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 379.00 Td (3. Approximate waiting-time range) Tj ET
+0.3 0.35 0.4 rg BT /F1 8.5 Tf 210.00 379.00 Td (Helps patients plan their time; explicitly presented as an estimate \(~5-7 min/patient\).) Tj ET
+0.8 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 342.00 515.00 23.00 re B
+0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 353.00 Td (4. Receptionist queue dashboard) Tj ET
+0.3 0.35 0.4 rg BT /F1 8.5 Tf 210.00 353.00 Td (Staff portal to call next patient and advance the queue so patient data stays current.) Tj ET
 endstream
 endobj
 21 0 obj
-<< /Length 5573 >>
+<< /Length 6114 >>
 stream
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 380.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 360.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
 0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
 0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
-0.35 0.4 0.45 rg BT /F1 8.5 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
-0.2 0.3 0.4 rg BT /F2 8.5 Tf 510.00 30.00 Td (Page 7 of 9) Tj ET
-0.06 0.1 0.2 rg BT /F2 14 Tf 40.00 770.00 Td (4. BUILD LOG -- ANTIGRAVITY ENGINEERING RECORD \(2 / 2\)) Tj ET
+0.35 0.4 0.45 rg BT /F1 8 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
+0.2 0.3 0.4 rg BT /F2 8 Tf 500.00 30.00 Td (Page 4 of 12) Tj ET
+0.06 0.1 0.2 rg BT /F2 13.5 Tf 40.00 770.00 Td (3. IMPLEMENTATION PLAN & TECHNOLOGY STACK \(1 / 2\)) Tj ET
 0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
-0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 686.00 515.00 66.00 re B
-0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 738.00 Td (Session 6) Tj ET
-0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 728.00 Td (Nov 16) Tj ET
-0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 738.00 Td (Task: Connect all 3 screens, inline turn alerts, dynamic wait-time) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 726.00 Td (Worked: Unified links, inline Turn Approaching banner \(bell icon\), manual refresh, ) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 716.00 Td (automated tests.) Tj ET
-0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 704.00 Td (What Broke: Python test had SyntaxError: f-string backslash.) Tj ET
-0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 694.00 Td (How Fixed: Removed nested backslash; verified 5 steps passed \(b5062e9\).) Tj ET
-0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 612.00 515.00 66.00 re B
-0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 664.00 Td (Session 7) Tj ET
-0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 654.00 Td (Nov 16) Tj ET
-0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 664.00 Td (Task: Create GitHub repository clinic-queue-tracker and push code) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 652.00 Td (Worked: Configured origin remote; generated comprehensive README.md and .gitignore.) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 642.00 Td () Tj ET
-0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 630.00 Td (What Broke: Sandbox terminal blocked direct push \(no DNS\).) Tj ET
-0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 620.00 Td (How Fixed: Guided student to push in Terminal using Personal Access Token \(ef4de5c\).) Tj ET
-0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 538.00 515.00 66.00 re B
-0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 590.00 Td (Session 8) Tj ET
-0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 580.00 Td (Nov 17) Tj ET
-0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 590.00 Td (Task: Install Firebase CLI and deploy to Firebase Hosting on free ) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 578.00 Td (Worked: Configured firebase.json \(cleanUrls\) and firestore.indexes.json.) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 568.00 Td () Tj ET
-0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 556.00 Td (What Broke: 'bad CPU type in executable: firebase' on Apple Silicon.) Tj ET
-0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 546.00 Td (How Fixed: Ran 'softwareupdate --install-rosetta --agree-to-license' \(0d5762b\).) Tj ET
-0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 464.00 515.00 66.00 re B
-0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 516.00 Td (Session 9) Tj ET
-0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 506.00 Td (Nov 17) Tj ET
-0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 516.00 Td (Task: User linked project clinic-queue-tracker-a3b1b and ran fireb) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 504.00 Td (Worked: Mapped project in .firebaserc; deployed live to Google Firebase CDN.) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 494.00 Td () Tj ET
-0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 482.00 Td (What Broke: None.) Tj ET
-0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 472.00 Td (How Fixed: Terminal reported 'Deploy complete!' at clinic-queue-tracker-a3b1b.web.app \(6c2ee23\).) Tj ET
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 442.00 Td (Verified Git Commit History in Repository) Tj ET
-0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 426.00 Td (6c2ee23) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 426.00 Td (chore\(deploy\): document successful Firebase Hosting deployment to clinic-queue-tracker-a3b1b) Tj ET
-0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 414.00 Td (025315f) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 414.00 Td (chore\(deploy\): link project to clinic-queue-tracker-a3b1b) Tj ET
-0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 402.00 Td (a8e4c02) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 402.00 Td (chore: add .firebaserc for Firebase project mapping) Tj ET
-0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 390.00 Td (0d5762b) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 390.00 Td (feat\(firebase\): add firestore live sync, indexes config, and cleanUrls for Firebase Hosting) Tj ET
-0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 378.00 Td (ef4de5c) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 378.00 Td (docs: create comprehensive README with wireframe mapping, security rules, and testing guide) Tj ET
-0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 366.00 Td (b5062e9) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 366.00 Td (feat: connect full clinic queue workflow, inline turn alerts, dynamic wait estimation, and tests) Tj ET
-0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 354.00 Td (ab01f58) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 354.00 Td (feat: implement Receptionist Dashboard, queue progression, Firebase Auth protection, and rules) Tj ET
-0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 342.00 Td (7d1eb24) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 342.00 Td (feat: implement Patient Queue Status screen with live metrics, progress bar, and turn alert) Tj ET
-0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 330.00 Td (26fc493) Tj ET
-0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 330.00 Td (feat: implement Patient Home screen with token input, demo shortcut, and validation \(Feature 1\)) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 750.00 Td (3.1 Technology Stack & Architectural Decisions) Tj ET
+1 w 0.9 0.93 0.96 rg 40.00 720.00 515.00 18.00 re f
+0.1 0.2 0.3 rg BT /F2 8.5 Tf 48.00 729.00 Td (TIER) Tj ET
+0.1 0.2 0.3 rg BT /F2 8.5 Tf 150.00 729.00 Td (TECHNOLOGY) Tj ET
+0.1 0.2 0.3 rg BT /F2 8.5 Tf 330.00 729.00 Td (ENGINEERING RATIONALE) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 697.00 515.00 20.00 re B
+0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 707.00 Td (Frontend Layer) Tj ET
+0.15 0.2 0.3 rg BT /F1 8.5 Tf 150.00 707.00 Td (HTML5, CSS3, Vanilla JavaScript \(ES6+\)) Tj ET
+0.35 0.4 0.45 rg BT /F3 8 Tf 330.00 707.00 Td (Zero build-step overhead, light payload, fast mobile performance) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 675.00 515.00 20.00 re B
+0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 685.00 Td (Database Engine) Tj ET
+0.15 0.2 0.3 rg BT /F1 8.5 Tf 150.00 685.00 Td (Firebase Cloud Firestore \(NoSQL\)) Tj ET
+0.35 0.4 0.45 rg BT /F3 8 Tf 330.00 685.00 Td (Real-time document sync, offline caching, zero server setup) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 653.00 515.00 20.00 re B
+0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 663.00 Td (Authentication) Tj ET
+0.15 0.2 0.3 rg BT /F1 8.5 Tf 150.00 663.00 Td (Firebase Authentication) Tj ET
+0.35 0.4 0.45 rg BT /F3 8 Tf 330.00 663.00 Td (Email/password security locking receptionist dashboard write actions) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 631.00 515.00 20.00 re B
+0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 641.00 Td (Hosting & CDN) Tj ET
+0.15 0.2 0.3 rg BT /F1 8.5 Tf 150.00 641.00 Td (Firebase Hosting \(Free Spark Tier\)) Tj ET
+0.35 0.4 0.45 rg BT /F3 8 Tf 330.00 641.00 Td (Global CDN, automated SSL certificates, custom domain ready) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 609.00 515.00 20.00 re B
+0.06 0.1 0.2 rg BT /F2 8.5 Tf 48.00 619.00 Td (Version Control) Tj ET
+0.15 0.2 0.3 rg BT /F1 8.5 Tf 150.00 619.00 Td (Git & GitHub) Tj ET
+0.35 0.4 0.45 rg BT /F3 8 Tf 330.00 619.00 Td (Strict conventional feature commits and public repository delivery) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 595.00 Td (3.2 Repository Directory & File Structure) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 580.00 Td (index.html) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 580.00 Td (-  Screen 1: Patient Home \(Token input, demo shortcut, input validation\)) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 566.50 Td (queue-status.html) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 566.50 Td (-  Screen 2: Patient Queue Status & Screen 4: Turn Approaching view) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 553.00 Td (reception.html) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 553.00 Td (-  Screen 3: Protected Receptionist Dashboard with staff authentication guard) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 539.50 Td (css/styles.css) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 539.50 Td (-  Shared design system, CSS custom properties, responsive mobile container) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 526.00 Td (css/patient.css) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 526.00 Td (-  Patient mobile components, split metric boxes, 5-segment progress bar) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 512.50 Td (css/reception.css) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 512.50 Td (-  Reception desktop window layout, status pills, waiting queue table) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 499.00 Td (js/firebase-config.js) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 499.00 Td (-  Firebase v10 modular initialization, auth bridge, and offline fallback) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 485.50 Td (js/queue-service.js) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 485.50 Td (-  Single source of truth for queue data, wait math, and Firestore sync) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 472.00 Td (js/patient-home.js) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 472.00 Td (-  Client input validation, token normalization \(25 -> 025\), navigation) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 458.50 Td (js/queue-status.js) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 458.50 Td (-  DOM controller for queue status, progress animation, and turn alerts) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 445.00 Td (js/reception.js) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 445.00 Td (-  Receptionist login controller, queue advancement, and reset logic) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 431.50 Td (seed/initial-queue.json) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 431.50 Td (-  Canonical baseline configuration for sample tokens 021-025) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 418.00 Td (firestore.rules) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 418.00 Td (-  Cloud Firestore security rules enforcing authenticated staff writes) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 404.50 Td (firebase.json / .firebaserc) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 404.50 Td (-  Hosting rewrite configuration \(cleanUrls\) and project mapping) Tj ET
+0.1 0.3 0.6 rg BT /F2 8 Tf 50.00 391.00 Td (original-implementation-plan.md) Tj ET
+0.25 0.3 0.35 rg BT /F1 8 Tf 195.00 391.00 Td (-  Approved initial agent architecture specification) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 367.50 Td (3.3 Six-Phase Development Methodology) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 40.00 352.50 Td (Development followed a strict feature-driven pipeline where each feature was completed, locally verified,) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 40.00 340.50 Td (and committed to Git before proceeding: Planning -> Scaffolding -> Patient UI -> Reception -> Sync -> Deploy.) Tj ET
 endstream
 endobj
 22 0 obj
-<< /Length 5074 >>
+<< /Length 4044 >>
 stream
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 380.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 360.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
 0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
 0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
-0.35 0.4 0.45 rg BT /F1 8.5 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
-0.2 0.3 0.4 rg BT /F2 8.5 Tf 510.00 30.00 Td (Page 8 of 9) Tj ET
-0.06 0.1 0.2 rg BT /F2 14 Tf 40.00 770.00 Td (5. FEATURE CHECKLIST & MOSCOW AUDIT) Tj ET
+0.35 0.4 0.45 rg BT /F1 8 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
+0.2 0.3 0.4 rg BT /F2 8 Tf 500.00 30.00 Td (Page 5 of 12) Tj ET
+0.06 0.1 0.2 rg BT /F2 13.5 Tf 40.00 770.00 Td (3. IMPLEMENTATION PLAN & DATABASE DESIGN \(2 / 2\)) Tj ET
 0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
-0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 748.00 Td (Audit of the four original Must-have features evaluated against the live production application:) Tj ET
-1 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 675.00 515.00 60.00 re B
-0.06 0.1 0.2 rg BT /F2 10 Tf 50.00 720.00 Td (1. Patient Token Lookup) Tj ET
-1 w 0.85 0.96 0.85 rg 490.00 716.00 55.00 16.00 re f
-0.1 0.5 0.2 rg BT /F2 8.5 Tf 502.00 720.00 Td (DONE) Tj ET
-0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 704.00 Td (Delivery Evidence: Input field accepts token; normalizes 2-digit entries \(25 -> 025\); includes demo) Tj ET
-0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 693.00 Td ( shortcut \('* Try it out with sample token 025'\); displays helpful error message for ) Tj ET
-0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 682.00 Td (empty/invalid tokens; routes valid tokens to status screen with zero lag.) Tj ET
-1 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 607.00 515.00 60.00 re B
-0.06 0.1 0.2 rg BT /F2 10 Tf 50.00 652.00 Td (2. Current Queue Position) Tj ET
-1 w 0.85 0.96 0.85 rg 490.00 648.00 55.00 16.00 re f
-0.1 0.5 0.2 rg BT /F2 8.5 Tf 502.00 652.00 Td (DONE) Tj ET
-0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 636.00 Td (Delivery Evidence: Calculates and displays exact count of patients ahead \(displays '04' for Token 0) Tj ET
-0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 625.00 Td (25 initially\). Correctly accounts for both waiting queue tokens and active doctor con) Tj ET
-0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 614.00 Td (sultation in Room 1. Dynamically decrements as receptionist calls each patient.) Tj ET
-1 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 539.00 515.00 60.00 re B
-0.06 0.1 0.2 rg BT /F2 10 Tf 50.00 584.00 Td (3. Approximate Waiting-Time Range) Tj ET
-1 w 0.85 0.96 0.85 rg 490.00 580.00 55.00 16.00 re f
-0.1 0.5 0.2 rg BT /F2 8.5 Tf 502.00 584.00 Td (DONE) Tj ET
-0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 568.00 Td (Delivery Evidence: Calculates waiting range at ~5 to 7.5 mins per consultation \('20-30 minutes' for) Tj ET
-0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 557.00 Td ( Token 025\). Explicitly tagged as an *Estimate. Features an interactive 5-segment pro) Tj ET
-0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 546.00 Td (gress bar and an explicit disclaimer card explaining that times vary with consultation complexity.) Tj ET
-1 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 471.00 515.00 60.00 re B
-0.06 0.1 0.2 rg BT /F2 10 Tf 50.00 516.00 Td (4. Receptionist Dashboard & Controls) Tj ET
-1 w 0.85 0.96 0.85 rg 490.00 512.00 55.00 16.00 re f
-0.1 0.5 0.2 rg BT /F2 8.5 Tf 502.00 516.00 Td (DONE) Tj ET
-0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 500.00 Td (Delivery Evidence: Protected desktop staff dashboard at /reception.html with email/password login. ) Tj ET
-0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 489.00 Td (Displays 3 metric cards \(Current Token, Next Token, Total Waiting\), patient queue tab) Tj ET
-0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 478.00 Td (le with individual 'Call Patient' buttons, 'Update Queue' action, and 'Reset Demo Queue' tool. Write actions locked by Firestore rules.) Tj ET
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 448.00 Td (Delivery of Secondary Wireframe Features & Out-of-Scope Compliance) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 412.00 515.00 22.00 re B
-0.1 0.15 0.25 rg BT /F2 8 Tf 50.00 423.00 Td (Turn Approaching Alert) Tj ET
-0.3 0.35 0.4 rg BT /F1 8 Tf 200.00 423.00 Td (Inline banner \(bell icon\) and Screen 4 modal notify patient when turn is close.) Tj ET
-0.15 0.4 0.2 rg BT /F2 7.5 Tf 505.00 423.00 Td (DONE) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 387.00 515.00 22.00 re B
-0.1 0.15 0.25 rg BT /F2 8 Tf 50.00 398.00 Td (Manual Refresh Control) Tj ET
-0.3 0.35 0.4 rg BT /F1 8 Tf 200.00 398.00 Td (Prominent 'Check for updates' button complements real-time storage event sync.) Tj ET
-0.15 0.4 0.2 rg BT /F2 7.5 Tf 505.00 398.00 Td (DONE) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 362.00 515.00 22.00 re B
-0.1 0.15 0.25 rg BT /F2 8 Tf 50.00 373.00 Td (Patient Self-Registration) Tj ET
-0.3 0.35 0.4 rg BT /F1 8 Tf 200.00 373.00 Td (Deliberately excluded per MoSCoW MVP plan \(tokens issued at clinic counter\).) Tj ET
-0.15 0.4 0.5 rg BT /F2 7.5 Tf 505.00 373.00 Td (EXCLUDED) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 337.00 515.00 22.00 re B
-0.1 0.15 0.25 rg BT /F2 8 Tf 50.00 348.00 Td (Online Payments / SMS) Tj ET
-0.3 0.35 0.4 rg BT /F1 8 Tf 200.00 348.00 Td (Deliberately excluded to maintain strict MVP scope and zero operational friction.) Tj ET
-0.15 0.4 0.5 rg BT /F2 7.5 Tf 505.00 348.00 Td (EXCLUDED) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 750.00 Td (3.4 Cloud Firestore Database Schema) Tj ET
+0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 735.00 Td (The database structure is organized into two document models balancing public reads with protected writes:) Tj ET
+1 w 0.8 0.85 0.9 RG 0.97 0.98 0.99 rg 40.00 642.00 515.00 80.00 re B
+0.06 0.1 0.2 rg BT /F2 9 Tf 50.00 707.00 Td (Document Path: metadata/clinic_queue \(Summary State\)) Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 692.00 Td (  current_token: '021'          // String: Token currently in consultation with doctor) Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 680.00 Td (  current_status: 'calling'      // String: 'calling' | 'in_consultation') Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 668.00 Td (  next_token: '022'             // String: Token next in line) Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 656.00 Td (  total_waiting: 4              // Number: Count of tokens in waiting area) Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 644.00 Td (  doctor_room: 'Room 1'         // String: Room guidance for patients) Tj ET
+1 w 0.8 0.85 0.9 RG 0.97 0.98 0.99 rg 40.00 552.00 515.00 75.00 re B
+0.06 0.1 0.2 rg BT /F2 9 Tf 50.00 612.00 Td (Collection Path: tokens/{tokenId} \(e.g. tokens/025\)) Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 597.00 Td (  token_id: '025'               // String: Normalized 3-digit token reference) Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 585.00 Td (  order: 5                      // Number: Sequence order in queue) Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 573.00 Td (  status: 'waiting'             // String: 'waiting' | 'calling' | 'completed') Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 50.00 561.00 Td (  created_at: Timestamp         // Timestamp: Token issuance time) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 532.00 Td (3.5 Mathematical Waiting-Time & Position Algorithm) Tj ET
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 40.00 517.00 Td (1. Patients Ahead \(N\) = Waiting Tokens Ahead + \(1 if doctor actively seeing patient, else 0\)) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 40.00 504.00 Td (   Example for Token 025: 3 waiting ahead \(022, 023, 024\) + 1 with doctor \(021\) = 4 patients ahead.) Tj ET
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 40.00 489.00 Td (2. Wait-Time Range: Calculated at ~5 to 7.5 minutes per consultation:) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 40.00 476.00 Td (   For N=4: Min = 4 x 5 = 20 mins; Max = Round\(4 x 7.5 / 5\) x 5 = 30 mins -> Displays '20-30 minutes'.) Tj ET
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 40.00 461.00 Td (3. Turn Approaching Trigger: When N <= 1, inline alert activates: 'Your turn is approaching!') Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 439.00 Td (3.6 Backend Security Rules Specification \(firestore.rules\)) Tj ET
+1 w 0.7 0.75 0.8 RG 0.95 0.96 0.98 rg 40.00 349.00 515.00 80.00 re B
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 414.00 Td (rules_version = '2';) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 403.00 Td (service cloud.firestore {) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 392.00 Td (  match /databases/{database}/documents {) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 381.00 Td (    match /metadata/{document=**} { allow read: if true; allow write: if request.auth != null; }) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 370.00 Td (    match /tokens/{tokenId}        { allow read: if true; allow write: if request.auth != null; }) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 359.00 Td (  }) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 348.00 Td (}) Tj ET
 endstream
 endobj
 23 0 obj
-<< /Length 5263 >>
+<< /Length 4507 >>
 stream
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
-0.3 0.4 0.5 rg BT /F2 8.5 Tf 380.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 360.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
 0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
 0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
-0.35 0.4 0.45 rg BT /F1 8.5 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
-0.2 0.3 0.4 rg BT /F2 8.5 Tf 510.00 30.00 Td (Page 9 of 9) Tj ET
-0.06 0.1 0.2 rg BT /F2 14 Tf 40.00 770.00 Td (6. TESTING VERIFICATION, CONCLUSION & FUTURE IMPROVEMENTS) Tj ET
+0.35 0.4 0.45 rg BT /F1 8 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
+0.2 0.3 0.4 rg BT /F2 8 Tf 500.00 30.00 Td (Page 6 of 12) Tj ET
+0.06 0.1 0.2 rg BT /F2 13.5 Tf 40.00 770.00 Td (4. BUILD LOG -- ANTIGRAVITY ENGINEERING RECORD \(1 / 2\)) Tj ET
 0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 748.00 Td (6.1 Verified End-to-End Test Matrix) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 716.00 515.00 18.00 re B
-0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 725.00 Td (TC-01) Tj ET
-0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 725.00 Td (Enter Token 025 on Home) Tj ET
-0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 725.00 Td (Opens Queue Status; shows Token 025, 4 ahead, 20-30 mins wait) Tj ET
-0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 725.00 Td (PASS) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 696.00 515.00 18.00 re B
-0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 705.00 Td (TC-02) Tj ET
-0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 705.00 Td (Click demo shortcut \(025\)) Tj ET
-0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 705.00 Td (Auto-populates 025 into input field immediately) Tj ET
-0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 705.00 Td (PASS) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 676.00 515.00 18.00 re B
-0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 685.00 Td (TC-03) Tj ET
-0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 685.00 Td (Submit unknown token \(999\)) Tj ET
-0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 685.00 Td (Displays inline error: 'Token #999 was not found...') Tj ET
-0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 685.00 Td (PASS) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 656.00 515.00 18.00 re B
-0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 665.00 Td (TC-04) Tj ET
-0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 665.00 Td (Reception calls Token 022) Tj ET
-0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 665.00 Td (Token 021 completes; 025 updates to 3 ahead, 15-20 mins wait) Tj ET
-0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 665.00 Td (PASS) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 636.00 515.00 18.00 re B
-0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 645.00 Td (TC-05) Tj ET
-0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 645.00 Td (Reception calls Token 024) Tj ET
-0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 645.00 Td (Token 025 drops to 1 ahead; Turn Approaching banner \(bell\) activates) Tj ET
-0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 645.00 Td (PASS) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 616.00 515.00 18.00 re B
-0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 625.00 Td (TC-06) Tj ET
-0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 625.00 Td (Reception calls Token 025) Tj ET
-0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 625.00 Td (Token 025 becomes 0 ahead; status changes to 'Now Being Called') Tj ET
-0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 625.00 Td (PASS) Tj ET
-0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 596.00 515.00 18.00 re B
-0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 605.00 Td (TC-07) Tj ET
-0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 605.00 Td (Unauthenticated reception) Tj ET
-0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 605.00 Td (Direct write actions blocked; dashboard gated behind auth modal) Tj ET
-0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 605.00 Td (PASS) Tj ET
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 582.00 Td (6.2 Short Conclusion) Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 40.00 566.00 Td (The Clinic Queue Tracking System MVP successfully demonstrates how a focused, lightweight web application) Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 40.00 553.50 Td (can effectively solve waiting-time uncertainty for outpatient clinics. By adhering strictly to the MoSCoW MVP) Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 40.00 541.00 Td (scope--avoiding complex patient self-registration or online payments--the product delivers immediate, practical) Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 40.00 528.50 Td (value to patients while giving clinic receptionists a single-click queue advancement workflow. The system was) Tj ET
-0.2 0.25 0.3 rg BT /F1 8.5 Tf 40.00 516.00 Td (thoroughly verified across mobile and desktop devices and successfully deployed to Google Cloud Firebase Hosting.) Tj ET
-0.1 0.18 0.32 rg BT /F2 10.5 Tf 40.00 493.50 Td (6.3 Future Improvements Roadmap \(Post-MVP Extensions\)) Tj ET
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 477.50 Td (Multi-Doctor & Multi-Room Support:) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 215.00 477.50 Td (Expand database schema to handle distinct queues across multiple OPD rooms.) Tj ET
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 463.50 Td (Automated SMS / WhatsApp Alerts:) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 215.00 463.50 Td (Optional notification ping when a patient reaches 2 people ahead.) Tj ET
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 449.50 Td (Doctor Delay Status Indicator:) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 215.00 449.50 Td (Staff toggle to broadcast doctor emergency delays to waiting patients.) Tj ET
-0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 435.50 Td (Physical Slip QR Code Scanning:) Tj ET
-0.25 0.3 0.35 rg BT /F1 8.5 Tf 215.00 435.50 Td (Print a scannable QR code on physical paper slips for instant zero-typing lookup.) Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 40.00 750.00 Td (This build log documents actual prompts, code actions, technical bottlenecks, and verified resolutions.) Tj ET
+0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 670.00 515.00 66.00 re B
+0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 722.00 Td (Session 1) Tj ET
+0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 712.00 Td (Nov 16) Tj ET
+0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 722.00 Td (Task: Analyze PDFs & Figma prototype; generate implementation-plan) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 710.00 Td (Worked: Extracted 4 wireframe screens; synthesized MoSCoW table; designed database ) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 700.00 Td (schema.) Tj ET
+0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 688.00 Td (What Broke: None.) Tj ET
+0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 678.00 Td (How Fixed: Approved by student before coding.) Tj ET
+0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 596.00 515.00 66.00 re B
+0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 648.00 Td (Session 2) Tj ET
+0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 638.00 Td (Nov 16) Tj ET
+0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 648.00 Td (Task: Build Feature 1: Patient Home screen with token input & Chec) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 636.00 Td (Worked: Created index.html, styles.css, patient.css, and patient-home.js. Added dem) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 626.00 Td (o shortcut \(025\).) Tj ET
+0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 614.00 Td (What Broke: git status failed \('not a git repo'\).) Tj ET
+0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 604.00 Td (How Fixed: Ran git init, configured user, made initial commit \(26fc493\).) Tj ET
+0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 522.00 515.00 66.00 re B
+0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 574.00 Td (Session 3) Tj ET
+0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 564.00 Td (Nov 16) Tj ET
+0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 574.00 Td (Task: Verify token input validation logic and demo shortcut auto-f) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 562.00 Td (Worked: Validated input trimming, digit format, and sample token whitelist \(021-025) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 552.00 Td (\).) Tj ET
+0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 540.00 Td (What Broke: Node.js test script threw 'command not found: node'.) Tj ET
+0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 530.00 Td (How Fixed: Replaced test with native Python 3.9 script.) Tj ET
+0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 448.00 515.00 66.00 re B
+0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 500.00 Td (Session 4) Tj ET
+0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 490.00 Td (Nov 16) Tj ET
+0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 500.00 Td (Task: Build Feature 2: Patient Queue Status screen matching Sketch) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 488.00 Td (Worked: Built queue-status.html and queue-service.js. Added 5-step progress bar and) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 478.00 Td ( disclaimer.) Tj ET
+0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 466.00 Td (What Broke: Generic label 'People Ahead' was unclear to testers.) Tj ET
+0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 456.00 Td (How Fixed: Updated label to 'Patients ahead of you' \(7d1eb24\).) Tj ET
+0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 374.00 515.00 66.00 re B
+0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 426.00 Td (Session 5) Tj ET
+0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 416.00 Td (Nov 16) Tj ET
+0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 426.00 Td (Task: Build Feature 3: Receptionist Dashboard with auth and Firest) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 414.00 Td (Worked: Built reception.html desktop view, metric cards, queue table with Call Pati) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 404.00 Td (ent buttons.) Tj ET
+0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 392.00 Td (What Broke: Firebase credentials not yet created by student.) Tj ET
+0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 382.00 Td (How Fixed: Engineered transparent local storage bridge with demo login \(ab01f58\).) Tj ET
+endstream
+endobj
+24 0 obj
+<< /Length 5566 >>
+stream
+0.3 0.4 0.5 rg BT /F2 8 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 360.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
+0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
+0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
+0.35 0.4 0.45 rg BT /F1 8 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
+0.2 0.3 0.4 rg BT /F2 8 Tf 500.00 30.00 Td (Page 7 of 12) Tj ET
+0.06 0.1 0.2 rg BT /F2 13.5 Tf 40.00 770.00 Td (4. BUILD LOG -- ANTIGRAVITY ENGINEERING RECORD \(2 / 2\)) Tj ET
+0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
+0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 688.00 515.00 66.00 re B
+0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 740.00 Td (Session 6) Tj ET
+0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 730.00 Td (Nov 16) Tj ET
+0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 740.00 Td (Task: Connect all 3 screens, inline turn alerts, dynamic wait-time) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 728.00 Td (Worked: Unified links, inline Turn Approaching banner \(bell icon\), manual refresh, ) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 718.00 Td (automated tests.) Tj ET
+0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 706.00 Td (What Broke: Python test had SyntaxError: f-string backslash.) Tj ET
+0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 696.00 Td (How Fixed: Removed nested backslash; verified 5 steps passed \(b5062e9\).) Tj ET
+0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 614.00 515.00 66.00 re B
+0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 666.00 Td (Session 7) Tj ET
+0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 656.00 Td (Nov 16) Tj ET
+0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 666.00 Td (Task: Create GitHub repository clinic-queue-tracker and push code) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 654.00 Td (Worked: Configured origin remote; generated comprehensive README.md and .gitignore.) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 644.00 Td () Tj ET
+0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 632.00 Td (What Broke: Sandbox terminal blocked direct push \(no DNS\).) Tj ET
+0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 622.00 Td (How Fixed: Guided student to push in Terminal using Personal Access Token \(ef4de5c\).) Tj ET
+0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 540.00 515.00 66.00 re B
+0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 592.00 Td (Session 8) Tj ET
+0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 582.00 Td (Nov 17) Tj ET
+0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 592.00 Td (Task: Install Firebase CLI and deploy to Firebase Hosting on free ) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 580.00 Td (Worked: Configured firebase.json \(cleanUrls\) and firestore.indexes.json.) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 570.00 Td () Tj ET
+0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 558.00 Td (What Broke: 'bad CPU type in executable: firebase' on Apple Silicon.) Tj ET
+0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 548.00 Td (How Fixed: Ran 'softwareupdate --install-rosetta --agree-to-license' \(0d5762b\).) Tj ET
+0.8 w 0.85 0.88 0.92 RG 0.99 0.99 1.0 rg 40.00 466.00 515.00 66.00 re B
+0.06 0.1 0.2 rg BT /F2 8 Tf 46.00 518.00 Td (Session 9) Tj ET
+0.4 0.45 0.5 rg BT /F3 7.5 Tf 46.00 508.00 Td (Nov 17) Tj ET
+0.1 0.2 0.4 rg BT /F2 8 Tf 105.00 518.00 Td (Task: User linked project clinic-queue-tracker-a3b1b and ran fireb) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 506.00 Td (Worked: Mapped project in .firebaserc; deployed live to Google Firebase CDN.) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 105.00 496.00 Td () Tj ET
+0.6 0.1 0.1 rg BT /F2 7.5 Tf 105.00 484.00 Td (What Broke: None.) Tj ET
+0.1 0.45 0.2 rg BT /F1 7.5 Tf 105.00 474.00 Td (How Fixed: Terminal reported 'Deploy complete!' at clinic-queue-tracker-a3b1b.web.app \(6c2ee23\).) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 444.00 Td (Verified Git Commit History in Repository) Tj ET
+0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 429.00 Td (6c2ee23) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 429.00 Td (chore\(deploy\): document successful Firebase Hosting deployment to clinic-queue-tracker-a3b1b) Tj ET
+0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 417.00 Td (025315f) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 417.00 Td (chore\(deploy\): link project to clinic-queue-tracker-a3b1b) Tj ET
+0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 405.00 Td (a8e4c02) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 405.00 Td (chore: add .firebaserc for Firebase project mapping) Tj ET
+0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 393.00 Td (0d5762b) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 393.00 Td (feat\(firebase\): add firestore live sync, indexes config, and cleanUrls for Firebase Hosting) Tj ET
+0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 381.00 Td (ef4de5c) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 381.00 Td (docs: create comprehensive README with wireframe mapping, security rules, and testing guide) Tj ET
+0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 369.00 Td (b5062e9) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 369.00 Td (feat: connect full clinic queue workflow, inline turn alerts, dynamic wait estimation, and tests) Tj ET
+0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 357.00 Td (ab01f58) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 357.00 Td (feat: implement Receptionist Dashboard, queue progression, Firebase Auth protection, and rules) Tj ET
+0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 345.00 Td (7d1eb24) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 345.00 Td (feat: implement Patient Queue Status screen with live metrics, progress bar, and turn alert) Tj ET
+0.15 0.35 0.7 rg BT /F2 7.5 Tf 45.00 333.00 Td (26fc493) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 95.00 333.00 Td (feat: implement Patient Home screen with token input, demo shortcut, and validation \(Feature 1\)) Tj ET
+endstream
+endobj
+25 0 obj
+<< /Length 5067 >>
+stream
+0.3 0.4 0.5 rg BT /F2 8 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 360.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
+0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
+0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
+0.35 0.4 0.45 rg BT /F1 8 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
+0.2 0.3 0.4 rg BT /F2 8 Tf 500.00 30.00 Td (Page 8 of 12) Tj ET
+0.06 0.1 0.2 rg BT /F2 13.5 Tf 40.00 770.00 Td (5. FEATURE CHECKLIST & MOSCOW AUDIT) Tj ET
+0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
+0.2 0.25 0.3 rg BT /F1 9 Tf 40.00 750.00 Td (Audit of the four original Must-have features evaluated against the live production application:) Tj ET
+1 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 677.00 515.00 60.00 re B
+0.06 0.1 0.2 rg BT /F2 10 Tf 50.00 722.00 Td (1. Patient Token Lookup) Tj ET
+1 w 0.85 0.96 0.85 rg 490.00 718.00 55.00 16.00 re f
+0.1 0.5 0.2 rg BT /F2 8.5 Tf 502.00 722.00 Td (DONE) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 706.00 Td (Delivery Evidence: Input field accepts token; normalizes 2-digit entries \(25 -> 025\); includes demo) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 695.00 Td ( shortcut \('* Try it out with sample token 025'\); displays helpful error message for ) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 684.00 Td (empty/invalid tokens; routes valid tokens to status screen with zero lag.) Tj ET
+1 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 609.00 515.00 60.00 re B
+0.06 0.1 0.2 rg BT /F2 10 Tf 50.00 654.00 Td (2. Current Queue Position) Tj ET
+1 w 0.85 0.96 0.85 rg 490.00 650.00 55.00 16.00 re f
+0.1 0.5 0.2 rg BT /F2 8.5 Tf 502.00 654.00 Td (DONE) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 638.00 Td (Delivery Evidence: Calculates and displays exact count of patients ahead \(displays '04' for Token 0) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 627.00 Td (25 initially\). Correctly accounts for both waiting queue tokens and active doctor con) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 616.00 Td (sultation in Room 1. Dynamically decrements as receptionist calls each patient.) Tj ET
+1 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 541.00 515.00 60.00 re B
+0.06 0.1 0.2 rg BT /F2 10 Tf 50.00 586.00 Td (3. Approximate Waiting-Time Range) Tj ET
+1 w 0.85 0.96 0.85 rg 490.00 582.00 55.00 16.00 re f
+0.1 0.5 0.2 rg BT /F2 8.5 Tf 502.00 586.00 Td (DONE) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 570.00 Td (Delivery Evidence: Calculates waiting range at ~5 to 7.5 mins per consultation \('20-30 minutes' for) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 559.00 Td ( Token 025\). Explicitly tagged as an *Estimate. Features an interactive 5-segment pro) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 548.00 Td (gress bar and an explicit disclaimer card explaining that times vary with consultation complexity.) Tj ET
+1 w 0.85 0.88 0.92 RG 0.98 0.99 1.0 rg 40.00 473.00 515.00 60.00 re B
+0.06 0.1 0.2 rg BT /F2 10 Tf 50.00 518.00 Td (4. Receptionist Dashboard & Controls) Tj ET
+1 w 0.85 0.96 0.85 rg 490.00 514.00 55.00 16.00 re f
+0.1 0.5 0.2 rg BT /F2 8.5 Tf 502.00 518.00 Td (DONE) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 502.00 Td (Delivery Evidence: Protected desktop staff dashboard at /reception.html with email/password login. ) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 491.00 Td (Displays 3 metric cards \(Current Token, Next Token, Total Waiting\), patient queue tab) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 50.00 480.00 Td (le with individual 'Call Patient' buttons, 'Update Queue' action, and 'Reset Demo Queue' tool. Write actions locked by Firestore rules.) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 450.00 Td (Delivery of Secondary Wireframe Features & Out-of-Scope Compliance) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 415.00 515.00 22.00 re B
+0.1 0.15 0.25 rg BT /F2 8 Tf 50.00 426.00 Td (Turn Approaching Alert) Tj ET
+0.3 0.35 0.4 rg BT /F1 8 Tf 200.00 426.00 Td (Inline banner \(bell icon\) and Screen 4 modal notify patient when turn is close.) Tj ET
+0.15 0.4 0.2 rg BT /F2 7.5 Tf 505.00 426.00 Td (DONE) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 390.00 515.00 22.00 re B
+0.1 0.15 0.25 rg BT /F2 8 Tf 50.00 401.00 Td (Manual Refresh Control) Tj ET
+0.3 0.35 0.4 rg BT /F1 8 Tf 200.00 401.00 Td (Prominent 'Check for updates' button complements real-time storage event sync.) Tj ET
+0.15 0.4 0.2 rg BT /F2 7.5 Tf 505.00 401.00 Td (DONE) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 365.00 515.00 22.00 re B
+0.1 0.15 0.25 rg BT /F2 8 Tf 50.00 376.00 Td (Patient Self-Registration) Tj ET
+0.3 0.35 0.4 rg BT /F1 8 Tf 200.00 376.00 Td (Deliberately excluded per MoSCoW MVP plan \(tokens issued at clinic counter\).) Tj ET
+0.15 0.4 0.5 rg BT /F2 7.5 Tf 505.00 376.00 Td (EXCLUDED) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 340.00 515.00 22.00 re B
+0.1 0.15 0.25 rg BT /F2 8 Tf 50.00 351.00 Td (Online Payments / SMS) Tj ET
+0.3 0.35 0.4 rg BT /F1 8 Tf 200.00 351.00 Td (Deliberately excluded to maintain strict MVP scope and zero operational friction.) Tj ET
+0.15 0.4 0.5 rg BT /F2 7.5 Tf 505.00 351.00 Td (EXCLUDED) Tj ET
+endstream
+endobj
+26 0 obj
+<< /Length 5252 >>
+stream
+0.3 0.4 0.5 rg BT /F2 8 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 360.00 805.00 Td (CLINIC QUEUE TRACKING SYSTEM) Tj ET
+0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
+0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
+0.35 0.4 0.45 rg BT /F1 8 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
+0.2 0.3 0.4 rg BT /F2 8 Tf 500.00 30.00 Td (Page 9 of 12) Tj ET
+0.06 0.1 0.2 rg BT /F2 13.5 Tf 40.00 770.00 Td (6. TESTING VERIFICATION, CONCLUSION & FUTURE IMPROVEMENTS) Tj ET
+0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 750.00 Td (6.1 Verified End-to-End Test Matrix) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 719.00 515.00 18.00 re B
+0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 728.00 Td (TC-01) Tj ET
+0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 728.00 Td (Enter Token 025 on Home) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 728.00 Td (Opens Queue Status; shows Token 025, 4 ahead, 20-30 mins wait) Tj ET
+0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 728.00 Td (PASS) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 699.00 515.00 18.00 re B
+0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 708.00 Td (TC-02) Tj ET
+0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 708.00 Td (Click demo shortcut \(025\)) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 708.00 Td (Auto-populates 025 into input field immediately) Tj ET
+0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 708.00 Td (PASS) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 679.00 515.00 18.00 re B
+0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 688.00 Td (TC-03) Tj ET
+0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 688.00 Td (Submit unknown token \(999\)) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 688.00 Td (Displays inline error: 'Token #999 was not found...') Tj ET
+0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 688.00 Td (PASS) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 659.00 515.00 18.00 re B
+0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 668.00 Td (TC-04) Tj ET
+0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 668.00 Td (Reception calls Token 022) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 668.00 Td (Token 021 completes; 025 updates to 3 ahead, 15-20 mins wait) Tj ET
+0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 668.00 Td (PASS) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 639.00 515.00 18.00 re B
+0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 648.00 Td (TC-05) Tj ET
+0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 648.00 Td (Reception calls Token 024) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 648.00 Td (Token 025 drops to 1 ahead; Turn Approaching banner \(bell\) activates) Tj ET
+0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 648.00 Td (PASS) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 619.00 515.00 18.00 re B
+0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 628.00 Td (TC-06) Tj ET
+0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 628.00 Td (Reception calls Token 025) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 628.00 Td (Token 025 becomes 0 ahead; status changes to 'Now Being Called') Tj ET
+0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 628.00 Td (PASS) Tj ET
+0.6 w 0.88 0.9 0.92 RG 0.99 0.99 1.0 rg 40.00 599.00 515.00 18.00 re B
+0.1 0.2 0.4 rg BT /F2 8 Tf 48.00 608.00 Td (TC-07) Tj ET
+0.15 0.2 0.25 rg BT /F1 8 Tf 90.00 608.00 Td (Unauthenticated reception) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 255.00 608.00 Td (Direct write actions blocked; dashboard gated behind auth modal) Tj ET
+0.1 0.55 0.2 rg BT /F2 8 Tf 515.00 608.00 Td (PASS) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 585.00 Td (6.2 Short Conclusion) Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 40.00 570.00 Td (The Clinic Queue Tracking System MVP successfully demonstrates how a focused, lightweight web application) Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 40.00 557.50 Td (can effectively solve waiting-time uncertainty for outpatient clinics. By adhering strictly to the MoSCoW MVP) Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 40.00 545.00 Td (scope--avoiding complex patient self-registration or online payments--the product delivers immediate, practical) Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 40.00 532.50 Td (value to patients while giving clinic receptionists a single-click queue advancement workflow. The system was) Tj ET
+0.2 0.25 0.3 rg BT /F1 8.5 Tf 40.00 520.00 Td (thoroughly verified across mobile and desktop devices and successfully deployed to Google Cloud Firebase Hosting.) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 497.50 Td (6.3 Future Improvements Roadmap \(Post-MVP Extensions\)) Tj ET
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 482.50 Td (Multi-Doctor & Multi-Room Support:) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 215.00 482.50 Td (Expand database schema to handle distinct queues across multiple OPD rooms.) Tj ET
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 468.50 Td (Automated SMS / WhatsApp Alerts:) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 215.00 468.50 Td (Optional notification ping when a patient reaches 2 people ahead.) Tj ET
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 454.50 Td (Doctor Delay Status Indicator:) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 215.00 454.50 Td (Staff toggle to broadcast doctor emergency delays to waiting patients.) Tj ET
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 45.00 440.50 Td (Physical Slip QR Code Scanning:) Tj ET
+0.25 0.3 0.35 rg BT /F1 8.5 Tf 215.00 440.50 Td (Print a scannable QR code on physical paper slips for instant zero-typing lookup.) Tj ET
+endstream
+endobj
+27 0 obj
+<< /Length 6314 >>
+stream
+0.3 0.4 0.5 rg BT /F2 8 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 360.00 805.00 Td (APPENDIX A: ORIGINAL IMPLEMENTATION PLAN) Tj ET
+0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
+0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
+0.35 0.4 0.45 rg BT /F1 8 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
+0.2 0.3 0.4 rg BT /F2 8 Tf 500.00 30.00 Td (Page 10 of 12) Tj ET
+0.06 0.1 0.2 rg BT /F2 13.5 Tf 40.00 770.00 Td (APPENDIX A -- ORIGINAL ANTIGRAVITY IMPLEMENTATION PLAN \(PART 1\)) Tj ET
+0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
+1 w 0.2 0.45 0.85 RG 0.95 0.96 0.98 rg 40.00 726.00 515.00 28.00 re B
+0.1 0.3 0.7 rg BT /F2 8.5 Tf 48.00 740.00 Td (ARCHIVAL RECORD: Below is the complete, unchanged text of original-implementation-plan.md) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 48.00 730.00 Td (generated during Phase 0 of the Antigravity engineering workflow, preserving all original specifications.) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 712.00 Td (# Clinic Queue Tracking System \(MVP\) - Implementation Plan) Tj ET
+0.3 0.35 0.4 rg BT /F1 8 Tf 40.00 697.00 Td (Author: Vivek Kumar \(B.Tech Computer Science, MSOT\)  |  Target: HTML5, CSS3, Vanilla JS, Firebase) Tj ET
+0.3 0.35 0.4 rg BT /F1 8 Tf 40.00 687.00 Td (System: Clinic Queue Tracking Web Application \(Patna OPD Clinic Pilot\)  |  Status: Approved Phase 0) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 671.00 Td (## 1. Project Goal & MVP Scope) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 40.00 656.00 Td (1.1 Problem Statement: In busy outpatient department \(OPD\) clinics, patients receive a paper token after registration) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 40.00 645.00 Td (but often have no visibility into how many patients are ahead of them or when they will be called. This causes anxiety,) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 40.00 634.00 Td (frequent inquiries at the reception counter, and overcrowding in waiting corridors.) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 40.00 619.00 Td (1.2 Solution & MVP Objective: A lightweight, mobile-first web application that allows patients who already hold a physical) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 40.00 608.00 Td (paper token \(e.g., 021, 022, 023, 024, 025\) to look up their current queue status and estimated waiting time. A secure,) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 40.00 597.00 Td (authenticated receptionist dashboard allows clinic staff to advance the queue in real-time.) Tj ET
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 40.00 582.00 Td (1.3 Strict Scope Boundaries \(MoSCoW Alignment\):) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 48.00 570.00 Td (*  1. Patient Token Lookup: Single-field mobile screen to enter existing token \(025\) with demo shortcut and error handling.) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 48.00 559.00 Td (*  2. Queue Position & Wait Time Display: Displays token, status, patients ahead, estimated wait \(20-30m\), 5-step progress bar.) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 48.00 548.00 Td (*  3. Turn Approaching Alert: Status alert informing patient when turn is next or called to proceed to consultation room.) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 48.00 537.00 Td (*  4. Receptionist Dashboard: Protected staff dashboard showing current, next, waiting count, Call Patient buttons, Update Queue.) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 48.00 526.00 Td (*  5. Data Persistence & Security: Firebase Firestore for live shared queue state; Firebase Auth restricting writes to staff.) Tj ET
+0.6 0.1 0.1 rg BT /F2 8.5 Tf 40.00 511.00 Td (OUT OF SCOPE \(Won't Have Now\):) Tj ET
+0.35 0.4 0.45 rg BT /F1 8 Tf 48.00 499.00 Td (*  No online patient self-registration or appointment booking \(tokens issued in person at reception counter\).) Tj ET
+0.35 0.4 0.45 rg BT /F1 8 Tf 48.00 488.00 Td (*  No automatic digital token generation | No online payments, billing, or prescription integration.) Tj ET
+0.35 0.4 0.45 rg BT /F1 8 Tf 48.00 477.00 Td (*  No third-party notification channels \(SMS, WhatsApp, email\) -- status is checked on the web page.) Tj ET
+0.35 0.4 0.45 rg BT /F1 8 Tf 48.00 466.00 Td (*  No collection of real or sensitive Patient Health Information \(PHI\) -- strictly tokens and status.) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 447.00 Td (## 2. Screen-by-Screen UI Architecture) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 40.00 432.00 Td (The interface directly reflects the low-fidelity hand-drawn wireframes and Figma prototype:) Tj ET
+0.1 0.2 0.4 rg BT /F2 8 Tf 45.00 420.00 Td (Screen 1: Patient Home \(index.html\) -- Mobile View) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 45.00 410.00 Td (Header: OUTPATIENT CLINIC * Queue tracker | Badge: 01 / WELCOME | Heading: Clinic Queue Tracker) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 45.00 401.00 Td ( | Input: 'Enter your token number' \(e.g. 025\) | Demo shortcut: * Try it out with sample token 025 | Primary button: Check Queue -> | Inline error for invalid/unknown tokens | Footer: Your time is valuable.) Tj ET
+0.1 0.2 0.4 rg BT /F2 8 Tf 45.00 389.00 Td (Screen 2: Patient Queue Status \(queue-status.html\) -- Mobile View) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 45.00 379.00 Td (Header: OUTPATIENT CLINIC * Queue tracker | Badge: 02 / YOUR PLACE IN LINE | Title: Your Queue ) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 45.00 370.00 Td (Status | Hero card: Token 025, status pill \(Waiting\) | Metrics: 'Patients ahead of you: 04', 'Estimated Waiting Time: 20-30m' | 5-step progress bar \(Registered -> Your turn\) | View Turn Status -> and <- Back to Home buttons | Disclaimer note.) Tj ET
+0.1 0.2 0.4 rg BT /F2 8 Tf 45.00 358.00 Td (Screen 3: Turn Approaching View \(turn-approaching.html\)) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 45.00 348.00 Td (Badge: 03 / TURN APPROACHING | Banner: 'Your turn is approaching! Please stay near consultation) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 45.00 339.00 Td ( room 1.') Tj ET
+0.1 0.2 0.4 rg BT /F2 8 Tf 45.00 327.00 Td (Screen 4: Receptionist Dashboard \(reception.html\) -- Desktop View) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 45.00 317.00 Td (Header: Reception desk | Staff Login Modal | 3 Metric cards: Current \(021\), Next \(022\), Waiting) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 45.00 308.00 Td ( \(04\) | Table of waiting tokens with 'Call Patient ->' actions | Footer action bar: 'Update Queue' and 'Reset Demo Queue'.) Tj ET
+endstream
+endobj
+28 0 obj
+<< /Length 4784 >>
+stream
+0.3 0.4 0.5 rg BT /F2 8 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 360.00 805.00 Td (APPENDIX A: ORIGINAL IMPLEMENTATION PLAN) Tj ET
+0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
+0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
+0.35 0.4 0.45 rg BT /F1 8 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
+0.2 0.3 0.4 rg BT /F2 8 Tf 500.00 30.00 Td (Page 11 of 12) Tj ET
+0.06 0.1 0.2 rg BT /F2 13.5 Tf 40.00 770.00 Td (APPENDIX A -- ORIGINAL ANTIGRAVITY IMPLEMENTATION PLAN \(PART 2\)) Tj ET
+0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 750.00 Td (## 3. Database Schema & Business Logic) Tj ET
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 40.00 735.00 Td (3.1 Firebase Firestore Collections & Document Structure:) Tj ET
+1 w 0.8 0.85 0.9 RG 0.97 0.98 0.99 rg 40.00 631.00 515.00 95.00 re B
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 711.00 Td (Firestore Root) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 701.50 Td (|-- metadata/) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 692.00 Td (|   +-- clinic_queue \(Document\)) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 682.50 Td (|       |-- current_token: '021'       \(String: Token currently with doctor\)) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 673.00 Td (|       |-- current_status: 'Calling'   \(String: 'Calling' | 'In Consultation'\)) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 663.50 Td (|       |-- next_token: '022'          \(String: Next token in line\)) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 654.00 Td (|       |-- total_waiting: 4           \(Number: Count of tokens waiting\)) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 644.50 Td (|       +-- avg_mins_per_patient: 6    \(Number: Default consultation window baseline\)) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 635.00 Td (+-- tokens/ \(Collection\) -> 021 \(calling\), 022 \(waiting\), 023 \(waiting\), 024 \(waiting\), 025 \(waiting\)) Tj ET
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 40.00 621.50 Td (3.2 Waiting-Time Calculation Algorithm:) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 48.00 609.50 Td (1. Calculate Patients Ahead \(N\): Retrieve tokens where status == 'waiting' and order < T.order. N = count of those tokens.) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 48.00 598.50 Td (2. Determine Time Range: If Calling -> 'Now being called -- please proceed to Room 1'; If N == 0 -> 'Up next \(< 5 mins\)';) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 48.00 587.50 Td (   If N > 0: Min = N x 5 mins; Max = N x 7 mins \(rounded to 10-min bracket\) -> N=4 displays '20-30 minutes'.) Tj ET
+0.2 0.25 0.3 rg BT /F1 8 Tf 48.00 576.50 Td (3. Queue Progress Steps \(5 Segments\): Step 1 \(Registered\) | Step 2 \(N <= 3\) | Step 3 \(N <= 2\) | Step 4 \(N <= 1\) | Step 5 \(Calling\).) Tj ET
+0.1 0.15 0.25 rg BT /F2 8.5 Tf 40.00 561.50 Td (3.3 Security Rules \(firestore.rules\):) Tj ET
+1 w 0.7 0.75 0.8 RG 0.95 0.96 0.98 rg 40.00 487.50 515.00 66.00 re B
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 539.50 Td (rules_version = '2';) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 528.50 Td (service cloud.firestore { match /databases/{database}/documents {) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 517.50 Td (  match /metadata/{document=**} { allow read: if true; allow write: if request.auth != null; }) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 506.50 Td (  match /tokens/{tokenId}        { allow read: if true; allow write: if request.auth != null; }) Tj ET
+0.1 0.15 0.2 rg BT /F1 8 Tf 50.00 495.50 Td (}}) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 480.50 Td (## 4. File & Folder Structure) Tj ET
+1 w 0.8 0.85 0.9 RG 0.98 0.98 0.99 rg 40.00 345.50 515.00 125.00 re B
+0.1 0.2 0.3 rg BT /F1 7.8 Tf 50.00 455.50 Td (product/) Tj ET
+0.1 0.2 0.3 rg BT /F1 7.8 Tf 50.00 444.00 Td (|-- index.html                 # Screen 1: Patient Home \(Token input & lookup\)) Tj ET
+0.1 0.2 0.3 rg BT /F1 7.8 Tf 50.00 432.50 Td (|-- queue-status.html          # Screen 2: Patient Queue Status & Screen 4: Turn Approaching) Tj ET
+0.1 0.2 0.3 rg BT /F1 7.8 Tf 50.00 421.00 Td (|-- reception.html             # Screen 3: Protected Receptionist Dashboard) Tj ET
+0.1 0.2 0.3 rg BT /F1 7.8 Tf 50.00 409.50 Td (|-- css/ \(styles.css, patient.css, reception.css\)) Tj ET
+0.1 0.2 0.3 rg BT /F1 7.8 Tf 50.00 398.00 Td (|-- js/ \(firebase-config.js, queue-service.js, patient-home.js, queue-status.js, reception.js, seed-data.js\)) Tj ET
+0.1 0.2 0.3 rg BT /F1 7.8 Tf 50.00 386.50 Td (|-- seed/initial-queue.json    # JSON reference data for sample tokens \(021 to 025\)) Tj ET
+0.1 0.2 0.3 rg BT /F1 7.8 Tf 50.00 375.00 Td (|-- firestore.rules            # Firebase security rules enforcing auth for writes) Tj ET
+0.1 0.2 0.3 rg BT /F1 7.8 Tf 50.00 363.50 Td (|-- firebase.json / .firebaserc / .gitignore / implementation-plan.md / BUILD_LOG.md / README.md) Tj ET
+endstream
+endobj
+29 0 obj
+<< /Length 7417 >>
+stream
+0.3 0.4 0.5 rg BT /F2 8 Tf 40.00 805.00 Td (MSOT  |  PRODUCT DEVELOPMENT) Tj ET
+0.3 0.4 0.5 rg BT /F2 8 Tf 360.00 805.00 Td (APPENDIX A: ORIGINAL IMPLEMENTATION PLAN) Tj ET
+0.75 0.8 0.85 RG 1 w 40.00 798.00 m 555.00 798.00 l S
+0.8 0.85 0.9 RG 0.8 w 40.00 42.00 m 555.00 42.00 l S
+0.35 0.4 0.45 rg BT /F1 8 Tf 40.00 30.00 Td (Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028) Tj ET
+0.2 0.3 0.4 rg BT /F2 8 Tf 500.00 30.00 Td (Page 12 of 12) Tj ET
+0.06 0.1 0.2 rg BT /F2 13.5 Tf 40.00 770.00 Td (APPENDIX A -- ORIGINAL ANTIGRAVITY IMPLEMENTATION PLAN \(PART 3\)) Tj ET
+0.06 0.1 0.2 RG 1.5 w 40.00 765.00 m 555.00 765.00 l S
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 750.00 Td (## 5. Phased Implementation Checklist) Tj ET
+0.1 0.15 0.25 rg BT /F2 8 Tf 45.00 735.00 Td (Phase 1: Project Scaffolding & Git Setup) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 235.00 735.00 Td ([x] Git init | [x] Create .gitignore and base structure | [x] Create BUILD_LOG.md | [x] Create seed data 021-025) Tj ET
+0.1 0.15 0.25 rg BT /F2 8 Tf 45.00 722.00 Td (Phase 2: Design System & Wireframe Layouts) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 235.00 722.00 Td ([x] styles.css | [x] index.html \(Patient Home\) | [x] queue-status.html \(Queue Status\) | [x] reception.html \(Reception\)) Tj ET
+0.1 0.15 0.25 rg BT /F2 8 Tf 45.00 709.00 Td (Phase 3: Firebase Integration & Sample Data) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 235.00 709.00 Td ([x] firebase-config.js with v10 CDN | [x] firestore.rules | [x] Seed state \(021 calling, 022-025 waiting\)) Tj ET
+0.1 0.15 0.25 rg BT /F2 8 Tf 45.00 696.00 Td (Phase 4: Patient Features \(Lookup & Math\)) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 235.00 696.00 Td ([x] patient-home.js \(input, demo shortcut, validation\) | [x] queue-status.js \(math, progress bar, turn alert\)) Tj ET
+0.1 0.15 0.25 rg BT /F2 8 Tf 45.00 683.00 Td (Phase 5: Receptionist Dashboard & Auth) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 235.00 683.00 Td ([x] Firebase Auth in reception.js | [x] Metric cards | [x] Call Patient advancement | [x] Reset Demo Queue) Tj ET
+0.1 0.15 0.25 rg BT /F2 8 Tf 45.00 670.00 Td (Phase 6: Verification, Testing & Deployment) Tj ET
+0.25 0.3 0.35 rg BT /F1 7.5 Tf 235.00 670.00 Td ([x] Test cases TC-01 to TC-12 | [x] Responsive checks | [x] Finalize BUILD_LOG.md | [x] Firebase Hosting deploy) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 649.00 Td (## 6. Comprehensive Testing Plan \(Original Blueprint\)) Tj ET
+0.1 0.2 0.4 rg BT /F2 7.5 Tf 45.00 634.00 Td (TC-01) Tj ET
+0.15 0.2 0.25 rg BT /F2 7.5 Tf 85.00 634.00 Td (Token Lookup \(Valid\)) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 215.00 634.00 Td (Enter 025 and click Check Queue) Tj ET
+0.2 0.4 0.2 rg BT /F1 7.5 Tf 385.00 634.00 Td (Navigates to Queue Status showing 025, Sta) Tj ET
+0.1 0.2 0.4 rg BT /F2 7.5 Tf 45.00 622.50 Td (TC-02) Tj ET
+0.15 0.2 0.25 rg BT /F2 7.5 Tf 85.00 622.50 Td (Token Lookup \(Demo\)) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 215.00 622.50 Td (Click * Try it out with sample token 025) Tj ET
+0.2 0.4 0.2 rg BT /F1 7.5 Tf 385.00 622.50 Td (Input auto-fills with 025 and proceeds to ) Tj ET
+0.1 0.2 0.4 rg BT /F2 7.5 Tf 45.00 611.00 Td (TC-03) Tj ET
+0.15 0.2 0.25 rg BT /F2 7.5 Tf 85.00 611.00 Td (Token Lookup \(Invalid\)) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 215.00 611.00 Td (Enter 999 or letters ABC) Tj ET
+0.2 0.4 0.2 rg BT /F1 7.5 Tf 385.00 611.00 Td (Shows 'Token not found. Please verify your) Tj ET
+0.1 0.2 0.4 rg BT /F2 7.5 Tf 45.00 599.50 Td (TC-04) Tj ET
+0.15 0.2 0.25 rg BT /F2 7.5 Tf 85.00 599.50 Td (Queue Status Metrics) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 215.00 599.50 Td (Inspect Token 025 initial status) Tj ET
+0.2 0.4 0.2 rg BT /F1 7.5 Tf 385.00 599.50 Td (Shows Patients ahead of you: 04 and Estima) Tj ET
+0.1 0.2 0.4 rg BT /F2 7.5 Tf 45.00 588.00 Td (TC-05) Tj ET
+0.15 0.2 0.25 rg BT /F2 7.5 Tf 85.00 588.00 Td (Progress Bar Display) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 215.00 588.00 Td (Inspect 5-step progress bar for 025) Tj ET
+0.2 0.4 0.2 rg BT /F1 7.5 Tf 385.00 588.00 Td (Displays registered step lit, proportional) Tj ET
+0.1 0.2 0.4 rg BT /F2 7.5 Tf 45.00 576.50 Td (TC-06) Tj ET
+0.15 0.2 0.25 rg BT /F2 7.5 Tf 85.00 576.50 Td (Disclaimer Visibility) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 215.00 576.50 Td (Inspect Queue Status footer note) Tj ET
+0.2 0.4 0.2 rg BT /F1 7.5 Tf 385.00 576.50 Td (Displays 'This is an estimate and may chan) Tj ET
+0.1 0.2 0.4 rg BT /F2 7.5 Tf 45.00 565.00 Td (TC-07) Tj ET
+0.15 0.2 0.25 rg BT /F2 7.5 Tf 85.00 565.00 Td (Turn Approaching Alert) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 215.00 565.00 Td (Click View Turn Status or next in line) Tj ET
+0.2 0.4 0.2 rg BT /F1 7.5 Tf 385.00 565.00 Td (Displays 'Your turn is approaching! Please) Tj ET
+0.1 0.2 0.4 rg BT /F2 7.5 Tf 45.00 553.50 Td (TC-08) Tj ET
+0.15 0.2 0.25 rg BT /F2 7.5 Tf 85.00 553.50 Td (Reception Auth Guard) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 215.00 553.50 Td (Navigate to reception.html without sign-in) Tj ET
+0.2 0.4 0.2 rg BT /F1 7.5 Tf 385.00 553.50 Td (Queue controls hidden; login modal prompts) Tj ET
+0.1 0.2 0.4 rg BT /F2 7.5 Tf 45.00 542.00 Td (TC-09) Tj ET
+0.15 0.2 0.25 rg BT /F2 7.5 Tf 85.00 542.00 Td (Reception Queue Progression) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 215.00 542.00 Td (Staff logs in and calls 022) Tj ET
+0.2 0.4 0.2 rg BT /F1 7.5 Tf 385.00 542.00 Td (Token 021 completes, 022 current, 023 next) Tj ET
+0.1 0.2 0.4 rg BT /F2 7.5 Tf 45.00 530.50 Td (TC-10) Tj ET
+0.15 0.2 0.25 rg BT /F2 7.5 Tf 85.00 530.50 Td (Live Patient View Update) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 215.00 530.50 Td (Keep queue-status.html open while 022 called) Tj ET
+0.2 0.4 0.2 rg BT /F1 7.5 Tf 385.00 530.50 Td (Token 025 updates to 3 ahead, wait reduces) Tj ET
+0.1 0.2 0.4 rg BT /F2 7.5 Tf 45.00 519.00 Td (TC-11) Tj ET
+0.15 0.2 0.25 rg BT /F2 7.5 Tf 85.00 519.00 Td (Security Rules Enforcement) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 215.00 519.00 Td (Attempt write without auth) Tj ET
+0.2 0.4 0.2 rg BT /F1 7.5 Tf 385.00 519.00 Td (Firebase rejects write with permission-den) Tj ET
+0.1 0.2 0.4 rg BT /F2 7.5 Tf 45.00 507.50 Td (TC-12) Tj ET
+0.15 0.2 0.25 rg BT /F2 7.5 Tf 85.00 507.50 Td (Demo Reset Action) Tj ET
+0.3 0.35 0.4 rg BT /F1 7.5 Tf 215.00 507.50 Td (Staff clicks Reset Demo Queue) Tj ET
+0.2 0.4 0.2 rg BT /F1 7.5 Tf 385.00 507.50 Td (State resets to 021 calling, 022-025 waiti) Tj ET
+0.1 0.18 0.32 rg BT /F2 10 Tf 40.00 488.00 Td (## 7. Version Control & Git Commit Strategy) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 45.00 473.00 Td (1. chore: project initialization, folder structure, and build log) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 45.00 463.00 Td (2. feat\(ui\): implement responsive patient home, queue status, and reception layouts matching wireframes) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 45.00 453.00 Td (3. feat\(firebase\): configure firestore schema, security rules, and seed script for tokens 021-025) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 45.00 443.00 Td (4. feat\(patient\): implement token validation, lookup routing, and dynamic wait-time calculation) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 45.00 433.00 Td (5. feat\(reception\): implement staff authentication, queue advancement, and demo reset controls) Tj ET
+0.2 0.25 0.3 rg BT /F1 7.5 Tf 45.00 423.00 Td (6. test: verify queue progression, live updates, and test matrix across mobile and desktop) Tj ET
+0.4 0.45 0.5 rg BT /F3 8 Tf 45.00 407.00 Td (*This plan is ready for review. Coding will begin upon user confirmation.*) Tj ET
 endstream
 endobj
 xref
-0 24
+0 30
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
-0000000168 00000 n 
-0000000238 00000 n 
-0000000313 00000 n 
-0000000391 00000 n 
-0000000544 00000 n 
-0000000697 00000 n 
-0000000850 00000 n 
-0000001003 00000 n 
-0000001157 00000 n 
-0000001311 00000 n 
-0000001465 00000 n 
-0000001619 00000 n 
-0000001773 00000 n 
-0000004386 00000 n 
-0000009261 00000 n 
-0000014639 00000 n 
-0000020617 00000 n 
-0000024725 00000 n 
-0000029290 00000 n 
-0000034916 00000 n 
-0000040043 00000 n 
+0000000190 00000 n 
+0000000260 00000 n 
+0000000335 00000 n 
+0000000413 00000 n 
+0000000566 00000 n 
+0000000719 00000 n 
+0000000872 00000 n 
+0000001025 00000 n 
+0000001179 00000 n 
+0000001333 00000 n 
+0000001487 00000 n 
+0000001641 00000 n 
+0000001795 00000 n 
+0000001949 00000 n 
+0000002103 00000 n 
+0000002257 00000 n 
+0000004870 00000 n 
+0000009738 00000 n 
+0000015103 00000 n 
+0000021270 00000 n 
+0000025367 00000 n 
+0000029927 00000 n 
+0000035546 00000 n 
+0000040666 00000 n 
+0000045971 00000 n 
+0000052338 00000 n 
+0000057175 00000 n 
 trailer
-<< /Size 24 /Root 1 0 R >>
+<< /Size 30 /Root 1 0 R >>
 startxref
-45359
+64645
 %%EOF

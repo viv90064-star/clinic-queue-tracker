@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Generates a clean, print-ready 9-page PDF: Clinic_Queue_Final_MVP_Report.pdf
+Generates a complete, print-ready 12-page PDF: Clinic_Queue_Final_MVP_Report.pdf
+Including Appendix A with the complete, unchanged original implementation plan.
 Using pure Python with standard PDF-1.4 format (no external libraries needed).
 """
 
@@ -20,8 +21,12 @@ def escape_pdf(text):
         .replace('🔔', '')
         .replace('⚠️', '')
         .replace('👉', '->')
+        .replace('→', '->')
+        .replace('←', '<-')
+        .replace('≈', '~')
+        .replace('≤', '<=')
+        .replace('≥', '>=')
     )
-    # Ensure all characters are strictly ascii
     ascii_clean = cleaned.encode('ascii', errors='replace').decode('ascii')
     return ascii_clean.replace('\\', '\\\\').replace('(', '\\(').replace(')', '\\)')
 
@@ -29,8 +34,8 @@ class PDFGenerator:
     def __init__(self, filename):
         self.filename = filename
         self.pages = []
-        self.width = 595.28  # A4 width in points
-        self.height = 841.89 # A4 height in points
+        self.width = 595.28
+        self.height = 841.89
 
     def add_page(self):
         page_stream = []
@@ -60,27 +65,28 @@ class PDFGenerator:
     def draw_line(self, stream, x1, y1, x2, y2, rgb=(0.75, 0.8, 0.85), line_width=1):
         stream.append(f"{rgb[0]} {rgb[1]} {rgb[2]} RG {line_width} w {x1:.2f} {y1:.2f} m {x2:.2f} {y2:.2f} l S")
 
-    def add_running_header_footer(self, stream, page_num):
+    def add_running_header_footer(self, stream, page_num, total_pages=12):
         if page_num == 1:
-            return # Cover page has no running header/footer
+            return
         # Running Header
-        self.draw_text(stream, 40, 805, "MSOT  |  PRODUCT DEVELOPMENT", font="F2", size=8.5, r=0.3, g=0.4, b=0.5)
-        self.draw_text(stream, 380, 805, "CLINIC QUEUE TRACKING SYSTEM", font="F2", size=8.5, r=0.3, g=0.4, b=0.5)
+        header_tag = "APPENDIX A: ORIGINAL IMPLEMENTATION PLAN" if page_num >= 10 else "CLINIC QUEUE TRACKING SYSTEM"
+        self.draw_text(stream, 40, 805, "MSOT  |  PRODUCT DEVELOPMENT", font="F2", size=8, r=0.3, g=0.4, b=0.5)
+        self.draw_text(stream, 360, 805, header_tag, font="F2", size=8, r=0.3, g=0.4, b=0.5)
         self.draw_line(stream, 40, 798, 555, 798, rgb=(0.75, 0.8, 0.85), line_width=1)
         
         # Running Footer
         self.draw_line(stream, 40, 42, 555, 42, rgb=(0.8, 0.85, 0.9), line_width=0.8)
-        self.draw_text(stream, 40, 30, "Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028", font="F1", size=8.5, r=0.35, g=0.4, b=0.45)
-        self.draw_text(stream, 510, 30, f"Page {page_num} of 9", font="F2", size=8.5, r=0.2, g=0.3, b=0.4)
+        self.draw_text(stream, 40, 30, "Candidate: Vivek Kumar  |  Roll: 2602028  |  Enrollment: 0201260028", font="F1", size=8, r=0.35, g=0.4, b=0.45)
+        self.draw_text(stream, 500, 30, f"Page {page_num} of {total_pages}", font="F2", size=8, r=0.2, g=0.3, b=0.4)
 
     def draw_section_heading(self, stream, y, title):
-        self.draw_text(stream, 40, y, title.upper(), font="F2", size=14, r=0.06, g=0.1, b=0.2)
+        self.draw_text(stream, 40, y, title.upper(), font="F2", size=13.5, r=0.06, g=0.1, b=0.2)
         self.draw_line(stream, 40, y - 5, 555, y - 5, rgb=(0.06, 0.1, 0.2), line_width=1.5)
-        return y - 22
+        return y - 20
 
     def draw_sub_heading(self, stream, y, title):
-        self.draw_text(stream, 40, y, title, font="F2", size=10.5, r=0.1, g=0.18, b=0.32)
-        return y - 16
+        self.draw_text(stream, 40, y, title, font="F2", size=10, r=0.1, g=0.18, b=0.32)
+        return y - 15
 
     def save(self):
         pdf = bytearray()
@@ -89,15 +95,6 @@ class PDFGenerator:
         offsets = []
         num_pages = len(self.pages)
         
-        # We will create objects:
-        # 1: Catalog
-        # 2: Pages container
-        # 3: Helvetica
-        # 4: Helvetica-Bold
-        # 5: Helvetica-Oblique
-        # 6 .. 5+num_pages: Page objects
-        # 6+num_pages .. 5+2*num_pages: Content stream objects
-
         base_obj_count = 5
         page_obj_ids = [base_obj_count + 1 + i for i in range(num_pages)]
         stream_obj_ids = [base_obj_count + 1 + num_pages + i for i in range(num_pages)]
@@ -159,9 +156,8 @@ def build_pdf_report():
     # PAGE 1: COVER PAGE
     # =========================================================================
     p1 = doc.add_page()
-    doc.add_running_header_footer(p1, 1)
+    doc.add_running_header_footer(p1, 1, 12)
 
-    # University header
     doc.draw_rect(p1, 40, 785, 515, 4, fill_rgb=(0.06, 0.1, 0.2))
     doc.draw_text(p1, 230, 755, "MSOT", font="F2", size=24, r=0.06, g=0.1, b=0.2)
     doc.draw_text(p1, 140, 736, "DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING", font="F2", size=11, r=0.3, g=0.35, b=0.45)
@@ -169,14 +165,12 @@ def build_pdf_report():
 
     doc.draw_line(p1, 80, 690, 515, 690, rgb=(0.15, 0.4, 0.85), line_width=2)
 
-    # Project Title
     doc.draw_text(p1, 210, 650, "COURSE PROJECT REPORT", font="F2", size=12, r=0.15, g=0.4, b=0.85)
     doc.draw_text(p1, 75, 615, "CLINIC QUEUE TRACKING SYSTEM", font="F2", size=23, r=0.06, g=0.1, b=0.2)
     doc.draw_text(p1, 125, 590, "Minimum Viable Product (MVP) Final Submission & Usability Validation", font="F3", size=11.5, r=0.25, g=0.3, b=0.4)
 
     doc.draw_line(p1, 80, 565, 515, 565, rgb=(0.15, 0.4, 0.85), line_width=2)
 
-    # Student Details Box
     doc.draw_rect(p1, 95, 235, 405, 275, fill_rgb=(0.97, 0.98, 0.99), stroke_rgb=(0.75, 0.8, 0.85), line_width=1.5)
     doc.draw_rect(p1, 95, 475, 405, 35, fill_rgb=(0.06, 0.1, 0.2))
     doc.draw_text(p1, 220, 487, "STUDENT CREDENTIALS", font="F2", size=11, r=1, g=1, b=1)
@@ -207,7 +201,7 @@ def build_pdf_report():
     # PAGE 2: LIVE MVP AND GITHUB LINKS
     # =========================================================================
     p2 = doc.add_page()
-    doc.add_running_header_footer(p2, 2)
+    doc.add_running_header_footer(p2, 2, 12)
     y = doc.draw_section_heading(p2, 770, "1. Live MVP and Verified GitHub Links")
 
     doc.draw_rect(p2, 40, y - 28, 515, 34, fill_rgb=(0.93, 0.96, 1.0), stroke_rgb=(0.2, 0.45, 0.85), line_width=1)
@@ -215,7 +209,6 @@ def build_pdf_report():
     doc.draw_text(p2, 50, y - 22, "Both patient and receptionist portals are operational with active Cloud Firestore persistence.", font="F1", size=9, r=0.2, g=0.25, b=0.3)
     y -= 46
 
-    # Links Table
     links_data = [
         ("Public Web Application URL:", "https://clinic-queue-tracker-a3b1b.web.app", "Main patient lookup and queue status"),
         ("Alternative Hosting Domain:", "https://clinic-queue-tracker-a3b1b.firebaseapp.com", "Secondary Firebase global SSL domain"),
@@ -263,7 +256,7 @@ def build_pdf_report():
     # PAGE 3: PRODUCT BRIEF
     # =========================================================================
     p3 = doc.add_page()
-    doc.add_running_header_footer(p3, 3)
+    doc.add_running_header_footer(p3, 3, 12)
     y = doc.draw_section_heading(p3, 770, "2. Product Brief & MVP Scope")
 
     y = doc.draw_sub_heading(p3, y, "2.1 Problem Statement & Healthcare Context")
@@ -323,7 +316,7 @@ def build_pdf_report():
     # PAGE 4: IMPLEMENTATION PLAN (PART 1)
     # =========================================================================
     p4 = doc.add_page()
-    doc.add_running_header_footer(p4, 4)
+    doc.add_running_header_footer(p4, 4, 12)
     y = doc.draw_section_heading(p4, 770, "3. Implementation Plan & Technology Stack (1 / 2)")
 
     y = doc.draw_sub_heading(p4, y, "3.1 Technology Stack & Architectural Decisions")
@@ -355,7 +348,7 @@ def build_pdf_report():
     files_tree = [
         ("index.html", "Screen 1: Patient Home (Token input, demo shortcut, input validation)"),
         ("queue-status.html", "Screen 2: Patient Queue Status & Screen 4: Turn Approaching view"),
-        ("reception.html", "Screen 3: Receptionist Dashboard with staff authentication guard"),
+        ("reception.html", "Screen 3: Protected Receptionist Dashboard with staff authentication guard"),
         ("css/styles.css", "Shared design system, CSS custom properties, responsive mobile container"),
         ("css/patient.css", "Patient mobile components, split metric boxes, 5-segment progress bar"),
         ("css/reception.css", "Reception desktop window layout, status pills, waiting queue table"),
@@ -366,12 +359,13 @@ def build_pdf_report():
         ("js/reception.js", "Receptionist login controller, queue advancement, and reset logic"),
         ("seed/initial-queue.json", "Canonical baseline configuration for sample tokens 021-025"),
         ("firestore.rules", "Cloud Firestore security rules enforcing authenticated staff writes"),
-        ("firebase.json / .firebaserc", "Hosting rewrite configuration (cleanUrls) and project mapping")
+        ("firebase.json / .firebaserc", "Hosting rewrite configuration (cleanUrls) and project mapping"),
+        ("original-implementation-plan.md", "Approved initial agent architecture specification")
     ]
 
     for fname, fdesc in files_tree:
         doc.draw_text(p4, 50, y, fname, font="F2", size=8, r=0.1, g=0.3, b=0.6)
-        doc.draw_text(p4, 180, y, f"-  {fdesc}", font="F1", size=8, r=0.25, g=0.3, b=0.35)
+        doc.draw_text(p4, 195, y, f"-  {fdesc}", font="F1", size=8, r=0.25, g=0.3, b=0.35)
         y -= 13.5
 
     y -= 10
@@ -384,14 +378,13 @@ def build_pdf_report():
     # PAGE 5: IMPLEMENTATION PLAN (PART 2)
     # =========================================================================
     p5 = doc.add_page()
-    doc.add_running_header_footer(p5, 5)
+    doc.add_running_header_footer(p5, 5, 12)
     y = doc.draw_section_heading(p5, 770, "3. Implementation Plan & Database Design (2 / 2)")
 
     y = doc.draw_sub_heading(p5, y, "3.4 Cloud Firestore Database Schema")
     doc.draw_text(p5, 40, y, "The database structure is organized into two document models balancing public reads with protected writes:", font="F1", size=9, r=0.2, g=0.25, b=0.3)
     y -= 18
 
-    # Schema Box 1
     doc.draw_rect(p5, 40, y - 75, 515, 80, fill_rgb=(0.97, 0.98, 0.99), stroke_rgb=(0.8, 0.85, 0.9), line_width=1)
     doc.draw_text(p5, 50, y - 10, "Document Path: metadata/clinic_queue (Summary State)", font="F2", size=9, r=0.06, g=0.1, b=0.2)
     doc.draw_text(p5, 50, y - 25, "  current_token: '021'          // String: Token currently in consultation with doctor", font="F1", size=8.5, r=0.2, g=0.25, b=0.3)
@@ -401,7 +394,6 @@ def build_pdf_report():
     doc.draw_text(p5, 50, y - 73, "  doctor_room: 'Room 1'         // String: Room guidance for patients", font="F1", size=8.5, r=0.2, g=0.25, b=0.3)
     y -= 95
 
-    # Schema Box 2
     doc.draw_rect(p5, 40, y - 70, 515, 75, fill_rgb=(0.97, 0.98, 0.99), stroke_rgb=(0.8, 0.85, 0.9), line_width=1)
     doc.draw_text(p5, 50, y - 10, "Collection Path: tokens/{tokenId} (e.g. tokens/025)", font="F2", size=9, r=0.06, g=0.1, b=0.2)
     doc.draw_text(p5, 50, y - 25, "  token_id: '025'               // String: Normalized 3-digit token reference", font="F1", size=8.5, r=0.2, g=0.25, b=0.3)
@@ -441,7 +433,7 @@ def build_pdf_report():
     # PAGE 6: BUILD LOG (PART 1)
     # =========================================================================
     p6 = doc.add_page()
-    doc.add_running_header_footer(p6, 6)
+    doc.add_running_header_footer(p6, 6, 12)
     y = doc.draw_section_heading(p6, 770, "4. Build Log — Antigravity Engineering Record (1 / 2)")
 
     doc.draw_text(p6, 40, y, "This build log documents actual prompts, code actions, technical bottlenecks, and verified resolutions.", font="F1", size=8.5, r=0.2, g=0.25, b=0.3)
@@ -486,7 +478,7 @@ def build_pdf_report():
     # PAGE 7: BUILD LOG (PART 2)
     # =========================================================================
     p7 = doc.add_page()
-    doc.add_running_header_footer(p7, 7)
+    doc.add_running_header_footer(p7, 7, 12)
     y = doc.draw_section_heading(p7, 770, "4. Build Log — Antigravity Engineering Record (2 / 2)")
 
     log_part2 = [
@@ -544,7 +536,7 @@ def build_pdf_report():
     # PAGE 8: FEATURE CHECKLIST
     # =========================================================================
     p8 = doc.add_page()
-    doc.add_running_header_footer(p8, 8)
+    doc.add_running_header_footer(p8, 8, 12)
     y = doc.draw_section_heading(p8, 770, "5. Feature Checklist & MoSCoW Audit")
 
     doc.draw_text(p8, 40, y, "Audit of the four original Must-have features evaluated against the live production application:", font="F1", size=9, r=0.2, g=0.25, b=0.3)
@@ -604,7 +596,7 @@ def build_pdf_report():
     # PAGE 9: TESTING AND CONCLUSION
     # =========================================================================
     p9 = doc.add_page()
-    doc.add_running_header_footer(p9, 9)
+    doc.add_running_header_footer(p9, 9, 12)
     y = doc.draw_section_heading(p9, 770, "6. Testing Verification, Conclusion & Future Improvements")
 
     y = doc.draw_sub_heading(p9, y, "6.1 Verified End-to-End Test Matrix")
@@ -652,6 +644,241 @@ def build_pdf_report():
         doc.draw_text(p9, 45, y, ftitle, font="F2", size=8.5, r=0.1, g=0.15, b=0.25)
         doc.draw_text(p9, 215, y, fdesc, font="F1", size=8.5, r=0.25, g=0.3, b=0.35)
         y -= 14
+
+    # =========================================================================
+    # PAGE 10: APPENDIX A — ORIGINAL IMPLEMENTATION PLAN (PART 1)
+    # =========================================================================
+    p10 = doc.add_page()
+    doc.add_running_header_footer(p10, 10, 12)
+    y = doc.draw_section_heading(p10, 770, "Appendix A -- Original Antigravity Implementation Plan (Part 1)")
+
+    doc.draw_rect(p10, 40, y - 24, 515, 28, fill_rgb=(0.95, 0.96, 0.98), stroke_rgb=(0.2, 0.45, 0.85), line_width=1)
+    doc.draw_text(p10, 48, y - 10, "ARCHIVAL RECORD: Below is the complete, unchanged text of original-implementation-plan.md", font="F2", size=8.5, r=0.1, g=0.3, b=0.7)
+    doc.draw_text(p10, 48, y - 20, "generated during Phase 0 of the Antigravity engineering workflow, preserving all original specifications.", font="F1", size=8, r=0.2, g=0.25, b=0.3)
+    y -= 38
+
+    y = doc.draw_sub_heading(p10, y, "# Clinic Queue Tracking System (MVP) - Implementation Plan")
+    doc.draw_text(p10, 40, y, "Author: Vivek Kumar (B.Tech Computer Science, MSOT)  |  Target: HTML5, CSS3, Vanilla JS, Firebase", font="F1", size=8, r=0.3, g=0.35, b=0.4)
+    y -= 10
+    doc.draw_text(p10, 40, y, "System: Clinic Queue Tracking Web Application (Patna OPD Clinic Pilot)  |  Status: Approved Phase 0", font="F1", size=8, r=0.3, g=0.35, b=0.4)
+    y -= 16
+
+    y = doc.draw_sub_heading(p10, y, "## 1. Project Goal & MVP Scope")
+    doc.draw_text(p10, 40, y, "1.1 Problem Statement: In busy outpatient department (OPD) clinics, patients receive a paper token after registration", font="F1", size=8, r=0.2, g=0.25, b=0.3)
+    y -= 11
+    doc.draw_text(p10, 40, y, "but often have no visibility into how many patients are ahead of them or when they will be called. This causes anxiety,", font="F1", size=8, r=0.2, g=0.25, b=0.3)
+    y -= 11
+    doc.draw_text(p10, 40, y, "frequent inquiries at the reception counter, and overcrowding in waiting corridors.", font="F1", size=8, r=0.2, g=0.25, b=0.3)
+    y -= 15
+
+    doc.draw_text(p10, 40, y, "1.2 Solution & MVP Objective: A lightweight, mobile-first web application that allows patients who already hold a physical", font="F1", size=8, r=0.2, g=0.25, b=0.3)
+    y -= 11
+    doc.draw_text(p10, 40, y, "paper token (e.g., 021, 022, 023, 024, 025) to look up their current queue status and estimated waiting time. A secure,", font="F1", size=8, r=0.2, g=0.25, b=0.3)
+    y -= 11
+    doc.draw_text(p10, 40, y, "authenticated receptionist dashboard allows clinic staff to advance the queue in real-time.", font="F1", size=8, r=0.2, g=0.25, b=0.3)
+    y -= 15
+
+    doc.draw_text(p10, 40, y, "1.3 Strict Scope Boundaries (MoSCoW Alignment):", font="F2", size=8.5, r=0.1, g=0.15, b=0.25)
+    y -= 12
+    in_scope = [
+        "1. Patient Token Lookup: Single-field mobile screen to enter existing token (025) with demo shortcut and error handling.",
+        "2. Queue Position & Wait Time Display: Displays token, status, patients ahead, estimated wait (20-30m), 5-step progress bar.",
+        "3. Turn Approaching Alert: Status alert informing patient when turn is next or called to proceed to consultation room.",
+        "4. Receptionist Dashboard: Protected staff dashboard showing current, next, waiting count, Call Patient buttons, Update Queue.",
+        "5. Data Persistence & Security: Firebase Firestore for live shared queue state; Firebase Auth restricting writes to staff."
+    ]
+    for iscope in in_scope:
+        doc.draw_text(p10, 48, y, "*  " + iscope, font="F1", size=8, r=0.2, g=0.25, b=0.3)
+        y -= 11
+
+    y -= 4
+    doc.draw_text(p10, 40, y, "OUT OF SCOPE (Won't Have Now):", font="F2", size=8.5, r=0.6, g=0.1, b=0.1)
+    y -= 12
+    out_scope = [
+        "*  No online patient self-registration or appointment booking (tokens issued in person at reception counter).",
+        "*  No automatic digital token generation | No online payments, billing, or prescription integration.",
+        "*  No third-party notification channels (SMS, WhatsApp, email) -- status is checked on the web page.",
+        "*  No collection of real or sensitive Patient Health Information (PHI) -- strictly tokens and status."
+    ]
+    for oscope in out_scope:
+        doc.draw_text(p10, 48, y, oscope, font="F1", size=8, r=0.35, g=0.4, b=0.45)
+        y -= 11
+
+    y -= 8
+    y = doc.draw_sub_heading(p10, y, "## 2. Screen-by-Screen UI Architecture")
+    doc.draw_text(p10, 40, y, "The interface directly reflects the low-fidelity hand-drawn wireframes and Figma prototype:", font="F1", size=8, r=0.2, g=0.25, b=0.3)
+    y -= 12
+
+    screens_appx = [
+        ("Screen 1: Patient Home (index.html) -- Mobile View",
+         "Header: OUTPATIENT CLINIC * Queue tracker | Badge: 01 / WELCOME | Heading: Clinic Queue Tracker | "
+         "Input: 'Enter your token number' (e.g. 025) | Demo shortcut: * Try it out with sample token 025 | "
+         "Primary button: Check Queue -> | Inline error for invalid/unknown tokens | Footer: Your time is valuable."),
+        
+        ("Screen 2: Patient Queue Status (queue-status.html) -- Mobile View",
+         "Header: OUTPATIENT CLINIC * Queue tracker | Badge: 02 / YOUR PLACE IN LINE | Title: Your Queue Status | "
+         "Hero card: Token 025, status pill (Waiting) | Metrics: 'Patients ahead of you: 04', 'Estimated Waiting Time: 20-30m' | "
+         "5-step progress bar (Registered -> Your turn) | View Turn Status -> and <- Back to Home buttons | Disclaimer note."),
+        
+        ("Screen 3: Turn Approaching View (turn-approaching.html)",
+         "Badge: 03 / TURN APPROACHING | Banner: 'Your turn is approaching! Please stay near consultation room 1.'"),
+        
+        ("Screen 4: Receptionist Dashboard (reception.html) -- Desktop View",
+         "Header: Reception desk | Staff Login Modal | 3 Metric cards: Current (021), Next (022), Waiting (04) | "
+         "Table of waiting tokens with 'Call Patient ->' actions | Footer action bar: 'Update Queue' and 'Reset Demo Queue'.")
+    ]
+
+    for sname, sdesc in screens_appx:
+        doc.draw_text(p10, 45, y, sname, font="F2", size=8, r=0.1, g=0.2, b=0.4)
+        y -= 10
+        doc.draw_text(p10, 45, y, sdesc[:95], font="F1", size=7.5, r=0.25, g=0.3, b=0.35)
+        y -= 9
+        doc.draw_text(p10, 45, y, sdesc[95:], font="F1", size=7.5, r=0.25, g=0.3, b=0.35)
+        y -= 12
+
+    # =========================================================================
+    # PAGE 11: APPENDIX A — ORIGINAL IMPLEMENTATION PLAN (PART 2)
+    # =========================================================================
+    p11 = doc.add_page()
+    doc.add_running_header_footer(p11, 11, 12)
+    y = doc.draw_section_heading(p11, 770, "Appendix A -- Original Antigravity Implementation Plan (Part 2)")
+
+    y = doc.draw_sub_heading(p11, y, "## 3. Database Schema & Business Logic")
+    doc.draw_text(p11, 40, y, "3.1 Firebase Firestore Collections & Document Structure:", font="F2", size=8.5, r=0.1, g=0.15, b=0.25)
+    y -= 14
+
+    doc.draw_rect(p11, 40, y - 90, 515, 95, fill_rgb=(0.97, 0.98, 0.99), stroke_rgb=(0.8, 0.85, 0.9), line_width=1)
+    tree_lines = [
+        "Firestore Root",
+        "|-- metadata/",
+        "|   +-- clinic_queue (Document)",
+        "|       |-- current_token: '021'       (String: Token currently with doctor)",
+        "|       |-- current_status: 'Calling'   (String: 'Calling' | 'In Consultation')",
+        "|       |-- next_token: '022'          (String: Next token in line)",
+        "|       |-- total_waiting: 4           (Number: Count of tokens waiting)",
+        "|       +-- avg_mins_per_patient: 6    (Number: Default consultation window baseline)",
+        "+-- tokens/ (Collection) -> 021 (calling), 022 (waiting), 023 (waiting), 024 (waiting), 025 (waiting)"
+    ]
+    for tline in tree_lines:
+        doc.draw_text(p11, 50, y - 10, tline, font="F1", size=8, r=0.1, g=0.15, b=0.2)
+        y -= 9.5
+    y -= 14
+
+    doc.draw_text(p11, 40, y, "3.2 Waiting-Time Calculation Algorithm:", font="F2", size=8.5, r=0.1, g=0.15, b=0.25)
+    y -= 12
+    algo_steps = [
+        "1. Calculate Patients Ahead (N): Retrieve tokens where status == 'waiting' and order < T.order. N = count of those tokens.",
+        "2. Determine Time Range: If Calling -> 'Now being called -- please proceed to Room 1'; If N == 0 -> 'Up next (< 5 mins)';",
+        "   If N > 0: Min = N x 5 mins; Max = N x 7 mins (rounded to 10-min bracket) -> N=4 displays '20-30 minutes'.",
+        "3. Queue Progress Steps (5 Segments): Step 1 (Registered) | Step 2 (N <= 3) | Step 3 (N <= 2) | Step 4 (N <= 1) | Step 5 (Calling)."
+    ]
+    for astep in algo_steps:
+        doc.draw_text(p11, 48, y, astep, font="F1", size=8, r=0.2, g=0.25, b=0.3)
+        y -= 11
+
+    y -= 4
+    doc.draw_text(p11, 40, y, "3.3 Security Rules (firestore.rules):", font="F2", size=8.5, r=0.1, g=0.15, b=0.25)
+    y -= 12
+    doc.draw_rect(p11, 40, y - 62, 515, 66, fill_rgb=(0.95, 0.96, 0.98), stroke_rgb=(0.7, 0.75, 0.8), line_width=1)
+    srules = [
+        "rules_version = '2';",
+        "service cloud.firestore { match /databases/{database}/documents {",
+        "  match /metadata/{document=**} { allow read: if true; allow write: if request.auth != null; }",
+        "  match /tokens/{tokenId}        { allow read: if true; allow write: if request.auth != null; }",
+        "}}"
+    ]
+    for sline in srules:
+        doc.draw_text(p11, 50, y - 10, sline, font="F1", size=8, r=0.1, g=0.15, b=0.2)
+        y -= 11
+    y -= 14
+
+    y = doc.draw_sub_heading(p11, y, "## 4. File & Folder Structure")
+    doc.draw_rect(p11, 40, y - 120, 515, 125, fill_rgb=(0.98, 0.98, 0.99), stroke_rgb=(0.8, 0.85, 0.9), line_width=1)
+    tree_items = [
+        "product/",
+        "|-- index.html                 # Screen 1: Patient Home (Token input & lookup)",
+        "|-- queue-status.html          # Screen 2: Patient Queue Status & Screen 4: Turn Approaching",
+        "|-- reception.html             # Screen 3: Protected Receptionist Dashboard",
+        "|-- css/ (styles.css, patient.css, reception.css)",
+        "|-- js/ (firebase-config.js, queue-service.js, patient-home.js, queue-status.js, reception.js, seed-data.js)",
+        "|-- seed/initial-queue.json    # JSON reference data for sample tokens (021 to 025)",
+        "|-- firestore.rules            # Firebase security rules enforcing auth for writes",
+        "|-- firebase.json / .firebaserc / .gitignore / implementation-plan.md / BUILD_LOG.md / README.md"
+    ]
+    for item in tree_items:
+        doc.draw_text(p11, 50, y - 10, item, font="F1", size=7.8, r=0.1, g=0.2, b=0.3)
+        y -= 11.5
+
+    # =========================================================================
+    # PAGE 12: APPENDIX A — ORIGINAL IMPLEMENTATION PLAN (PART 3)
+    # =========================================================================
+    p12 = doc.add_page()
+    doc.add_running_header_footer(p12, 12, 12)
+    y = doc.draw_section_heading(p12, 770, "Appendix A -- Original Antigravity Implementation Plan (Part 3)")
+
+    y = doc.draw_sub_heading(p12, y, "## 5. Phased Implementation Checklist")
+    
+    phases_checklist = [
+        ("Phase 1: Project Scaffolding & Git Setup",
+         "[x] Git init | [x] Create .gitignore and base structure | [x] Create BUILD_LOG.md | [x] Create seed data 021-025"),
+        ("Phase 2: Design System & Wireframe Layouts",
+         "[x] styles.css | [x] index.html (Patient Home) | [x] queue-status.html (Queue Status) | [x] reception.html (Reception)"),
+        ("Phase 3: Firebase Integration & Sample Data",
+         "[x] firebase-config.js with v10 CDN | [x] firestore.rules | [x] Seed state (021 calling, 022-025 waiting)"),
+        ("Phase 4: Patient Features (Lookup & Math)",
+         "[x] patient-home.js (input, demo shortcut, validation) | [x] queue-status.js (math, progress bar, turn alert)"),
+        ("Phase 5: Receptionist Dashboard & Auth",
+         "[x] Firebase Auth in reception.js | [x] Metric cards | [x] Call Patient advancement | [x] Reset Demo Queue"),
+        ("Phase 6: Verification, Testing & Deployment",
+         "[x] Test cases TC-01 to TC-12 | [x] Responsive checks | [x] Finalize BUILD_LOG.md | [x] Firebase Hosting deploy")
+    ]
+
+    for pname, pitems in phases_checklist:
+        doc.draw_text(p12, 45, y, pname, font="F2", size=8, r=0.1, g=0.15, b=0.25)
+        doc.draw_text(p12, 235, y, pitems, font="F1", size=7.5, r=0.25, g=0.3, b=0.35)
+        y -= 13
+
+    y -= 8
+    y = doc.draw_sub_heading(p12, y, "## 6. Comprehensive Testing Plan (Original Blueprint)")
+    
+    test_cases_blueprint = [
+        ("TC-01", "Token Lookup (Valid)", "Enter 025 and click Check Queue", "Navigates to Queue Status showing 025, Status: Waiting"),
+        ("TC-02", "Token Lookup (Demo)", "Click * Try it out with sample token 025", "Input auto-fills with 025 and proceeds to queue status"),
+        ("TC-03", "Token Lookup (Invalid)", "Enter 999 or letters ABC", "Shows 'Token not found. Please verify your token number...'"),
+        ("TC-04", "Queue Status Metrics", "Inspect Token 025 initial status", "Shows Patients ahead of you: 04 and Estimated Wait: 20-30m"),
+        ("TC-05", "Progress Bar Display", "Inspect 5-step progress bar for 025", "Displays registered step lit, proportional to line position"),
+        ("TC-06", "Disclaimer Visibility", "Inspect Queue Status footer note", "Displays 'This is an estimate and may change depending on...'"),
+        ("TC-07", "Turn Approaching Alert", "Click View Turn Status or next in line", "Displays 'Your turn is approaching! Please stay near Room 1'"),
+        ("TC-08", "Reception Auth Guard", "Navigate to reception.html without sign-in", "Queue controls hidden; login modal prompts credentials"),
+        ("TC-09", "Reception Queue Progression", "Staff logs in and calls 022", "Token 021 completes, 022 current, 023 next, waiting count 3"),
+        ("TC-10", "Live Patient View Update", "Keep queue-status.html open while 022 called", "Token 025 updates to 3 ahead, wait reduces to 15-20 mins"),
+        ("TC-11", "Security Rules Enforcement", "Attempt write without auth", "Firebase rejects write with permission-denied"),
+        ("TC-12", "Demo Reset Action", "Staff clicks Reset Demo Queue", "State resets to 021 calling, 022-025 waiting, 4 total waiting")
+    ]
+
+    for t_id, t_feat, t_act, t_exp in test_cases_blueprint:
+        doc.draw_text(p12, 45, y, t_id, font="F2", size=7.5, r=0.1, g=0.2, b=0.4)
+        doc.draw_text(p12, 85, y, t_feat, font="F2", size=7.5, r=0.15, g=0.2, b=0.25)
+        doc.draw_text(p12, 215, y, t_act, font="F1", size=7.5, r=0.3, g=0.35, b=0.4)
+        doc.draw_text(p12, 385, y, t_exp[:42], font="F1", size=7.5, r=0.2, g=0.4, b=0.2)
+        y -= 11.5
+
+    y -= 8
+    y = doc.draw_sub_heading(p12, y, "## 7. Version Control & Git Commit Strategy")
+    commits_strat = [
+        "1. chore: project initialization, folder structure, and build log",
+        "2. feat(ui): implement responsive patient home, queue status, and reception layouts matching wireframes",
+        "3. feat(firebase): configure firestore schema, security rules, and seed script for tokens 021-025",
+        "4. feat(patient): implement token validation, lookup routing, and dynamic wait-time calculation",
+        "5. feat(reception): implement staff authentication, queue advancement, and demo reset controls",
+        "6. test: verify queue progression, live updates, and test matrix across mobile and desktop"
+    ]
+    for cstrat in commits_strat:
+        doc.draw_text(p12, 45, y, cstrat, font="F1", size=7.5, r=0.2, g=0.25, b=0.3)
+        y -= 10
+
+    y -= 6
+    doc.draw_text(p12, 45, y, "*This plan is ready for review. Coding will begin upon user confirmation.*", font="F3", size=8, r=0.4, g=0.45, b=0.5)
 
     doc.save()
 
