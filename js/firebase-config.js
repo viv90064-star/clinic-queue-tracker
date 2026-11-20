@@ -65,6 +65,19 @@ async function initializeFirebase() {
   return { isLive: false, app: null, auth: null, db: null };
 }
 
+// Auth state listeners registry
+const authListeners = [];
+
+function notifyAuthListeners(user) {
+  authListeners.forEach((cb) => {
+    try {
+      cb(user);
+    } catch (err) {
+      console.warn("Auth listener notification error:", err);
+    }
+  });
+}
+
 /**
  * Staff Authentication: Sign In
  * Uses Firebase Auth signInWithEmailAndPassword if configured, or simulated session if local.
@@ -72,7 +85,10 @@ async function initializeFirebase() {
 async function loginReceptionist(email, password) {
   if (isFirebaseConfigured() && auth) {
     const { signInWithEmailAndPassword } = await import("https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js");
-    return await signInWithEmailAndPassword(auth, email, password);
+    const cred = await signInWithEmailAndPassword(auth, email, password);
+    notifyAuthListeners(cred.user);
+    window.dispatchEvent(new CustomEvent("clinic_auth_updated", { detail: cred.user }));
+    return cred;
   } else {
     // Local demo verification: Accepts clinic staff email & password
     if (email.trim().toLowerCase() === "reception@clinic.com" && password === "clinic123") {
@@ -83,6 +99,8 @@ async function loginReceptionist(email, password) {
         role: "receptionist"
       };
       localStorage.setItem(LOCAL_STAFF_AUTH_KEY, JSON.stringify(user));
+      notifyAuthListeners(user);
+      window.dispatchEvent(new CustomEvent("clinic_auth_updated", { detail: user }));
       return { user };
     } else {
       const error = new Error("Invalid staff credentials. (Demo hint: reception@clinic.com / clinic123)");
@@ -98,9 +116,14 @@ async function loginReceptionist(email, password) {
 async function logoutReceptionist() {
   if (isFirebaseConfigured() && auth) {
     const { signOut } = await import("https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js");
-    return await signOut(auth);
+    await signOut(auth);
+    notifyAuthListeners(null);
+    window.dispatchEvent(new CustomEvent("clinic_auth_updated", { detail: null }));
+    return true;
   } else {
     localStorage.removeItem(LOCAL_STAFF_AUTH_KEY);
+    notifyAuthListeners(null);
+    window.dispatchEvent(new CustomEvent("clinic_auth_updated", { detail: null }));
     return true;
   }
 }
@@ -110,6 +133,10 @@ async function logoutReceptionist() {
  * @param {Function} callback - Invoked whenever auth state changes
  */
 async function observeAuthState(callback) {
+  if (typeof callback === "function" && !authListeners.includes(callback)) {
+    authListeners.push(callback);
+  }
+
   if (isFirebaseConfigured() && auth) {
     const { onAuthStateChanged } = await import("https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js");
     return onAuthStateChanged(auth, callback);
@@ -127,11 +154,15 @@ async function observeAuthState(callback) {
     };
 
     checkLocal();
-    // Listen for cross-tab auth sync
+    // Listen for cross-tab auth sync & same-window custom event
     window.addEventListener("storage", (e) => {
       if (e.key === LOCAL_STAFF_AUTH_KEY) {
         checkLocal();
       }
+    });
+
+    window.addEventListener("clinic_auth_updated", (e) => {
+      callback(e.detail);
     });
   }
 }

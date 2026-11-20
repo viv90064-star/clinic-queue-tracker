@@ -388,18 +388,18 @@ async function handleStaffLogin(event) {
     return;
   }
 
+  const submitBtn = document.getElementById("loginSubmitBtn");
   try {
-    const submitBtn = document.getElementById("loginSubmitBtn");
     submitBtn.textContent = "Signing In...";
     submitBtn.disabled = true;
 
-    await window.FirebaseBridge.loginReceptionist(email, password);
-    // Observe auth state will trigger handleAuthChange automatically
+    const result = await window.FirebaseBridge.loginReceptionist(email, password);
+    handleAuthChange(result.user);
+    showReceptionAlert(`Welcome, ${result.user.email}! Queue dashboard ready.`);
   } catch (err) {
     authErrorAlert.textContent = err.message || "Failed to sign in. Please verify credentials.";
     authErrorAlert.classList.add("visible");
   } finally {
-    const submitBtn = document.getElementById("loginSubmitBtn");
     submitBtn.textContent = "Sign In to Dashboard";
     submitBtn.disabled = false;
   }
@@ -408,6 +408,7 @@ async function handleStaffLogin(event) {
 async function handleStaffLogout() {
   try {
     await window.FirebaseBridge.logoutReceptionist();
+    handleAuthChange(null);
   } catch (err) {
     console.error("Sign out error:", err);
   }
@@ -498,7 +499,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 6. Connect Firebase Auth Observer
   if (window.FirebaseBridge) {
-    window.FirebaseBridge.observeAuthState(handleAuthChange);
+    window.FirebaseBridge.initializeFirebase().then(() => {
+      window.FirebaseBridge.observeAuthState(handleAuthChange);
+    });
   }
 
   // 7. Initial URL / Query Parameters Handling
