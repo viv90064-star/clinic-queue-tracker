@@ -74,6 +74,14 @@
 - [x] Deployed web application to Firebase Hosting free tier (Spark plan).
 - [x] Verified live public URLs on mobile and desktop viewports.
 
+### Phase 6: Unified Single-Page Live Portal (Patient & Receptionist Merge)
+- [x] Designed top mode navigation bar with responsive role switching (`[👤 Patient Portal]` vs `[👩‍💼 Reception Desk Staff]`).
+- [x] Merged public patient lookup (Screen 1), in-place live queue status (Screen 2), and turn approaching alert (Screen 4) directly inside `index.html`.
+- [x] Embedded receptionist staff sign-in (`reception@clinic.com` / `clinic123`), live 3-card metrics, and patient queue table on `index.html` with smooth container expansion.
+- [x] Implemented instant cross-view real-time synchronization: advancing the queue from the receptionist view immediately updates the patient view without page reloads.
+- [x] Preserved existing direct routes (`queue-status.html` and `reception.html`) as standalone fallbacks to guarantee 100% backward compatibility.
+- [x] Created `css/unified.css` and `js/unified-portal.js`.
+
 ---
 
 ## Git Commit History
@@ -83,3 +91,4 @@
 4. `feat: connect full clinic queue workflow, inline turn alerts, dynamic wait-time estimation, and verification (Feature 4)`
 5. `docs: create comprehensive README with wireframe mapping, security rules, and testing guide`
 6. `chore(deploy): link project to clinic-queue-tracker-a3b1b and deploy to Firebase Hosting`
+7. `feat: unify patient portal and receptionist dashboard into single-page application on index.html`

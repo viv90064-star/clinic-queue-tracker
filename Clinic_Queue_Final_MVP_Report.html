@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,6 +37,7 @@
       color: var(--text);
       background-color: #e2e8f0;
       line-height: 1.5;
+      font-size: 13.5px;
       font-size: 13px;
       -webkit-font-smoothing: antialiased;
     }
@@ -53,7 +55,7 @@
       justify-content: space-between;
       align-items: center;
       z-index: 1000;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
     .btn-print {
@@ -85,9 +87,10 @@
     /* Page Definition */
     .page {
       background: #ffffff;
+      padding: 44px 50px;
       padding: 40px 48px;
       margin-bottom: 24px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
       border-radius: 4px;
       position: relative;
       min-height: 1080px;
@@ -99,6 +102,7 @@
     .running-header {
       display: flex;
       justify-content: space-between;
+      font-size: 10px;
       font-size: 9.5px;
       font-weight: 700;
       text-transform: uppercase;
@@ -106,6 +110,7 @@
       color: var(--text-muted);
       border-bottom: 1.5px solid var(--border);
       padding-bottom: 8px;
+      margin-bottom: 24px;
       margin-bottom: 22px;
     }
 
@@ -114,6 +119,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-size: 10px;
       font-size: 9.5px;
       color: var(--text-muted);
       border-top: 1px solid var(--border);
@@ -131,6 +137,7 @@
     }
 
     h2.section-heading {
+      font-size: 16px;
       font-size: 15px;
       font-weight: 800;
       color: var(--primary);
@@ -138,19 +145,23 @@
       letter-spacing: 0.04em;
       border-bottom: 2px solid var(--primary);
       padding-bottom: 6px;
+      margin-bottom: 16px;
       margin-bottom: 14px;
     }
 
     h3.sub-heading {
+      font-size: 13px;
       font-size: 12.5px;
       font-weight: 700;
       color: var(--secondary);
+      margin: 14px 0 6px 0;
       margin: 12px 0 5px 0;
       text-transform: uppercase;
       letter-spacing: 0.02em;
     }
 
     p {
+      margin-bottom: 10px;
       margin-bottom: 8px;
       text-align: justify;
     }
@@ -170,12 +181,16 @@
     table {
       width: 100%;
       border-collapse: collapse;
+      margin: 12px 0 16px 0;
+      font-size: 12px;
       margin: 10px 0 14px 0;
       font-size: 11.5px;
     }
 
-    th, td {
+    th,
+    td {
       border: 1px solid var(--border);
+      padding: 7px 10px;
       padding: 6px 9px;
       text-align: left;
       vertical-align: top;
@@ -186,6 +201,7 @@
       font-weight: 700;
       color: var(--primary);
       text-transform: uppercase;
+      font-size: 10.5px;
       font-size: 10px;
       letter-spacing: 0.03em;
     }
@@ -199,8 +215,10 @@
       background-color: var(--bg-alt);
       border: 1px solid var(--border);
       border-left: 4px solid var(--accent);
+      padding: 12px 14px;
       padding: 10px 12px;
       border-radius: 4px;
+      margin-bottom: 14px;
       margin-bottom: 12px;
     }
 
@@ -210,31 +228,53 @@
 
     .badge {
       display: inline-block;
+      padding: 2px 8px;
       padding: 2px 7px;
       border-radius: 12px;
+      font-size: 10px;
       font-size: 9.5px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.03em;
     }
 
-    .badge-success { background: var(--success-bg); color: var(--success); }
-    .badge-warning { background: var(--warning-bg); color: var(--warning); }
-    .badge-danger { background: var(--danger-bg); color: var(--danger); }
-    .badge-info { background: #e0f2fe; color: #0369a1; }
+    .badge-success {
+      background: var(--success-bg);
+      color: var(--success);
+    }
+
+    .badge-warning {
+      background: var(--warning-bg);
+      color: var(--warning);
+    }
+
+    .badge-danger {
+      background: var(--danger-bg);
+      color: var(--danger);
+    }
+
+    .badge-info {
+      background: #e0f2fe;
+      color: #0369a1;
+    }
 
     /* Code & Pre */
-    code, pre {
+    code,
+    pre {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
       font-size: 10.5px;
     }
 
     pre {
       background-color: var(--bg-alt);
       border: 1px solid var(--border);
+      padding: 10px;
       padding: 9px;
       border-radius: 4px;
       overflow-x: auto;
+      margin: 10px 0;
+      line-height: 1.4;
       margin: 8px 0;
       line-height: 1.35;
     }
@@ -243,6 +283,7 @@
     .cover-page {
       text-align: center;
       justify-content: space-between;
+      padding: 60px 50px;
       padding: 60px 48px;
     }
 
@@ -316,6 +357,7 @@
       display: grid;
       grid-template-columns: 140px 1fr;
       row-gap: 8px;
+      font-size: 12.5px;
       font-size: 12px;
     }
 
@@ -323,6 +365,7 @@
       font-weight: 700;
       color: var(--text-muted);
       text-transform: uppercase;
+      font-size: 11px;
       font-size: 10.5px;
     }
 
@@ -336,13 +379,16 @@
       body {
         background-color: #ffffff;
       }
+
       .no-print-bar {
         display: none !important;
       }
+
       .report-container {
         margin: 0;
         max-width: 100%;
       }
+
       .page {
         box-shadow: none;
         margin-bottom: 0;
@@ -350,6 +396,7 @@
         page-break-after: always;
         min-height: 100vh;
       }
+
       a {
         color: #0f172a;
         text-decoration: underline;
@@ -357,6 +404,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Screen Top Bar for Easy Printing -->
@@ -428,71 +476,97 @@
     <div class="page">
       <div class="running-header">
         <span>MSOT • Product Development</span>
+        <span>Page 2 / 9</span>
         <span>Page 2 / 12</span>
       </div>
 
+      <h2 class="section-heading">Live MVP and GitHub Links</h2>
       <h2 class="section-heading">1. Live MVP and Verified GitHub Links</h2>
 
       <div class="info-card">
-        <strong>Verified Production Deployment:</strong> The Clinic Queue Tracking System MVP is fully built, tested, and live on the internet via Google Cloud's Firebase Hosting infrastructure.
+        <strong>Verified Production Deployment:</strong> The Clinic Queue Tracking System MVP is fully built, tested,
+        and live on the internet via Google Cloud's Firebase Hosting infrastructure.
       </div>
 
-      <table>
-        <thead>
-          <tr>
-            <th style="width: 25%;">Resource</th>
-            <th style="width: 45%;">URL / Location</th>
-            <th style="width: 30%;">Access Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Live Web Application</strong></td>
-            <td><a href="https://clinic-queue-tracker-a3b1b.web.app" target="_blank">https://clinic-queue-tracker-a3b1b.web.app</a></td>
-            <td>Public Patient Home & Queue Status. Works on mobile & desktop.</td>
-          </tr>
-          <tr>
-            <td><strong>Alternative Live URL</strong></td>
-            <td><a href="https://clinic-queue-tracker-a3b1b.firebaseapp.com" target="_blank">https://clinic-queue-tracker-a3b1b.firebaseapp.com</a></td>
-            <td>Firebase primary hosting domain fallback.</td>
-          </tr>
-          <tr>
-            <td><strong>Receptionist Portal</strong></td>
-            <td><a href="https://clinic-queue-tracker-a3b1b.web.app/reception.html" target="_blank">https://clinic-queue-tracker-a3b1b.web.app/reception.html</a></td>
-            <td>Staff-protected dashboard. Demo credentials: <code>reception@clinic.com</code> / <code>clinic123</code>.</td>
-          </tr>
-          <tr>
-            <td><strong>GitHub Repository</strong></td>
-            <td><a href="https://github.com/viv90064-star/clinic-queue-tracker" target="_blank">https://github.com/viv90064-star/clinic-queue-tracker</a></td>
-            <td>Complete version-controlled source code with structured commits.</td>
-          </tr>
-          <tr>
-            <td><strong>Figma Wireframe Prototype</strong></td>
-            <td><a href="https://sip-format-11274582.figma.site/" target="_blank">https://sip-format-11274582.figma.site/</a></td>
-            <td>Original interactive clickable prototype (4 screens).</td>
-          </tr>
-        </tbody>
-      </table>
+      <table style="margin-top: 16px;">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%;">Resource</th>
+              <th style="width: 45%;">URL / Location</th>
+              <th style="width: 30%;">Access Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Live Web Application</strong></td>
+              <td><a href="https://clinic-queue-tracker-a3b1b.web.app"
+                  target="_blank">https://clinic-queue-tracker-a3b1b.web.app</a></td>
+              <td>Public Patient Home & Queue Status. Works on mobile & desktop.</td>
+            </tr>
+            <tr>
+              <td><strong>Alternative Live URL</strong></td>
+              <td><a href="https://clinic-queue-tracker-a3b1b.firebaseapp.com"
+                  target="_blank">https://clinic-queue-tracker-a3b1b.firebaseapp.com</a></td>
+              <td>Firebase primary hosting domain fallback.</td>
+            </tr>
+            <tr>
+              <td><strong>Receptionist Portal</strong></td>
+              <td><a href="https://clinic-queue-tracker-a3b1b.web.app/reception.html"
+                  target="_blank">https://clinic-queue-tracker-a3b1b.web.app/reception.html</a></td>
+              <td>Staff-protected dashboard. Demo credentials: <code>reception@clinic.com</code> /
+                <code>clinic123</code>.</td>
+            </tr>
+            <tr>
+              <td><strong>GitHub Repository</strong></td>
+              <td><a href="https://github.com/viv90064-star/clinic-queue-tracker"
+                  target="_blank">https://github.com/viv90064-star/clinic-queue-tracker</a></td>
+              <td>Complete version-controlled source code with 9 feature commits.</td>
+              <td>Complete version-controlled source code with structured commits.</td>
+            </tr>
+            <tr>
+              <td><strong>Figma Wireframe Prototype</strong></td>
+              <td><a href="https://sip-format-11274582.figma.site/"
+                  target="_blank">https://sip-format-11274582.figma.site/</a></td>
+              <td>Original interactive clickable prototype (4 screens).</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <h3 class="sub-heading">Summary of What the Live Website Does</h3>
-      <p>
-        The <strong>Clinic Queue Tracking System</strong> is a lightweight, mobile-first web application designed to eliminate waiting-time uncertainty for outpatient clinic patients.
-      </p>
-      <ul style="margin-left: 20px; margin-bottom: 14px; line-height: 1.55;">
-        <li><strong>Patient Queue Lookup:</strong> Patients visiting the clinic register at the physical front desk and receive a paper slip with their token number (e.g. <code>021</code>, <code>022</code>, <code>023</code>, <code>024</code>, <code>025</code>). They open the mobile website, type their token number or tap the demo shortcut, and click <em>Check Queue</em>.</li>
-        <li><strong>Real-Time Status & Wait Estimation:</strong> The application queries the central queue state to display the patient's token, status (<em>Waiting</em>, <em>Now Being Called</em>), the exact count of patients ahead in line, an approximate waiting-time range (e.g. <code>20–30 minutes</code> calculated at ~5–7.5 minutes per consultation), and an interactive 5-segment visual progress bar.</li>
-        <li><strong>Turn Approaching Alert:</strong> When a patient is next in line or being called, an automatic high-visibility notification alerts the patient to move to <em>Consultation Room 1</em>.</li>
-        <li><strong>Protected Receptionist Controls:</strong> Staff sign in with clinic credentials to view the current token with the doctor, next token in line, total waiting patients, and a live queue table. Clicking <em>Call Patient</em> automatically updates the queue across all devices instantly without needing page reloads.</li>
-      </ul>
+        <h3 class="sub-heading">Summary of What the Live Application Does</h3>
+        <h3 class="sub-heading">Summary of What the Live Website Does</h3>
+        <p>
+          The <strong>Clinic Queue Tracking System</strong> is a lightweight, mobile-first web application designed to
+          eliminate waiting-time uncertainty for outpatient clinic patients.
+        </p>
+        <ul style="margin-left: 20px; margin-bottom: 16px; line-height: 1.6;">
+          <ul style="margin-left: 20px; margin-bottom: 14px; line-height: 1.55;">
+            <li><strong>Patient Queue Lookup:</strong> Patients visiting the clinic register at the physical front desk
+              and receive a paper slip with their token number (e.g. <code>021</code>, <code>022</code>,
+              <code>023</code>, <code>024</code>, <code>025</code>). They open the mobile website, type their token
+              number or tap the demo shortcut, and click <em>Check Queue</em>.</li>
+            <li><strong>Real-Time Status & Wait Estimation:</strong> The application queries the central queue state to
+              display the patient's token, status (<em>Waiting</em>, <em>Now Being Called</em>), the exact count of
+              patients ahead in line, an approximate waiting-time range (e.g. <code>20–30 minutes</code> calculated at
+              ~5–7.5 minutes per consultation), and an interactive 5-segment visual progress bar.</li>
+            <li><strong>Turn Approaching Alert:</strong> When a patient is next in line or being called, an automatic
+              high-visibility notification alerts the patient to move to <em>Consultation Room 1</em>.</li>
+            <li><strong>Protected Receptionist Controls:</strong> Staff sign in with clinic credentials to view the
+              current token with the doctor, next token in line, total waiting patients, and a live queue table.
+              Clicking <em>Call Patient</em> automatically updates the queue across all devices instantly without
+              needing page reloads.</li>
+          </ul>
 
-      <div class="info-card">
-        <strong>Zero Patient Data Exposure:</strong> The application does not collect, store, or display sensitive personal health information (PHI), phone numbers, or patient names. It operates strictly on anonymous sequential token identifiers.
-      </div>
+          <div class="info-card">
+            <strong>Zero Patient Data Exposure:</strong> The application does not collect, store, or display sensitive
+            personal health information (PHI), phone numbers, or patient names. It operates strictly on anonymous
+            sequential token identifiers.
+          </div>
 
-      <div class="running-footer">
-        <span>Clinic Queue Tracking System — Final Report</span>
-        <span>Vivek Kumar (Roll: 2602028)</span>
-      </div>
+          <div class="running-footer">
+            <span>Clinic Queue Tracking System — Final Report</span>
+            <span>Vivek Kumar (Roll: 2602028)</span>
+          </div>
     </div>
 
     <!-- ====================================================================
@@ -501,765 +575,948 @@
     <div class="page">
       <div class="running-header">
         <span>MSOT • Product Development</span>
+        <span>Page 3 / 9</span>
         <span>Page 3 / 12</span>
       </div>
 
+      <h2 class="section-heading">Product Brief & MVP Scope</h2>
       <h2 class="section-heading">2. Product Brief & MVP Scope</h2>
 
+      <h3 class="sub-heading">1. Project Context & Problem Statement</h3>
       <h3 class="sub-heading">2.1 Problem Statement & Healthcare Context</h3>
       <p>
-        The selected healthcare problem is that patients visiting busy outpatient clinics in Patna, Bihar face acute uncertainty about their queue position and expected waiting duration after completing registration. Because OPD consultation times vary and clinics lack digital queue monitors, patients constantly experience anxiety, crowd the narrow corridors near doctor rooms, and repeatedly interrupt reception staff to ask: <em>"When will my turn come?"</em>
+        The selected healthcare problem is that patients visiting busy outpatient clinics in Patna, Bihar face acute
+        uncertainty about their queue position and expected waiting duration after completing registration. Because OPD
+        consultation times vary and clinics lack digital queue monitors, patients constantly experience anxiety, crowd
+        the narrow corridors near doctor rooms, and repeatedly interrupt reception staff to ask: <em>"When will my turn
+          come?"</em>
       </p>
 
+      <h3 class="sub-heading">2. Target Users</h3>
       <h3 class="sub-heading">2.2 Target Users & One-Line MVP Scope Statement</h3>
       <p>
-        <strong>Primary Users:</strong> Registered outpatient clinic patients and accompanying family caregivers waiting for OPD consultations.<br>
+        <strong>Primary Users:</strong> Registered outpatient clinic patients and accompanying family caregivers who
+        want to track queue progress on their personal mobile phones while waiting nearby.<br>
+        <strong>Secondary Users:</strong> Clinic front-desk receptionists who need a simple, single-click interface to
+        call the next patient and keep queue progress synchronized.
+        <strong>Primary Users:</strong> Registered outpatient clinic patients and accompanying family caregivers waiting
+        for OPD consultations.<br>
         <strong>Secondary Users:</strong> Clinic front-desk reception staff managing daily patient flow.
       </p>
 
-      <div class="info-card" style="margin: 8px 0;">
-        <em>"A simple web page where a registered patient enters a token number to see their queue position and an approximate waiting-time range, kept up to date through a basic reception dashboard."</em>
+      <h3 class="sub-heading">3. One-Line MVP Scope Statement</h3>
+      <div class="info-card" style="font-size: 13.5px; border-left-color: #0f172a;">
+        <div class="info-card" style="margin: 8px 0;">
+          <em>"A simple web page where a registered patient enters a token number to see their queue position and an
+            approximate waiting-time range, kept up to date through a basic reception dashboard."</em>
+        </div>
+
+        <h3 class="sub-heading">4. Seven-Step Patient User Journey</h3>
+        <h3 class="sub-heading">2.3 Seven-Step Patient User Journey (from Assignment 1)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 10%;">Step</th>
+              <th style="width: 25%;">User Action</th>
+              <th style="width: 65%;">System & Environment Interaction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1</strong></td>
+              <td>Arrive at clinic</td>
+              <td>Patient visits the healthcare facility during a busy OPD session.</td>
+            </tr>
+            <tr>
+              <td><strong>2</strong></td>
+              <td>Register & get token</td>
+              <td>Patient completes front-desk registration and receives a paper token (e.g. <code>025</code>).</td>
+            </tr>
+            <tr>
+              <td><strong>3</strong></td>
+              <td>Open queue page</td>
+              <td>Patient opens the clinic queue tracking web link on their mobile smartphone.</td>
+            </tr>
+            <tr>
+              <td><strong>4</strong></td>
+              <td>Enter token number</td>
+              <td>Patient types their token number into the clean input field (or taps demo shortcut).</td>
+              <td>Patient types their token number into the simple field (or taps demo shortcut).</td>
+            </tr>
+            <tr>
+              <td><strong>5</strong></td>
+              <td>Check queue status</td>
+              <td>Page displays current status, exact patients ahead, estimated wait time, and progress bar.</td>
+            </tr>
+            <tr>
+              <td><strong>6</strong></td>
+              <td>See queue updates</td>
+              <td>As reception advances the queue, the patient sees updated position and reduced wait times.</td>
+            </tr>
+            <tr>
+              <td><strong>7</strong></td>
+              <td>Return when turn is near</td>
+              <td>Turn Approaching alert prompts patient to return to Consultation Room 1 for consultation.</td>
+              <td>Turn Approaching alert prompts patient to return to Consultation Room 1 on time.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="sub-heading">5. The Four Original Must-Have Features (MoSCoW Prioritization)</h3>
+        <h3 class="sub-heading">2.4 The Four Original Must-Have Features (MoSCoW Prioritization)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 30%;">Must-Have Feature</th>
+              <th style="width: 45%;">Reason for Priority</th>
+              <th style="width: 25%;">Wireframe Sketch</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Patient Token Lookup</strong></td>
+              <td>Patient requires a quick, zero-friction method to query their place without signing up.</td>
+              <td>Sketch 1 (Patient Home)</td>
+            </tr>
+            <tr>
+              <td><strong>2. Current Queue Position</strong></td>
+              <td>Directly addresses uncertainty regarding how many patients remain ahead in line.</td>
+              <td>Sketch 2 (Queue Status)</td>
+            </tr>
+            <tr>
+              <td><strong>3. Approximate Waiting Time</strong></td>
+              <td>Enables patients to plan their time, clearly presented as an approximate estimate.</td>
+              <td>Sketch 2 (Queue Status)</td>
+            </tr>
+            <tr>
+              <td><strong>4. Receptionist Dashboard</strong></td>
+              <td>Enables staff to advance the queue so patient visibility never becomes stale.</td>
+              <td>Sketch 3 (Reception Desk)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="running-footer">
+          <span>Clinic Queue Tracking System — Final Report</span>
+          <span>Vivek Kumar (Roll: 2602028)</span>
+        </div>
       </div>
 
-      <h3 class="sub-heading">2.3 Seven-Step Patient User Journey (from Assignment 1)</h3>
-      <table>
-        <thead>
-          <tr>
-            <th style="width: 10%;">Step</th>
-            <th style="width: 25%;">User Action</th>
-            <th style="width: 65%;">System & Environment Interaction</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>1</strong></td>
-            <td>Arrive at clinic</td>
-            <td>Patient visits the healthcare facility during a busy OPD session.</td>
-          </tr>
-          <tr>
-            <td><strong>2</strong></td>
-            <td>Register & get token</td>
-            <td>Patient completes front-desk registration and receives a paper token (e.g. <code>025</code>).</td>
-          </tr>
-          <tr>
-            <td><strong>3</strong></td>
-            <td>Open queue page</td>
-            <td>Patient opens the clinic queue tracking web link on their mobile smartphone.</td>
-          </tr>
-          <tr>
-            <td><strong>4</strong></td>
-            <td>Enter token number</td>
-            <td>Patient types their token number into the simple field (or taps demo shortcut).</td>
-          </tr>
-          <tr>
-            <td><strong>5</strong></td>
-            <td>Check queue status</td>
-            <td>Page displays current status, exact patients ahead, estimated wait time, and progress bar.</td>
-          </tr>
-          <tr>
-            <td><strong>6</strong></td>
-            <td>See queue updates</td>
-            <td>As reception advances the queue, the patient sees updated position and reduced wait times.</td>
-          </tr>
-          <tr>
-            <td><strong>7</strong></td>
-            <td>Return when turn is near</td>
-            <td>Turn Approaching alert prompts patient to return to Consultation Room 1 on time.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3 class="sub-heading">2.4 The Four Original Must-Have Features (MoSCoW Prioritization)</h3>
-      <table>
-        <thead>
-          <tr>
-            <th style="width: 30%;">Must-Have Feature</th>
-            <th style="width: 45%;">Reason for Priority</th>
-            <th style="width: 25%;">Wireframe Sketch</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>1. Patient Token Lookup</strong></td>
-            <td>Patient requires a quick, zero-friction method to query their place without signing up.</td>
-            <td>Sketch 1 (Patient Home)</td>
-          </tr>
-          <tr>
-            <td><strong>2. Current Queue Position</strong></td>
-            <td>Directly addresses uncertainty regarding how many patients remain ahead in line.</td>
-            <td>Sketch 2 (Queue Status)</td>
-          </tr>
-          <tr>
-            <td><strong>3. Approximate Waiting Time</strong></td>
-            <td>Enables patients to plan their time, clearly presented as an approximate estimate.</td>
-            <td>Sketch 2 (Queue Status)</td>
-          </tr>
-          <tr>
-            <td><strong>4. Receptionist Dashboard</strong></td>
-            <td>Enables staff to advance the queue so patient visibility never becomes stale.</td>
-            <td>Sketch 3 (Reception Desk)</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="running-footer">
-        <span>Clinic Queue Tracking System — Final Report</span>
-        <span>Vivek Kumar (Roll: 2602028)</span>
-      </div>
-    </div>
-
-    <!-- ====================================================================
+      <!-- ====================================================================
+         PAGES 4–5: IMPLEMENTATION PLAN (PART 1)
          PAGE 4: IMPLEMENTATION PLAN (PART 1)
          ==================================================================== -->
-    <div class="page">
-      <div class="running-header">
-        <span>MSOT • Product Development</span>
-        <span>Page 4 / 12</span>
-      </div>
+      <div class="page">
+        <div class="running-header">
+          <span>MSOT • Product Development</span>
+          <span>Page 4 / 9</span>
+          <span>Page 4 / 12</span>
+        </div>
 
-      <h2 class="section-heading">3. Implementation Plan & Technology Stack (1 / 2)</h2>
+        <h2 class="section-heading">Implementation Plan & Architecture (1 / 2)</h2>
+        <h2 class="section-heading">3. Implementation Plan & Technology Stack (1 / 2)</h2>
 
-      <h3 class="sub-heading">3.1 Technology Stack & Architectural Decisions</h3>
-      <table>
-        <thead>
-          <tr>
-            <th style="width: 25%;">Layer</th>
-            <th style="width: 35%;">Technology</th>
-            <th style="width: 40%;">Reason for Choice</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>User Interface</strong></td>
-            <td>HTML5, CSS3, Vanilla JavaScript (ES6+)</td>
-            <td>Zero build-step overhead, ultra-fast load times on 3G/4G mobile devices, accessible semantics, easy maintainability.</td>
-          </tr>
-          <tr>
-            <td><strong>Database Layer</strong></td>
-            <td>Firebase Cloud Firestore (NoSQL)</td>
-            <td>Real-time synchronization across devices, flexible document data model, offline caching, and zero database server management.</td>
-          </tr>
-          <tr>
-            <td><strong>Authentication</strong></td>
-            <td>Firebase Authentication</td>
-            <td>Secure email/password credentials to lock receptionist write operations behind staff-only verification.</td>
-          </tr>
-          <tr>
-            <td><strong>Hosting & CDN</strong></td>
-            <td>Firebase Hosting (Spark Free Tier)</td>
-            <td>Global CDN distribution, automated SSL provisioning, 100% free with no credit card required.</td>
-          </tr>
-          <tr>
-            <td><strong>Version Control</strong></td>
-            <td>Git & GitHub</td>
-            <td>Disciplined feature-by-feature commits, branch safety, and transparent submission logging.</td>
-          </tr>
-        </tbody>
-      </table>
+        <h3 class="sub-heading">1. Technology Stack Selection & Rationales</h3>
+        <h3 class="sub-heading">3.1 Technology Stack & Architectural Decisions</h3>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%;">Layer</th>
+              <th style="width: 35%;">Technology</th>
+              <th style="width: 40%;">Reason for Choice</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>User Interface</strong></td>
+              <td>HTML5, CSS3, Vanilla JavaScript (ES6+)</td>
+              <td>Zero build-step overhead, ultra-fast load times on 3G/4G mobile devices, accessible semantics, easy
+                maintainability.</td>
+            </tr>
+            <tr>
+              <td><strong>Database Layer</strong></td>
+              <td>Firebase Cloud Firestore (NoSQL)</td>
+              <td>Real-time synchronization across devices, flexible document data model, offline caching, and zero
+                database server management.</td>
+            </tr>
+            <tr>
+              <td><strong>Authentication</strong></td>
+              <td>Firebase Authentication</td>
+              <td>Secure email/password credentials to lock receptionist write operations behind staff-only
+                verification.</td>
+            </tr>
+            <tr>
+              <td><strong>Hosting & CDN</strong></td>
+              <td>Firebase Hosting (Spark Free Tier)</td>
+              <td>Global CDN distribution, automated SSL provisioning, 100% free with no credit card required.</td>
+            </tr>
+            <tr>
+              <td><strong>Version Control</strong></td>
+              <td>Git & GitHub</td>
+              <td>Disciplined feature-by-feature commits, branch safety, and transparent submission logging.</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <h3 class="sub-heading">3.2 Repository Directory & File Structure</h3>
-      <pre>
+        <h3 class="sub-heading">2. Actual Repository File Structure</h3>
+        <h3 class="sub-heading">3.2 Repository Directory & File Structure</h3>
+        <pre>
 clinic-queue-tracker/
+├── index.html                  # Screen 1: Patient Home (Token input, demo shortcut, validation)
 ├── index.html                  # Screen 1: Patient Home (Token input, demo shortcut, input validation)
 ├── queue-status.html           # Screen 2: Patient Queue Status & Screen 4: Turn Approaching view
 ├── reception.html              # Screen 3: Protected Receptionist Dashboard (Desktop layout)
 ├── css/
+│   ├── styles.css              # Shared design system, CSS variables, typography, mobile frame
+│   ├── patient.css             # Patient mobile views, hero cards, progress bar, alert banners
+│   └── reception.css           # Reception desktop window mock, metrics grid, patient queue table
 │   ├── styles.css              # Shared design system, CSS custom properties, responsive mobile container
 │   ├── patient.css             # Patient mobile components, split metric boxes, 5-segment progress bar
 │   └── reception.css           # Reception desktop window layout, status pills, waiting queue table
 ├── js/
+│   ├── firebase-config.js      # Firebase v10 modular initialization, auth state, local fallback
 │   ├── firebase-config.js      # Firebase v10 modular initialization, auth bridge, and offline fallback
 │   ├── queue-service.js        # Central state management, wait calculations, Firestore syncing
+│   ├── patient-home.js         # Input validation, normalization (25->025), navigation routing
+│   ├── queue-status.js         # Queue status DOM controller, progress animator, turn alert logic
+│   └── reception.js            # Receptionist login/logout, queue progression, call next patient
 │   ├── patient-home.js         # Client input validation, token normalization (25 -> 025), navigation
 │   ├── queue-status.js         # DOM controller for queue status, progress animation, and turn alerts
 │   └── reception.js            # Receptionist login controller, queue advancement, and reset logic
 ├── seed/
+│   └── initial-queue.json      # Reference configuration for sample tokens 021-025
 │   └── initial-queue.json      # Canonical baseline configuration for sample tokens 021-025
 ├── firestore.rules             # Backend security rules enforcing authenticated staff writes
 ├── firestore.indexes.json      # Firestore query indexing configuration
 ├── firebase.json               # Firebase Hosting and Firestore configuration (cleanUrls enabled)
 ├── .firebaserc                 # Project mapping (clinic-queue-tracker-a3b1b)
 ├── .gitignore                  # Excludes private keys, OS files, and environment secrets
+├── implementation-plan.md      # Approved agent implementation blueprint
 ├── original-implementation-plan.md # Original approved architecture plan
 ├── implementation-plan.md      # Blueprint file
 ├── BUILD_LOG.md                # Development milestone tracker and commit log
 └── README.md                   # Comprehensive project overview, testing guide, and setup
       </pre>
 
-      <h3 class="sub-heading">3.3 Six-Phase Development Methodology</h3>
-      <p>
-        The development was executed in 6 sequential phases to guarantee feature stability before adding complexity:
-      </p>
-      <ul style="margin-left: 20px; line-height: 1.55;">
-        <li><strong>Phase 1: Project Setup & Patient Home:</strong> Initialized Git repository, established clean directory structure, built <code>index.html</code> with input validation, sample demo token 025 shortcut, and responsive wireframe card.</li>
-        <li><strong>Phase 2: Patient Queue Status & Turn Approaching:</strong> Built <code>queue-status.html</code> with hero token card, split metrics, 5-segment progress bar, inline turn-approaching alert, and doctor availability disclaimer.</li>
-        <li><strong>Phase 3: Receptionist Dashboard & Auth:</strong> Built <code>reception.html</code> desktop interface with 3 metric cards, waiting table, <em>Call Patient</em> advancement, and Firebase Auth guard.</li>
-      </ul>
+        <h3 class="sub-heading">3. Phased Implementation Roadmap</h3>
+        <h3 class="sub-heading">3.3 Six-Phase Development Methodology</h3>
+        <p>
+          The development was executed in 6 sequential phases to guarantee feature stability before adding complexity:
+        </p>
+        <ul style="margin-left: 20px; line-height: 1.6;">
+          <ul style="margin-left: 20px; line-height: 1.55;">
+            <li><strong>Phase 1: Project Setup & Patient Home:</strong> Initialized Git repository, established clean
+              directory structure, built <code>index.html</code> with input validation, sample demo token 025 shortcut,
+              and responsive wireframe card.</li>
+            <li><strong>Phase 2: Patient Queue Status & Turn Approaching:</strong> Built <code>queue-status.html</code>
+              with hero token card, split metrics, 5-segment progress bar, inline turn-approaching alert, and doctor
+              availability disclaimer.</li>
+            <li><strong>Phase 3: Receptionist Dashboard & Auth:</strong> Built <code>reception.html</code> desktop
+              interface with 3 metric cards, waiting table, <em>Call Patient</em> advancement, and Firebase Auth guard.
+            </li>
+          </ul>
 
-      <div class="running-footer">
-        <span>Clinic Queue Tracking System — Final Report</span>
-        <span>Vivek Kumar (Roll: 2602028)</span>
+          <div class="running-footer">
+            <span>Clinic Queue Tracking System — Final Report</span>
+            <span>Vivek Kumar (Roll: 2602028)</span>
+          </div>
       </div>
-    </div>
 
-    <!-- ====================================================================
+      <!-- ====================================================================
          PAGE 5: IMPLEMENTATION PLAN (PART 2)
          ==================================================================== -->
-    <div class="page">
-      <div class="running-header">
-        <span>MSOT • Product Development</span>
-        <span>Page 5 / 12</span>
-      </div>
+      <div class="page">
+        <div class="running-header">
+          <span>MSOT • Product Development</span>
+          <span>Page 5 / 9</span>
+          <span>Page 5 / 12</span>
+        </div>
 
-      <h2 class="section-heading">3. Implementation Plan & Database Design (2 / 2)</h2>
+        <h2 class="section-heading">Implementation Plan & Architecture (2 / 2)</h2>
+        <h2 class="section-heading">3. Implementation Plan & Database Design (2 / 2)</h2>
 
-      <h3 class="sub-heading">3.4 Cloud Firestore Database Schema</h3>
-      <p>
-        The database is designed with two tightly coupled collections to maintain real-time queue coherence:
-      </p>
+        <h3 class="sub-heading">4. Database Schema Design (Cloud Firestore)</h3>
+        <h3 class="sub-heading">3.4 Cloud Firestore Database Schema</h3>
+        <p>
+          The database is designed with two tightly coupled collections to maintain real-time queue coherence:
+        </p>
 
-      <table>
-        <thead>
-          <tr>
-            <th style="width: 28%;">Document Path</th>
-            <th style="width: 42%;">Field Attributes</th>
-            <th style="width: 30%;">Functional Role</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>metadata/clinic_queue</code></td>
-            <td>
-              <code>current_token: "021"</code><br>
-              <code>current_status: "calling"</code><br>
-              <code>next_token: "022"</code><br>
-              <code>total_waiting: 4</code><br>
-              <code>doctor_room: "Room 1"</code><br>
-              <code>avg_mins_per_patient: 6</code><br>
-              <code>last_updated: Timestamp</code>
-            </td>
-            <td>Single source of truth for high-level clinic metrics. Read by patient screens; modified only when staff calls a patient.</td>
-          </tr>
-          <tr>
-            <td><code>tokens/{tokenId}</code><br>(e.g. <code>tokens/025</code>)</td>
-            <td>
-              <code>token_id: "025"</code><br>
-              <code>order: 5</code><br>
-              <code>status: "waiting" | "calling" | "completed"</code><br>
-              <code>note: "In waiting area"</code><br>
-              <code>called_at: Timestamp | null</code><br>
-              <code>completed_at: Timestamp | null</code>
-            </td>
-            <td>Individual record for each token. Stores order ranking, lifecycle status, and timestamps.</td>
-          </tr>
-        </tbody>
-      </table>
+        <table style="margin-bottom: 12px;">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 28%;">Document Path</th>
+                <th style="width: 42%;">Field Attributes</th>
+                <th style="width: 30%;">Functional Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>metadata/clinic_queue</code></td>
+                <td>
+                  <code>current_token: "021"</code><br>
+                  <code>current_status: "calling"</code><br>
+                  <code>next_token: "022"</code><br>
+                  <code>total_waiting: 4</code><br>
+                  <code>doctor_room: "Room 1"</code><br>
+                  <code>avg_mins_per_patient: 6</code><br>
+                  <code>last_updated: Timestamp</code>
+                </td>
+                <td>Single source of truth for high-level clinic metrics. Read by patient screens; modified only when
+                  staff calls a patient.</td>
+              </tr>
+              <tr>
+                <td><code>tokens/{tokenId}</code><br>(e.g. <code>tokens/025</code>)</td>
+                <td>
+                  <code>token_id: "025"</code><br>
+                  <code>order: 5</code><br>
+                  <code>status: "waiting" | "calling" | "completed"</code><br>
+                  <code>note: "In waiting area"</code><br>
+                  <code>called_at: Timestamp | null</code><br>
+                  <code>completed_at: Timestamp | null</code>
+                </td>
+                <td>Individual record for each token. Stores order ranking, lifecycle status, and timestamps.</td>
+              </tr>
+            </tbody>
+          </table>
 
-      <h3 class="sub-heading">3.5 Mathematical Waiting-Time & Position Algorithm</h3>
-      <div class="info-card">
-        <strong>1. Patients Ahead Calculation:</strong><br>
-        <code>Patients Ahead (N) = Waiting Tokens Ahead + (1 if doctor actively seeing a patient, else 0)</code><br><br>
-        <strong>2. Waiting-Time Bracket Calculation:</strong><br>
-        • If $N = 0$ and status is <em>Calling</em>: <code>"Now (Your Turn!)"</code><br>
-        • If $N = 0$ and status is <em>Waiting</em>: <code>"Next in line (&lt; 5 mins)"</code><br>
-        • If $N = 1$: <code>"5–10 minutes"</code><br>
-        • If $N = 2$: <code>"10–15 minutes"</code><br>
-        • If $N = 3$: <code>"15–20 minutes"</code><br>
-        • If $N \ge 4$: <code>Min = N × 5</code> mins, <code>Max = Round(N × 7.5 / 5) × 5</code> mins $\rightarrow$ <strong><code>"20–30 minutes"</code></strong> for Token 025.<br><br>
-        <strong>3. Visual Progress Bar Segments (5 Steps):</strong><br>
-        Step 1 (Registered) $\rightarrow$ Step 2 ($N \le 3$) $\rightarrow$ Step 3 ($N \le 2$) $\rightarrow$ Step 4 ($N \le 1$, Turn Approaching) $\rightarrow$ Step 5 (Calling / In Consultation).
-      </div>
+          <h3 class="sub-heading">5. Mathematical Algorithm for Wait-Time & Position Calculation</h3>
+          <p>
+            The calculation engine in <code>js/queue-service.js</code> uses a deterministic formula modeling real clinic
+            consultation pacing (~5 to 7.5 minutes per patient):
+          </p>
+          <h3 class="sub-heading">3.5 Mathematical Waiting-Time & Position Algorithm</h3>
+          <div class="info-card">
+            <strong>1. Patients Ahead Calculation:</strong><br>
+            <code>Patients Ahead (N) = Waiting Tokens Ahead + (1 if doctor actively seeing a patient, else 0)</code><br><br>
+            <strong>2. Waiting-Time Bracket Calculation:</strong><br>
+            • If $N = 0$ and status is <em>Calling</em>: <code>"Now (Your Turn!)"</code><br>
+            • If $N = 0$ and status is <em>Waiting</em>: <code>"Next in line (&lt; 5 mins)"</code><br>
+            • If $N = 1$: <code>"5–10 minutes"</code><br>
+            • If $N = 2$: <code>"10–15 minutes"</code><br>
+            • If $N = 3$: <code>"15–20 minutes"</code><br>
+            • If $N \ge 4$: <code>Min = N × 5</code> mins, <code>Max = Round(N × 7.5 / 5) × 5</code> mins $\rightarrow$
+            <strong><code>"20–30 minutes"</code></strong> for Token 025.<br><br>
+            <strong>3. Visual Progress Bar Segments (5 Steps):</strong><br>
+            Step 1 (Registered) $\rightarrow$ Step 2 ($N \le 3$) $\rightarrow$ Step 3 ($N \le 2$) $\rightarrow$ Step 4
+            ($N \le 1$, Turn Approaching) $\rightarrow$ Step 5 (Calling / In Consultation).
+          </div>
 
-      <h3 class="sub-heading">3.6 Backend Security Rules Specification (firestore.rules)</h3>
-      <pre>
+          <h3 class="sub-heading">6. Security Rules Specification (firestore.rules)</h3>
+          <h3 class="sub-heading">3.6 Backend Security Rules Specification (firestore.rules)</h3>
+          <pre>
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     // Patients can read queue metrics without signing in
+    match /metadata/{document=**} {
+      allow read: if true;
+      allow write: if request.auth != null; // Only authenticated clinic staff can write
+    }
+    match /tokens/{tokenId} {
+      allow read: if true;
+      allow write: if request.auth != null; // Only authenticated clinic staff can advance queue
+    }
     match /metadata/{document=**} { allow read: if true; allow write: if request.auth != null; }
     match /tokens/{tokenId}        { allow read: if true; allow write: if request.auth != null; }
   }
 }
       </pre>
 
-      <div class="running-footer">
-        <span>Clinic Queue Tracking System — Final Report</span>
-        <span>Vivek Kumar (Roll: 2602028)</span>
+          <div class="running-footer">
+            <span>Clinic Queue Tracking System — Final Report</span>
+            <span>Vivek Kumar (Roll: 2602028)</span>
+          </div>
       </div>
-    </div>
 
-    <!-- ====================================================================
+      <!-- ====================================================================
+         PAGES 6–7: BUILD LOG (PART 1)
          PAGE 6: BUILD LOG (PART 1)
          ==================================================================== -->
-    <div class="page">
-      <div class="running-header">
-        <span>MSOT • Product Development</span>
-        <span>Page 6 / 12</span>
+      <div class="page">
+        <div class="running-header">
+          <span>MSOT • Product Development</span>
+          <span>Page 6 / 9</span>
+          <span>Page 6 / 12</span>
+        </div>
+
+        <h2 class="section-heading">Detailed Build Log (1 / 2)</h2>
+        <h2 class="section-heading">4. Build Log — Antigravity Engineering Record (1 / 2)</h2>
+        <p style="margin-bottom: 12px;">
+          Chronological record of actual prompts, development actions, challenges encountered, and real engineering
+          solutions applied during the project lifecycle.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 12%;">Session / Date</th>
+              <th style="width: 24%;">Actual Prompt / Task</th>
+              <th style="width: 28%;">What Worked</th>
+              <th style="width: 36%;">What Broke & How It Was Fixed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Session 1</strong><br>Nov 16, 2026</td>
+              <td>Analyze PDFs & Figma prototype; prepare implementation plan.</td>
+              <td>Read both PDFs, extracted wireframe elements, synthesized MoSCoW table, created
+                <code>implementation-plan.md</code>.</td>
+              <td><strong>What Broke:</strong> None.<br><strong>How Fixed:</strong> Plan was reviewed and approved by
+                student before any coding began.</td>
+            </tr>
+            <tr>
+              <td><strong>Session 2</strong><br>Nov 16, 2026</td>
+              <td>Build Feature 1: Patient Home screen with token input and Check Queue button.</td>
+              <td>Created <code>index.html</code>, <code>css/styles.css</code>, <code>css/patient.css</code>, and
+                <code>js/patient-home.js</code>. Implemented token validation and demo shortcut (<code>025</code>).</td>
+              <td><strong>What Broke:</strong> <code>git status</code> reported
+                <code>fatal: not a git repository</code>.<br><strong>How Fixed:</strong> Ran <code>git init</code>,
+                configured user name and email, and created initial repository commit (<code>26fc493</code>).</td>
+            </tr>
+            <tr>
+              <td><strong>Session 3</strong><br>Nov 16, 2026</td>
+              <td>Verify token validation logic.</td>
+              <td>Defined validation rules for digits-only and active queue membership (tokens
+                <code>021</code>–<code>025</code>).</td>
+              <td><strong>What Broke:</strong> Verification script failed with <code>command not found: node</code>
+                (Node.js was not installed).<br><strong>How Fixed:</strong> Switched verification scripts to macOS's
+                built-in Python 3.9 engine, verifying HTML/JS tags cleanly.</td>
+            </tr>
+            <tr>
+              <td><strong>Session 4</strong><br>Nov 16, 2026</td>
+              <td>Build Feature 2: Patient Queue Status screen matching Sketch 2.</td>
+              <td>Built <code>queue-status.html</code>, <code>js/queue-service.js</code>, and
+                <code>js/queue-status.js</code>. Implemented hero token card, split metrics (patients ahead & wait
+                range), 5-segment progress bar, and disclaimer.</td>
+              <td><strong>What Broke:</strong> Initial draft used generic label "People Ahead" which testers found
+                ambiguous.<br><strong>How Fixed:</strong> Updated label to "Patients ahead of you" and added explicit
+                wait disclaimer as noted in tester feedback. Committed as <code>7d1eb24</code>.</td>
+            </tr>
+            <tr>
+              <td><strong>Session 5</strong><br>Nov 16, 2026</td>
+              <td>Build Feature 3: Receptionist Dashboard with staff authentication & Firestore rules.</td>
+              <td>Created <code>reception.html</code>, <code>css/reception.css</code>, <code>js/reception.js</code>,
+                <code>firestore.rules</code>, and <code>firebase.json</code>. Built 3 metric cards and queue table with
+                <em>Call Patient</em> buttons.</td>
+              <td><strong>What Broke:</strong> Live Firebase credentials were not yet configured by student during
+                development.<br><strong>How Fixed:</strong> Engineered a robust local storage bridge in
+                <code>js/firebase-config.js</code> with simulated staff session (<code>reception@clinic.com</code> /
+                <code>clinic123</code>), enabling 100% testability before cloud deployment. Committed as
+                <code>ab01f58</code>.</td>
+              <td><strong>What Broke:</strong> Firebase credentials were not yet configured by student during
+                development.<br><strong>How Fixed:</strong> Engineered a robust local storage bridge in
+                <code>js/firebase-config.js</code> with simulated staff session (<code>reception@clinic.com</code> /
+                <code>clinic123</code>), enabling 100% testability before cloud deployment. Committed as
+                <code>ab01f58</code>.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="running-footer">
+          <span>Clinic Queue Tracking System — Final Report</span>
+          <span>Vivek Kumar (Roll: 2602028)</span>
+        </div>
       </div>
 
-      <h2 class="section-heading">4. Build Log — Antigravity Engineering Record (1 / 2)</h2>
-      <p style="margin-bottom: 12px;">
-        Chronological record of actual prompts, development actions, challenges encountered, and real engineering solutions applied during the project lifecycle.
-      </p>
-
-      <table>
-        <thead>
-          <tr>
-            <th style="width: 12%;">Session / Date</th>
-            <th style="width: 24%;">Actual Prompt / Task</th>
-            <th style="width: 28%;">What Worked</th>
-            <th style="width: 36%;">What Broke & How It Was Fixed</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Session 1</strong><br>Nov 16, 2026</td>
-            <td>Analyze PDFs & Figma prototype; prepare implementation plan.</td>
-            <td>Read both PDFs, extracted wireframe elements, synthesized MoSCoW table, created <code>implementation-plan.md</code>.</td>
-            <td><strong>What Broke:</strong> None.<br><strong>How Fixed:</strong> Plan was reviewed and approved by student before any coding began.</td>
-          </tr>
-          <tr>
-            <td><strong>Session 2</strong><br>Nov 16, 2026</td>
-            <td>Build Feature 1: Patient Home screen with token input and Check Queue button.</td>
-            <td>Created <code>index.html</code>, <code>css/styles.css</code>, <code>css/patient.css</code>, and <code>js/patient-home.js</code>. Implemented token validation and demo shortcut (<code>025</code>).</td>
-            <td><strong>What Broke:</strong> <code>git status</code> reported <code>fatal: not a git repository</code>.<br><strong>How Fixed:</strong> Ran <code>git init</code>, configured user name and email, and created initial repository commit (<code>26fc493</code>).</td>
-          </tr>
-          <tr>
-            <td><strong>Session 3</strong><br>Nov 16, 2026</td>
-            <td>Verify token validation logic.</td>
-            <td>Defined validation rules for digits-only and active queue membership (tokens <code>021</code>–<code>025</code>).</td>
-            <td><strong>What Broke:</strong> Verification script failed with <code>command not found: node</code> (Node.js was not installed).<br><strong>How Fixed:</strong> Switched verification scripts to macOS's built-in Python 3.9 engine, verifying HTML/JS tags cleanly.</td>
-          </tr>
-          <tr>
-            <td><strong>Session 4</strong><br>Nov 16, 2026</td>
-            <td>Build Feature 2: Patient Queue Status screen matching Sketch 2.</td>
-            <td>Built <code>queue-status.html</code>, <code>js/queue-service.js</code>, and <code>js/queue-status.js</code>. Implemented hero token card, split metrics (patients ahead & wait range), 5-segment progress bar, and disclaimer.</td>
-            <td><strong>What Broke:</strong> Initial draft used generic label "People Ahead" which testers found ambiguous.<br><strong>How Fixed:</strong> Updated label to "Patients ahead of you" and added explicit wait disclaimer as noted in tester feedback. Committed as <code>7d1eb24</code>.</td>
-          </tr>
-          <tr>
-            <td><strong>Session 5</strong><br>Nov 16, 2026</td>
-            <td>Build Feature 3: Receptionist Dashboard with staff authentication & Firestore rules.</td>
-            <td>Created <code>reception.html</code>, <code>css/reception.css</code>, <code>js/reception.js</code>, <code>firestore.rules</code>, and <code>firebase.json</code>. Built 3 metric cards and queue table with <em>Call Patient</em> buttons.</td>
-            <td><strong>What Broke:</strong> Firebase credentials were not yet configured by student during development.<br><strong>How Fixed:</strong> Engineered a robust local storage bridge in <code>js/firebase-config.js</code> with simulated staff session (<code>reception@clinic.com</code> / <code>clinic123</code>), enabling 100% testability before cloud deployment. Committed as <code>ab01f58</code>.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="running-footer">
-        <span>Clinic Queue Tracking System — Final Report</span>
-        <span>Vivek Kumar (Roll: 2602028)</span>
-      </div>
-    </div>
-
-    <!-- ====================================================================
+      <!-- ====================================================================
+         PAGES 7: BUILD LOG (PART 2)
          PAGE 7: BUILD LOG (PART 2)
          ==================================================================== -->
-    <div class="page">
-      <div class="running-header">
-        <span>MSOT • Product Development</span>
-        <span>Page 7 / 12</span>
+      <div class="page">
+        <div class="running-header">
+          <span>MSOT • Product Development</span>
+          <span>Page 7 / 9</span>
+          <span>Page 7 / 12</span>
+        </div>
+
+        <h2 class="section-heading">Detailed Build Log (2 / 2)</h2>
+        <h2 class="section-heading">4. Build Log — Antigravity Engineering Record (2 / 2)</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 12%;">Session / Date</th>
+              <th style="width: 24%;">Actual Prompt / Task</th>
+              <th style="width: 28%;">What Worked</th>
+              <th style="width: 36%;">What Broke & How It Was Fixed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Session 6</strong><br>Nov 16, 2026</td>
+              <td>Connect all 3 screens, calculate patients ahead, inline turn alert, and programmatic workflow test.
+              </td>
+              <td>Unified navigation links, added dynamic inline Turn Approaching banner
+                (<code>🔔 Your turn is approaching!</code>), added manual refresh control, and created automated queue
+                progression test.</td>
+              <td><strong>What Broke:</strong> Python 3.9 test script threw
+                <code>SyntaxError: f-string expression part cannot include a backslash</code>.<br><strong>How
+                  Fixed:</strong> Removed nested backslash from assertion string expression, re-ran test script, and
+                verified all 5 progression steps passed. Committed as <code>b5062e9</code>.</td>
+            </tr>
+            <tr>
+              <td><strong>Session 7</strong><br>Nov 16, 2026</td>
+              <td>Create GitHub repository <code>clinic-queue-tracker</code> and upload source code.</td>
+              <td>Configured remote origin <code>https://github.com/viv90064-star/clinic-queue-tracker.git</code> and
+                generated comprehensive <code>README.md</code>.</td>
+              <td><strong>What Broke:</strong> Sandboxed terminal blocked direct git push (no DNS resolution to
+                <code>github.com</code>) and GitHub CLI (<code>gh</code>) was missing.<br><strong>How Fixed:</strong>
+                Guided student to push directly from Mac Terminal using a GitHub Personal Access Token (classic) with
+                <code>repo</code> scope. Committed as <code>ef4de5c</code>.</td>
+            </tr>
+            <tr>
+              <td><strong>Session 8</strong><br>Nov 17, 2026</td>
+              <td>Install Firebase CLI and deploy to Firebase Hosting free tier.</td>
+              <td>Configured <code>firebase.json</code>, <code>firestore.indexes.json</code>, and updated
+                <code>js/firebase-config.js</code> with live Firestore sync.</td>
+              <td><strong>What Broke:</strong> Running <code>firebase login</code> returned
+                <code>bad CPU type in executable: firebase</code> because student's Apple Silicon Mac (M1/M2/M3) lacked
+                Rosetta 2 for the downloaded Intel binary.<br><strong>How Fixed:</strong> Guided student to run
+                <code>softwareupdate --install-rosetta --agree-to-license</code>. CLI then executed smoothly. Committed
+                as <code>0d5762b</code>.</td>
+            </tr>
+            <tr>
+              <td><strong>Session 9</strong><br>Nov 17, 2026</td>
+              <td>User configured Firebase Project ID <code>clinic-queue-tracker-a3b1b</code>.</td>
+              <td>Mapped project in <code>.firebaserc</code>, updated <code>README.md</code> and
+                <code>BUILD_LOG.md</code> with live production URLs.</td>
+              <td><strong>What Broke:</strong> None.<br><strong>How Fixed:</strong> Student executed
+                <code>firebase deploy --only hosting</code> in terminal. Deployment finished successfully with status
+                <code>✔ Deploy complete!</code>. Committed as <code>6c2ee23</code>.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="sub-heading">Summary of Git Commit Trail</h3>
+        <table style="margin-top: 10px;">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 15%;">Commit Hash</th>
+                <th style="width: 55%;">Commit Message</th>
+                <th style="width: 30%;">Scope of Changes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>26fc493</code></td>
+                <td>feat: implement Patient Home screen with token input, demo shortcut, and validation (Feature 1)</td>
+                <td>Screen 1 UI, styles, validation logic.</td>
+              </tr>
+              <tr>
+                <td><code>7d1eb24</code></td>
+                <td>feat: implement Patient Queue Status screen with live metrics, progress bar, and turn approaching
+                  view (Feature 2)</td>
+                <td>Screen 2 & 4 UI, progress bar, math engine.</td>
+              </tr>
+              <tr>
+                <td><code>ab01f58</code></td>
+                <td>feat: implement Receptionist Dashboard, queue progression, Firebase Auth protection, and Firestore
+                  rules (Feature 3)</td>
+                <td>Screen 3 desktop UI, auth modal, security rules.</td>
+              </tr>
+              <tr>
+                <td><code>b5062e9</code></td>
+                <td>feat: connect full clinic queue workflow, inline turn alerts, dynamic wait-time estimation, and
+                  verification (Feature 4)</td>
+                <td>End-to-end integration, inline alerts, tests.</td>
+              </tr>
+              <tr>
+                <td><code>ef4de5c</code></td>
+                <td>docs: create comprehensive README with wireframe mapping, security rules, and testing guide</td>
+                <td>Documentation and GitHub setup.</td>
+              </tr>
+              <tr>
+                <td><code>0d5762b</code></td>
+                <td>feat(firebase): add firestore live sync, indexes config, and cleanUrls for Firebase Hosting</td>
+                <td>Firestore live listener & hosting rewrites.</td>
+              </tr>
+              <tr>
+                <td><code>025315f</code></td>
+                <td>chore(deploy): link project to clinic-queue-tracker-a3b1b</td>
+                <td>Project ID mapping in config and README.</td>
+              </tr>
+              <tr>
+                <td><code>6c2ee23</code></td>
+                <td>chore(deploy): document successful Firebase Hosting deployment to clinic-queue-tracker-a3b1b</td>
+                <td>Milestone recording and final build log.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="running-footer">
+            <span>Clinic Queue Tracking System — Final Report</span>
+            <span>Vivek Kumar (Roll: 2602028)</span>
+          </div>
       </div>
 
-      <h2 class="section-heading">4. Build Log — Antigravity Engineering Record (2 / 2)</h2>
-
-      <table>
-        <thead>
-          <tr>
-            <th style="width: 12%;">Session / Date</th>
-            <th style="width: 24%;">Actual Prompt / Task</th>
-            <th style="width: 28%;">What Worked</th>
-            <th style="width: 36%;">What Broke & How It Was Fixed</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Session 6</strong><br>Nov 16, 2026</td>
-            <td>Connect all 3 screens, calculate patients ahead, inline turn alert, and programmatic workflow test.</td>
-            <td>Unified navigation links, added dynamic inline Turn Approaching banner (<code>🔔 Your turn is approaching!</code>), added manual refresh control, and created automated queue progression test.</td>
-            <td><strong>What Broke:</strong> Python 3.9 test script threw <code>SyntaxError: f-string expression part cannot include a backslash</code>.<br><strong>How Fixed:</strong> Removed nested backslash from assertion string expression, re-ran test script, and verified all 5 progression steps passed. Committed as <code>b5062e9</code>.</td>
-          </tr>
-          <tr>
-            <td><strong>Session 7</strong><br>Nov 16, 2026</td>
-            <td>Create GitHub repository <code>clinic-queue-tracker</code> and upload source code.</td>
-            <td>Configured remote origin <code>https://github.com/viv90064-star/clinic-queue-tracker.git</code> and generated comprehensive <code>README.md</code>.</td>
-            <td><strong>What Broke:</strong> Sandboxed terminal blocked direct git push (no DNS resolution to <code>github.com</code>) and GitHub CLI (<code>gh</code>) was missing.<br><strong>How Fixed:</strong> Guided student to push directly from Mac Terminal using a GitHub Personal Access Token (classic) with <code>repo</code> scope. Committed as <code>ef4de5c</code>.</td>
-          </tr>
-          <tr>
-            <td><strong>Session 8</strong><br>Nov 17, 2026</td>
-            <td>Install Firebase CLI and deploy to Firebase Hosting free tier.</td>
-            <td>Configured <code>firebase.json</code>, <code>firestore.indexes.json</code>, and updated <code>js/firebase-config.js</code> with live Firestore sync.</td>
-            <td><strong>What Broke:</strong> Running <code>firebase login</code> returned <code>bad CPU type in executable: firebase</code> because student's Apple Silicon Mac (M1/M2/M3) lacked Rosetta 2 for the downloaded Intel binary.<br><strong>How Fixed:</strong> Guided student to run <code>softwareupdate --install-rosetta --agree-to-license</code>. CLI then executed smoothly. Committed as <code>0d5762b</code>.</td>
-          </tr>
-          <tr>
-            <td><strong>Session 9</strong><br>Nov 17, 2026</td>
-            <td>User configured Firebase Project ID <code>clinic-queue-tracker-a3b1b</code>.</td>
-            <td>Mapped project in <code>.firebaserc</code>, updated <code>README.md</code> and <code>BUILD_LOG.md</code> with live production URLs.</td>
-            <td><strong>What Broke:</strong> None.<br><strong>How Fixed:</strong> Student executed <code>firebase deploy --only hosting</code> in terminal. Deployment finished successfully with status <code>✔ Deploy complete!</code>. Committed as <code>6c2ee23</code>.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3 class="sub-heading">Summary of Git Commit Trail</h3>
-      <table>
-        <thead>
-          <tr>
-            <th style="width: 15%;">Commit Hash</th>
-            <th style="width: 55%;">Commit Message</th>
-            <th style="width: 30%;">Scope of Changes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>26fc493</code></td>
-            <td>feat: implement Patient Home screen with token input, demo shortcut, and validation (Feature 1)</td>
-            <td>Screen 1 UI, styles, validation logic.</td>
-          </tr>
-          <tr>
-            <td><code>7d1eb24</code></td>
-            <td>feat: implement Patient Queue Status screen with live metrics, progress bar, and turn approaching view (Feature 2)</td>
-            <td>Screen 2 & 4 UI, progress bar, math engine.</td>
-          </tr>
-          <tr>
-            <td><code>ab01f58</code></td>
-            <td>feat: implement Receptionist Dashboard, queue progression, Firebase Auth protection, and Firestore rules (Feature 3)</td>
-            <td>Screen 3 desktop UI, auth modal, security rules.</td>
-          </tr>
-          <tr>
-            <td><code>b5062e9</code></td>
-            <td>feat: connect full clinic queue workflow, inline turn alerts, dynamic wait-time estimation, and verification (Feature 4)</td>
-            <td>End-to-end integration, inline alerts, tests.</td>
-          </tr>
-          <tr>
-            <td><code>ef4de5c</code></td>
-            <td>docs: create comprehensive README with wireframe mapping, security rules, and testing guide</td>
-            <td>Documentation and GitHub setup.</td>
-          </tr>
-          <tr>
-            <td><code>0d5762b</code></td>
-            <td>feat(firebase): add firestore live sync, indexes config, and cleanUrls for Firebase Hosting</td>
-            <td>Firestore live listener & hosting rewrites.</td>
-          </tr>
-          <tr>
-            <td><code>025315f</code></td>
-            <td>chore(deploy): link project to clinic-queue-tracker-a3b1b</td>
-            <td>Project ID mapping in config and README.</td>
-          </tr>
-          <tr>
-            <td><code>6c2ee23</code></td>
-            <td>chore(deploy): document successful Firebase Hosting deployment to clinic-queue-tracker-a3b1b</td>
-            <td>Milestone recording and final build log.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="running-footer">
-        <span>Clinic Queue Tracking System — Final Report</span>
-        <span>Vivek Kumar (Roll: 2602028)</span>
-      </div>
-    </div>
-
-    <!-- ====================================================================
+      <!-- ====================================================================
          PAGE 8: FEATURE CHECKLIST
          ==================================================================== -->
-    <div class="page">
-      <div class="running-header">
-        <span>MSOT • Product Development</span>
-        <span>Page 8 / 12</span>
+      <div class="page">
+        <div class="running-header">
+          <span>MSOT • Product Development</span>
+          <span>Page 8 / 9</span>
+          <span>Page 8 / 12</span>
+        </div>
+
+        <h2 class="section-heading">Feature Checklist & Delivery Audit</h2>
+        <h2 class="section-heading">5. Feature Checklist & MoSCoW Audit</h2>
+
+        <p style="margin-bottom: 16px;">
+        <p style="margin-bottom: 14px;">
+          Audit of the four original Must-have features defined in the MoSCoW prioritization matrix evaluated against
+          the deployed production application (<code>https://clinic-queue-tracker-a3b1b.web.app</code>):
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%;">Feature Name</th>
+              <th style="width: 12%;">Original Status</th>
+              <th style="width: 12%;">Final Status</th>
+              <th style="width: 51%;">Delivery Evidence & Functional Verification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Patient Token Lookup</strong></td>
+              <td>MUST HAVE</td>
+              <td><span class="badge badge-success">DONE</span></td>
+              <td>
+                • User enters token number into a dedicated input box on <code>index.html</code>.<br>
+                • Input automatically normalizes (e.g. typing <code>25</code> formats to <code>025</code>).<br>
+                • Includes one-click demo shortcut: <em>• Try it out with sample token 025</em>.<br>
+                • Validates input; shows friendly error message if empty, non-numeric, or unknown (e.g.
+                <code>999</code>).<br>
+                • Seamlessly routes valid tokens to <code>queue-status.html?token=025</code>.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>2. Current Queue Position</strong></td>
+              <td>MUST HAVE</td>
+              <td><span class="badge badge-success">DONE</span></td>
+              <td>
+                • Prominently displays the exact number of patients ahead in the left split card.<br>
+                • Correctly accounts for waiting patients ahead in line plus active doctor consultation (displays
+                <code>04</code> ahead for Token 025 initially).<br>
+                • Incorporates tester usability feedback: labeled <em>"Patients ahead of you"</em>.<br>
+                • Recalculates dynamically in real time as the queue advances (drops from 4 to 3, 2, 1, 0).
+              </td>
+            </tr>
+            <tr>
+              <td><strong>3. Approximate Waiting-Time Range</strong></td>
+              <td>MUST HAVE</td>
+              <td><span class="badge badge-success">DONE</span></td>
+              <td>
+                • Calculates realistic waiting-time bracket based on ~5–7.5 mins per patient (displays
+                <code>20–30 minutes</code> for Token 025).<br>
+                • Explicitly labeled with an <em>*Estimate</em> badge.<br>
+                • Features a 5-segment horizontal progress bar (*Registered → In line → Mid-queue → Next in line → Your
+                turn*).<br>
+                • Includes mandatory disclaimer callout: <em>"Waiting times are approximate estimates only and may vary
+                  depending on patient care needs and doctor availability."</em>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>4. Receptionist Dashboard & Update Control</strong></td>
+              <td>MUST HAVE</td>
+              <td><span class="badge badge-success">DONE</span></td>
+              <td>
+                • Protected staff dashboard at <code>reception.html</code> requiring email/password login.<br>
+                • Protected desktop staff dashboard at <code>reception.html</code> requiring email/password login.<br>
+                • Displays 3 live metric cards: Current Token (<code>021</code>), Next Token (<code>022</code>), Total
+                Waiting (<code>04</code>).<br>
+                • Displays queue table with status pills and individual <em>Call Patient →</em> buttons.<br>
+                • Features primary <em>Update Queue</em> control and a <em>↺ Reset Demo Queue</em> button.<br>
+                • Write actions protected by Cloud Firestore security rules (<code>request.auth != null</code>).
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="sub-heading">Delivery of Additional Wireframe & PDF Enhancements</h3>
+        <h3 class="sub-heading">Delivery of Secondary Wireframe Features & Out-of-Scope Compliance</h3>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 30%;">Enhancement</th>
+              <th style="width: 15%;">MoSCoW Class</th>
+              <th style="width: 12%;">Status</th>
+              <th style="width: 43%;">Implementation Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Turn Approaching Alert</strong></td>
+              <td>COULD HAVE</td>
+              <td><span class="badge badge-success">DONE</span></td>
+              <td>Inline notification banner (<code>🔔 Your turn is approaching!</code>) lights up when 1 patient ahead,
+                directing patient to Consultation Room 1. Screen 4 overlay also viewable via <em>View Turn Status
+                  →</em>.</td>
+            </tr>
+            <tr>
+              <td><strong>Manual Refresh Control</strong></td>
+              <td>SHOULD HAVE</td>
+              <td><span class="badge badge-success">DONE</span></td>
+              <td>Prominent <em>↻ Refresh queue status</em> button allows instant on-demand updates, complementing
+                real-time cross-tab storage and Firestore sync listeners.</td>
+            </tr>
+            <tr>
+              <td><strong>Out-of-Scope Features Respected</strong></td>
+              <td><strong>Patient Self-Registration</strong></td>
+              <td>WON'T HAVE</td>
+              <td><span class="badge badge-info">EXCLUDED</span></td>
+              <td>No patient self-registration, no online payments, no SMS/WhatsApp gateways, and no PHI
+                collection—preserving strict MVP boundaries.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="running-footer">
+          <span>Clinic Queue Tracking System — Final Report</span>
+          <span>Vivek Kumar (Roll: 2602028)</span>
+        </div>
       </div>
 
-      <h2 class="section-heading">5. Feature Checklist & MoSCoW Audit</h2>
-
-      <p style="margin-bottom: 14px;">
-        Audit of the four original Must-have features defined in the MoSCoW prioritization matrix evaluated against the deployed production application (<code>https://clinic-queue-tracker-a3b1b.web.app</code>):
-      </p>
-
-      <table>
-        <thead>
-          <tr>
-            <th style="width: 25%;">Feature Name</th>
-            <th style="width: 12%;">Original Status</th>
-            <th style="width: 12%;">Final Status</th>
-            <th style="width: 51%;">Delivery Evidence & Functional Verification</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>1. Patient Token Lookup</strong></td>
-            <td>MUST HAVE</td>
-            <td><span class="badge badge-success">DONE</span></td>
-            <td>
-              • User enters token number into a dedicated input box on <code>index.html</code>.<br>
-              • Input automatically normalizes (e.g. typing <code>25</code> formats to <code>025</code>).<br>
-              • Includes one-click demo shortcut: <em>• Try it out with sample token 025</em>.<br>
-              • Validates input; shows friendly error message if empty, non-numeric, or unknown (e.g. <code>999</code>).<br>
-              • Seamlessly routes valid tokens to <code>queue-status.html?token=025</code>.
-            </td>
-          </tr>
-          <tr>
-            <td><strong>2. Current Queue Position</strong></td>
-            <td>MUST HAVE</td>
-            <td><span class="badge badge-success">DONE</span></td>
-            <td>
-              • Prominently displays the exact number of patients ahead in the left split card.<br>
-              • Correctly accounts for waiting patients ahead in line plus active doctor consultation (displays <code>04</code> ahead for Token 025 initially).<br>
-              • Incorporates tester usability feedback: labeled <em>"Patients ahead of you"</em>.<br>
-              • Recalculates dynamically in real time as the queue advances (drops from 4 to 3, 2, 1, 0).
-            </td>
-          </tr>
-          <tr>
-            <td><strong>3. Approximate Waiting-Time Range</strong></td>
-            <td>MUST HAVE</td>
-            <td><span class="badge badge-success">DONE</span></td>
-            <td>
-              • Calculates realistic waiting-time bracket based on ~5–7.5 mins per patient (displays <code>20–30 minutes</code> for Token 025).<br>
-              • Explicitly labeled with an <em>*Estimate</em> badge.<br>
-              • Features a 5-segment horizontal progress bar (*Registered → In line → Mid-queue → Next in line → Your turn*).<br>
-              • Includes mandatory disclaimer callout: <em>"Waiting times are approximate estimates only and may vary depending on patient care needs and doctor availability."</em>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>4. Receptionist Dashboard & Update Control</strong></td>
-            <td>MUST HAVE</td>
-            <td><span class="badge badge-success">DONE</span></td>
-            <td>
-              • Protected desktop staff dashboard at <code>reception.html</code> requiring email/password login.<br>
-              • Displays 3 live metric cards: Current Token (<code>021</code>), Next Token (<code>022</code>), Total Waiting (<code>04</code>).<br>
-              • Displays queue table with status pills and individual <em>Call Patient →</em> buttons.<br>
-              • Features primary <em>Update Queue</em> control and a <em>↺ Reset Demo Queue</em> button.<br>
-              • Write actions protected by Cloud Firestore security rules (<code>request.auth != null</code>).
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3 class="sub-heading">Delivery of Secondary Wireframe Features & Out-of-Scope Compliance</h3>
-      <table>
-        <thead>
-          <tr>
-            <th style="width: 30%;">Enhancement</th>
-            <th style="width: 15%;">MoSCoW Class</th>
-            <th style="width: 12%;">Status</th>
-            <th style="width: 43%;">Implementation Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Turn Approaching Alert</strong></td>
-            <td>COULD HAVE</td>
-            <td><span class="badge badge-success">DONE</span></td>
-            <td>Inline notification banner (<code>🔔 Your turn is approaching!</code>) lights up when 1 patient ahead, directing patient to Consultation Room 1. Screen 4 overlay also viewable via <em>View Turn Status →</em>.</td>
-          </tr>
-          <tr>
-            <td><strong>Manual Refresh Control</strong></td>
-            <td>SHOULD HAVE</td>
-            <td><span class="badge badge-success">DONE</span></td>
-            <td>Prominent <em>↻ Refresh queue status</em> button allows instant on-demand updates, complementing real-time cross-tab storage and Firestore sync listeners.</td>
-          </tr>
-          <tr>
-            <td><strong>Patient Self-Registration</strong></td>
-            <td>WON'T HAVE</td>
-            <td><span class="badge badge-info">EXCLUDED</span></td>
-            <td>No patient self-registration, no online payments, no SMS/WhatsApp gateways, and no PHI collection—preserving strict MVP boundaries.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="running-footer">
-        <span>Clinic Queue Tracking System — Final Report</span>
-        <span>Vivek Kumar (Roll: 2602028)</span>
-      </div>
-    </div>
-
-    <!-- ====================================================================
+      <!-- ====================================================================
          PAGE 9: TESTING AND CONCLUSION
          ==================================================================== -->
-    <div class="page">
-      <div class="running-header">
-        <span>MSOT • Product Development</span>
-        <span>Page 9 / 12</span>
+      <div class="page">
+        <div class="running-header">
+          <span>MSOT • Product Development</span>
+          <span>Page 9 / 9</span>
+          <span>Page 9 / 12</span>
+        </div>
+
+        <h2 class="section-heading">Testing, Conclusion & Future Improvements</h2>
+        <h2 class="section-heading">6. Testing, Conclusion & Future Improvements</h2>
+
+        <h3 class="sub-heading">1. Verified Test Execution Matrix</h3>
+        <h3 class="sub-heading">6.1 Verified End-to-End Test Matrix</h3>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 10%;">Test ID</th>
+              <th style="width: 25%;">Test Scenario / Input</th>
+              <th style="width: 35%;">Expected Behavior</th>
+              <th style="width: 20%;">Observed Result</th>
+              <th style="width: 10%;">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>TC-01</strong></td>
+              <td>Enter Token <code>025</code> on Home screen</td>
+              <td>Navigates to Queue Status; displays Token 025, 4 ahead, 20–30 mins wait.</td>
+              <td>Matches expectation exactly.</td>
+              <td><span class="badge badge-success">PASS</span></td>
+            </tr>
+            <tr>
+              <td><strong>TC-02</strong></td>
+              <td>Click demo shortcut (<code>025</code>)</td>
+              <td>Auto-fills <code>025</code> into input field without manual typing.</td>
+              <td>Fills immediately.</td>
+              <td><span class="badge badge-success">PASS</span></td>
+            </tr>
+            <tr>
+              <td><strong>TC-03</strong></td>
+              <td>Submit unknown token (<code>999</code>)</td>
+              <td>Displays friendly error: <em>"Token #999 was not found..."</em>.</td>
+              <td>Inline alert displays.</td>
+              <td><span class="badge badge-success">PASS</span></td>
+            </tr>
+            <tr>
+              <td><strong>TC-04</strong></td>
+              <td>Reception calls Token <code>022</code></td>
+              <td>Token 021 completes; 022 becomes current; Token 025 updates to 3 ahead, 15–20 mins.</td>
+              <td>Real-time update verified.</td>
+              <td><span class="badge badge-success">PASS</span></td>
+            </tr>
+            <tr>
+              <td><strong>TC-05</strong></td>
+              <td>Reception calls Token <code>024</code></td>
+              <td>Token 025 drops to 1 ahead; Turn Approaching banner (🔔) activates.</td>
+              <td>Alert banner displays.</td>
+              <td><span class="badge badge-success">PASS</span></td>
+            </tr>
+            <tr>
+              <td><strong>TC-06</strong></td>
+              <td>Reception calls Token <code>025</code></td>
+              <td>Token 025 becomes 0 ahead; status changes to <em>Now Being Called</em>; progress 5/5.</td>
+              <td>"It's Your Turn!" banner.</td>
+              <td><span class="badge badge-success">PASS</span></td>
+            </tr>
+            <tr>
+              <td><strong>TC-07</strong></td>
+              <td>Unauthenticated reception access</td>
+              <td>Dashboard controls hidden behind staff login modal; direct writes blocked.</td>
+              <td>Firestore rules enforce.</td>
+              <td><span class="badge badge-success">PASS</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="sub-heading">2. Short Conclusion</h3>
+        <h3 class="sub-heading">6.2 Short Conclusion</h3>
+        <p>
+          The <strong>Clinic Queue Tracking System MVP</strong> successfully demonstrates how a focused, lightweight web
+          application can solve patient waiting-time uncertainty in busy outpatient clinics. By respecting strict MoSCoW
+          MVP boundaries—avoiding unnecessary self-registration or online payment systems—the product delivers immediate
+          value to patients through clear queue positions and transparent waiting estimates. Reception staff retain full
+          operational control through a single-click interface protected by cloud authentication and security rules. The
+          system was verified across mobile and desktop devices and successfully deployed to Google Cloud Firebase
+          Hosting on the free tier.
+        </p>
+
+        <h3 class="sub-heading">3. Future Improvements Roadmap (Post-MVP Extensions)</h3>
+        <h3 class="sub-heading">6.3 Future Improvements Roadmap (Post-MVP Extensions)</h3>
+        <div class="info-card">
+          <ul style="margin-left: 18px; line-height: 1.55;">
+            <li><strong>Multi-Doctor / Multi-Room Support:</strong> Expand the database schema to support concurrent
+              queues across distinct OPD specialty rooms (e.g. Pediatrics in Room 1, Orthopedics in Room 2).</li>
+            <li><strong>Automated SMS / WhatsApp Queue Alerts:</strong> Integrate a cloud-triggered notification channel
+              to ping patients when they reach 2 patients ahead, allowing them to leave the clinic grounds safely.</li>
+            <li><strong>Doctor Delay Status Indicator:</strong> Provide a toggle for reception staff to broadcast doctor
+              emergency delays (e.g. <em>"Doctor delayed by 20 mins due to emergency round"</em>).</li>
+            <li><strong>Physical Registration Slip QR Codes:</strong> Print a scannable QR code on physical clinic slips
+              that opens the patient's queue status directly without entering any digits.</li>
+          </ul>
+        </div>
+
+        <div class="running-footer">
+          <span>Clinic Queue Tracking System — Final Report</span>
+          <span>Vivek Kumar (Roll: 2602028)</span>
+        </div>
       </div>
 
-      <h2 class="section-heading">6. Testing, Conclusion & Future Improvements</h2>
-
-      <h3 class="sub-heading">6.1 Verified End-to-End Test Matrix</h3>
-      <table>
-        <thead>
-          <tr>
-            <th style="width: 10%;">Test ID</th>
-            <th style="width: 25%;">Test Scenario / Input</th>
-            <th style="width: 35%;">Expected Behavior</th>
-            <th style="width: 20%;">Observed Result</th>
-            <th style="width: 10%;">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>TC-01</strong></td>
-            <td>Enter Token <code>025</code> on Home screen</td>
-            <td>Navigates to Queue Status; displays Token 025, 4 ahead, 20–30 mins wait.</td>
-            <td>Matches expectation exactly.</td>
-            <td><span class="badge badge-success">PASS</span></td>
-          </tr>
-          <tr>
-            <td><strong>TC-02</strong></td>
-            <td>Click demo shortcut (<code>025</code>)</td>
-            <td>Auto-fills <code>025</code> into input field without manual typing.</td>
-            <td>Fills immediately.</td>
-            <td><span class="badge badge-success">PASS</span></td>
-          </tr>
-          <tr>
-            <td><strong>TC-03</strong></td>
-            <td>Submit unknown token (<code>999</code>)</td>
-            <td>Displays friendly error: <em>"Token #999 was not found..."</em>.</td>
-            <td>Inline alert displays.</td>
-            <td><span class="badge badge-success">PASS</span></td>
-          </tr>
-          <tr>
-            <td><strong>TC-04</strong></td>
-            <td>Reception calls Token <code>022</code></td>
-            <td>Token 021 completes; 022 becomes current; Token 025 updates to 3 ahead, 15–20 mins.</td>
-            <td>Real-time update verified.</td>
-            <td><span class="badge badge-success">PASS</span></td>
-          </tr>
-          <tr>
-            <td><strong>TC-05</strong></td>
-            <td>Reception calls Token <code>024</code></td>
-            <td>Token 025 drops to 1 ahead; Turn Approaching banner (🔔) activates.</td>
-            <td>Alert banner displays.</td>
-            <td><span class="badge badge-success">PASS</span></td>
-          </tr>
-          <tr>
-            <td><strong>TC-06</strong></td>
-            <td>Reception calls Token <code>025</code></td>
-            <td>Token 025 becomes 0 ahead; status changes to <em>Now Being Called</em>; progress 5/5.</td>
-            <td>"It's Your Turn!" banner.</td>
-            <td><span class="badge badge-success">PASS</span></td>
-          </tr>
-          <tr>
-            <td><strong>TC-07</strong></td>
-            <td>Unauthenticated reception access</td>
-            <td>Dashboard controls hidden behind staff login modal; direct writes blocked.</td>
-            <td>Firestore rules enforce.</td>
-            <td><span class="badge badge-success">PASS</span></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3 class="sub-heading">6.2 Short Conclusion</h3>
-      <p>
-        The <strong>Clinic Queue Tracking System MVP</strong> successfully demonstrates how a focused, lightweight web application can solve patient waiting-time uncertainty in busy outpatient clinics. By respecting strict MoSCoW MVP boundaries—avoiding unnecessary self-registration or online payment systems—the product delivers immediate value to patients through clear queue positions and transparent waiting estimates. Reception staff retain full operational control through a single-click interface protected by cloud authentication and security rules. The system was verified across mobile and desktop devices and successfully deployed to Google Cloud Firebase Hosting on the free tier.
-      </p>
-
-      <h3 class="sub-heading">6.3 Future Improvements Roadmap (Post-MVP Extensions)</h3>
-      <div class="info-card">
-        <ul style="margin-left: 18px; line-height: 1.55;">
-          <li><strong>Multi-Doctor / Multi-Room Support:</strong> Expand the database schema to support concurrent queues across distinct OPD specialty rooms (e.g. Pediatrics in Room 1, Orthopedics in Room 2).</li>
-          <li><strong>Automated SMS / WhatsApp Queue Alerts:</strong> Integrate a cloud-triggered notification channel to ping patients when they reach 2 patients ahead, allowing them to leave the clinic grounds safely.</li>
-          <li><strong>Doctor Delay Status Indicator:</strong> Provide a toggle for reception staff to broadcast doctor emergency delays (e.g. <em>"Doctor delayed by 20 mins due to emergency round"</em>).</li>
-          <li><strong>Physical Registration Slip QR Codes:</strong> Print a scannable QR code on physical clinic slips that opens the patient's queue status directly without entering any digits.</li>
-        </ul>
-      </div>
-
-      <div class="running-footer">
-        <span>Clinic Queue Tracking System — Final Report</span>
-        <span>Vivek Kumar (Roll: 2602028)</span>
-      </div>
-    </div>
-
-    <!-- ====================================================================
+      <!-- ====================================================================
          PAGE 10: APPENDIX A — ORIGINAL ANTIGRAVITY IMPLEMENTATION PLAN (PART 1)
          ==================================================================== -->
-    <div class="page">
-      <div class="running-header">
-        <span>MSOT • Product Development</span>
-        <span>Appendix A (1 / 3) • Page 10 / 12</span>
+      <div class="page">
+        <div class="running-header">
+          <span>MSOT • Product Development</span>
+          <span>Appendix A (1 / 3) • Page 10 / 12</span>
+        </div>
+
+        <h2 class="section-heading">Appendix A — Original Antigravity Implementation Plan (Part 1)</h2>
+        <div class="info-card" style="margin-bottom: 14px;">
+          <strong>Archival Record:</strong> Below is the verbatim, unchanged content of the approved
+          <code>implementation-plan.md</code> generated during Phase 0 of the Antigravity engineering workflow,
+          preserving all original headings, scope boundaries, and screen architecture specifications.
+        </div>
+
+        <h3 class="sub-heading"># Clinic Queue Tracking System (MVP) - Implementation Plan</h3>
+        <p style="font-size: 11.5px; color: var(--text-muted);">
+          <strong>Author:</strong> Vivek Kumar (B.Tech Computer Science, MSOT)<br>
+          <strong>System:</strong> Clinic Queue Tracking Web Application (Patna OPD Clinic Pilot)<br>
+          <strong>Target Architecture:</strong> HTML5, CSS3, Vanilla JavaScript, Firebase Firestore, Firebase
+          Authentication, Firebase Hosting / Vercel<br>
+          <strong>Status:</strong> Pending Approval (Phase 0: Planning)
+        </p>
+
+        <h3 class="sub-heading">## 1. Project Goal & MVP Scope</h3>
+        <p><strong>1.1 Problem Statement:</strong> In busy outpatient department (OPD) clinics, patients receive a paper
+          token after registration but often have no visibility into how many patients are ahead of them or when they
+          will be called. This causes anxiety, frequent inquiries at the reception counter, and overcrowding in waiting
+          corridors.</p>
+        <p><strong>1.2 Solution & MVP Objective:</strong> A lightweight, mobile-first web application that allows
+          patients who already hold a physical paper token (e.g., <code>021</code>, <code>022</code>, <code>023</code>,
+          <code>024</code>, <code>025</code>) to look up their current queue status and estimated waiting time. A
+          secure, authenticated receptionist dashboard allows clinic staff to advance the queue in real-time.</p>
+
+        <p><strong>1.3 Strict Scope Boundaries (MoSCoW Alignment):</strong></p>
+        <ul style="margin-left: 20px; font-size: 11.5px; line-height: 1.5; margin-bottom: 12px;">
+          <li><strong>IN SCOPE (Must-Haves):</strong>
+            <br>1. <strong>Patient Token Lookup:</strong> Single-field mobile screen to enter an existing token (e.g.,
+            <code>025</code>) with a demo shortcut for quick testing and clear error handling for invalid tokens.
+            <br>2. <strong>Queue Position & Wait Time Display:</strong> Mobile screen showing token number, current
+            status, number of patients ahead, approximate waiting-time range (e.g., <code>20–30 minutes</code>), 5-step
+            visual progress bar, and an explicit disclaimer.
+            <br>3. <strong>Turn Approaching Alert:</strong> Status view / alert informing the patient when their turn is
+            next or being called to proceed to the consultation room.
+            <br>4. <strong>Receptionist Dashboard (Protected):</strong> Secure staff dashboard showing current token
+            being called, next token in line, total waiting count, a live list of waiting tokens with "Call Patient"
+            buttons, and an "Update Queue" action.
+            <br>5. <strong>Data Persistence & Security:</strong> Firebase Firestore for live shared queue state;
+            Firebase Authentication to restrict write operations to authorized clinic staff only.
+          </li>
+          <li style="margin-top: 6px;"><strong>OUT OF SCOPE (Won't Have Now):</strong>
+            <br>• No online patient self-registration or appointment booking (tokens are issued in person at reception).
+            <br>• No automatic digital token generation.
+            <br>• No online payments, billing, or prescription integration.
+            <br>• No third-party notification channels (SMS, WhatsApp, email) — status is checked on the web page.
+            <br>• No collection of real or sensitive Patient Health Information (PHI) — strictly tokens and status.
+          </li>
+        </ul>
+
+        <h3 class="sub-heading">## 2. Screen-by-Screen UI Architecture</h3>
+        <p style="font-size: 11px;">The interface directly reflects the low-fidelity hand-drawn wireframes and the Figma
+          prototype (<code>https://sip-format-11274582.figma.site/</code>):</p>
+
+        <table style="font-size: 10.5px; margin-top: 6px;">
+          <thead>
+            <tr>
+              <th style="width: 25%;">Screen</th>
+              <th style="width: 75%;">Design & Element Specification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Screen 1: Patient Home (index.html)</strong></td>
+              <td>Header: <code>OUTPATIENT CLINIC • Queue tracker</code> | Section: <code>01 / WELCOME</code> | Title:
+                "Clinic Queue Tracker" — "Check your waiting status" | Input: "Enter your token number" (placeholder
+                <code>e.g. 025</code>) | Subtext: "You'll find this on your registration slip." | Demo shortcut:
+                <code>• Try it out with sample token 025</code> | Primary button: <code>Check Queue →</code> | Error
+                alert for unknown tokens | Footer: "Your time is valuable. We'll help you keep track of it."</td>
+            </tr>
+            <tr>
+              <td><strong>Screen 2: Queue Status (queue-status.html)</strong></td>
+              <td>Header: <code>OUTPATIENT CLINIC • Queue tracker</code> | Section: <code>02 / YOUR PLACE IN LINE</code>
+                | Title: "Your Queue Status" | Hero Card: Token <code>025</code> with status pill (<code>Waiting</code>)
+                | Split Cards: "Patients ahead of you: 04" & "Estimated Waiting Time: 20–30 minutes" | 5-Segment
+                Progress Bar (Registered to Your turn) | Actions: <code>View Turn Status →</code> &
+                <code>← Back to Home</code> | Disclaimer: "This is an estimate and may change depending on queue
+                movement and doctor availability."</td>
+            </tr>
+            <tr>
+              <td><strong>Screen 3: Turn Approaching (turn-approaching.html)</strong></td>
+              <td>Header: <code>OUTPATIENT CLINIC • Queue tracker</code> | Section: <code>03 / TURN APPROACHING</code> |
+                High-visibility warning banner: "Your turn is approaching! Please stay near consultation room 1." |
+                Action: <code>← Back to Queue Status</code>.</td>
+            </tr>
+            <tr>
+              <td><strong>Screen 4: Receptionist Dashboard (reception.html)</strong></td>
+              <td>Header: <code>OUTPATIENT CLINIC • Reception desk</code> | Auth Guard & Login Modal (Staff Email &
+                Password) | 3 Top Metric Cards: Current Token (<code>021</code>), Next Token (<code>022</code>), Total
+                Waiting Patients (<code>04</code>) | Queue Table with columns: Token Number, Status, Action
+                (<code>Call Patient →</code>) | Footer Bar: "Call the next patient to move the queue forward." &
+                <code>Update Queue</code> button | "Reset Demo Data" & "Log Out" controls.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="running-footer">
+          <span>Clinic Queue Tracking System — Final Report</span>
+          <span>Vivek Kumar (Roll: 2602028)</span>
+        </div>
       </div>
 
-      <h2 class="section-heading">Appendix A — Original Antigravity Implementation Plan (Part 1)</h2>
-      <div class="info-card" style="margin-bottom: 14px;">
-        <strong>Archival Record:</strong> Below is the verbatim, unchanged content of the approved <code>implementation-plan.md</code> generated during Phase 0 of the Antigravity engineering workflow, preserving all original headings, scope boundaries, and screen architecture specifications.
-      </div>
-
-      <h3 class="sub-heading"># Clinic Queue Tracking System (MVP) - Implementation Plan</h3>
-      <p style="font-size: 11.5px; color: var(--text-muted);">
-        <strong>Author:</strong> Vivek Kumar (B.Tech Computer Science, MSOT)<br>
-        <strong>System:</strong> Clinic Queue Tracking Web Application (Patna OPD Clinic Pilot)<br>
-        <strong>Target Architecture:</strong> HTML5, CSS3, Vanilla JavaScript, Firebase Firestore, Firebase Authentication, Firebase Hosting / Vercel<br>
-        <strong>Status:</strong> Pending Approval (Phase 0: Planning)
-      </p>
-
-      <h3 class="sub-heading">## 1. Project Goal & MVP Scope</h3>
-      <p><strong>1.1 Problem Statement:</strong> In busy outpatient department (OPD) clinics, patients receive a paper token after registration but often have no visibility into how many patients are ahead of them or when they will be called. This causes anxiety, frequent inquiries at the reception counter, and overcrowding in waiting corridors.</p>
-      <p><strong>1.2 Solution & MVP Objective:</strong> A lightweight, mobile-first web application that allows patients who already hold a physical paper token (e.g., <code>021</code>, <code>022</code>, <code>023</code>, <code>024</code>, <code>025</code>) to look up their current queue status and estimated waiting time. A secure, authenticated receptionist dashboard allows clinic staff to advance the queue in real-time.</p>
-      
-      <p><strong>1.3 Strict Scope Boundaries (MoSCoW Alignment):</strong></p>
-      <ul style="margin-left: 20px; font-size: 11.5px; line-height: 1.5; margin-bottom: 12px;">
-        <li><strong>IN SCOPE (Must-Haves):</strong>
-          <br>1. <strong>Patient Token Lookup:</strong> Single-field mobile screen to enter an existing token (e.g., <code>025</code>) with a demo shortcut for quick testing and clear error handling for invalid tokens.
-          <br>2. <strong>Queue Position & Wait Time Display:</strong> Mobile screen showing token number, current status, number of patients ahead, approximate waiting-time range (e.g., <code>20–30 minutes</code>), 5-step visual progress bar, and an explicit disclaimer.
-          <br>3. <strong>Turn Approaching Alert:</strong> Status view / alert informing the patient when their turn is next or being called to proceed to the consultation room.
-          <br>4. <strong>Receptionist Dashboard (Protected):</strong> Secure staff dashboard showing current token being called, next token in line, total waiting count, a live list of waiting tokens with "Call Patient" buttons, and an "Update Queue" action.
-          <br>5. <strong>Data Persistence & Security:</strong> Firebase Firestore for live shared queue state; Firebase Authentication to restrict write operations to authorized clinic staff only.
-        </li>
-        <li style="margin-top: 6px;"><strong>OUT OF SCOPE (Won't Have Now):</strong>
-          <br>• No online patient self-registration or appointment booking (tokens are issued in person at reception).
-          <br>• No automatic digital token generation.
-          <br>• No online payments, billing, or prescription integration.
-          <br>• No third-party notification channels (SMS, WhatsApp, email) — status is checked on the web page.
-          <br>• No collection of real or sensitive Patient Health Information (PHI) — strictly tokens and status.
-        </li>
-      </ul>
-
-      <h3 class="sub-heading">## 2. Screen-by-Screen UI Architecture</h3>
-      <p style="font-size: 11px;">The interface directly reflects the low-fidelity hand-drawn wireframes and the Figma prototype (<code>https://sip-format-11274582.figma.site/</code>):</p>
-
-      <table style="font-size: 10.5px; margin-top: 6px;">
-        <thead>
-          <tr>
-            <th style="width: 25%;">Screen</th>
-            <th style="width: 75%;">Design & Element Specification</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Screen 1: Patient Home (index.html)</strong></td>
-            <td>Header: <code>OUTPATIENT CLINIC • Queue tracker</code> | Section: <code>01 / WELCOME</code> | Title: "Clinic Queue Tracker" — "Check your waiting status" | Input: "Enter your token number" (placeholder <code>e.g. 025</code>) | Subtext: "You'll find this on your registration slip." | Demo shortcut: <code>• Try it out with sample token 025</code> | Primary button: <code>Check Queue →</code> | Error alert for unknown tokens | Footer: "Your time is valuable. We'll help you keep track of it."</td>
-          </tr>
-          <tr>
-            <td><strong>Screen 2: Queue Status (queue-status.html)</strong></td>
-            <td>Header: <code>OUTPATIENT CLINIC • Queue tracker</code> | Section: <code>02 / YOUR PLACE IN LINE</code> | Title: "Your Queue Status" | Hero Card: Token <code>025</code> with status pill (<code>Waiting</code>) | Split Cards: "Patients ahead of you: 04" & "Estimated Waiting Time: 20–30 minutes" | 5-Segment Progress Bar (Registered to Your turn) | Actions: <code>View Turn Status →</code> & <code>← Back to Home</code> | Disclaimer: "This is an estimate and may change depending on queue movement and doctor availability."</td>
-          </tr>
-          <tr>
-            <td><strong>Screen 3: Turn Approaching (turn-approaching.html)</strong></td>
-            <td>Header: <code>OUTPATIENT CLINIC • Queue tracker</code> | Section: <code>03 / TURN APPROACHING</code> | High-visibility warning banner: "Your turn is approaching! Please stay near consultation room 1." | Action: <code>← Back to Queue Status</code>.</td>
-          </tr>
-          <tr>
-            <td><strong>Screen 4: Receptionist Dashboard (reception.html)</strong></td>
-            <td>Header: <code>OUTPATIENT CLINIC • Reception desk</code> | Auth Guard & Login Modal (Staff Email & Password) | 3 Top Metric Cards: Current Token (<code>021</code>), Next Token (<code>022</code>), Total Waiting Patients (<code>04</code>) | Queue Table with columns: Token Number, Status, Action (<code>Call Patient →</code>) | Footer Bar: "Call the next patient to move the queue forward." & <code>Update Queue</code> button | "Reset Demo Data" & "Log Out" controls.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="running-footer">
-        <span>Clinic Queue Tracking System — Final Report</span>
-        <span>Vivek Kumar (Roll: 2602028)</span>
-      </div>
-    </div>
-
-    <!-- ====================================================================
+      <!-- ====================================================================
          PAGE 11: APPENDIX A — ORIGINAL ANTIGRAVITY IMPLEMENTATION PLAN (PART 2)
          ==================================================================== -->
-    <div class="page">
-      <div class="running-header">
-        <span>MSOT • Product Development</span>
-        <span>Appendix A (2 / 3) • Page 11 / 12</span>
-      </div>
+      <div class="page">
+        <div class="running-header">
+          <span>MSOT • Product Development</span>
+          <span>Appendix A (2 / 3) • Page 11 / 12</span>
+        </div>
 
-      <h2 class="section-heading">Appendix A — Original Antigravity Implementation Plan (Part 2)</h2>
+        <h2 class="section-heading">Appendix A — Original Antigravity Implementation Plan (Part 2)</h2>
 
-      <h3 class="sub-heading">## 3. Database Schema & Business Logic</h3>
-      <p style="font-size: 11px;"><strong>3.1 Firebase Firestore Collections & Document Structure:</strong></p>
-      <pre>
+        <h3 class="sub-heading">## 3. Database Schema & Business Logic</h3>
+        <p style="font-size: 11px;"><strong>3.1 Firebase Firestore Collections & Document Structure:</strong></p>
+        <pre>
 Firestore Root
 │
 ├── metadata/
@@ -1279,21 +1536,30 @@ Firestore Root
     └── 025 (Document) [token_id: "025", order: 5, status: "waiting", called_at: null]
       </pre>
 
-      <p style="font-size: 11px;"><strong>3.2 Waiting-Time Calculation Algorithm:</strong></p>
-      <p style="font-size: 11px;">The algorithm is deterministic, transparent, and models real clinic consultation pacing (approx. 5 to 7 minutes per consultation):</p>
-      <ul style="margin-left: 20px; font-size: 11px; line-height: 1.45; margin-bottom: 8px;">
-        <li><strong>1. Calculate Patients Ahead (N):</strong> If a patient searches for Token T: Retrieve all tokens where <code>status == "waiting"</code> and <code>order &lt; T.order</code>. N = count of those waiting tokens.</li>
-        <li><strong>2. Determine Time Range:</strong>
-          <br>• If T.status == "calling": Patients Ahead = <code>0</code>, Time Estimate = <code>"Now being called — please proceed to Room 1"</code>
-          <br>• If N == 0 and T.status == "waiting": Patients Ahead = <code>0</code>, Time Estimate = <code>"Up next (&lt; 5 minutes)"</code>
-          <br>• If N &gt; 0: Min Wait = N × 5 mins, Max Wait = N × 7 mins (rounded to 10-min brackets).
-          <br>• <em>Example for Token 025 (N = 4 patients ahead: 021 calling, 022, 023, 024 waiting):</em> Min = 4 × 5 = 20 mins; Max = 4 × 7.5 ≈ 30 mins $\rightarrow$ <strong><code>"20–30 minutes"</code></strong> (exact wireframe match).
-        </li>
-        <li><strong>3. Queue Progress Steps (5 Segments):</strong> Segment 1: Registered (Always lit) | Segment 2: Waiting ($N \le 3$) | Segment 3: Halfway ($N \le 2$) | Segment 4: Next in line ($N == 0$ or $1$) | Segment 5: Your turn ($T.status == \text{"calling"}$).</li>
-      </ul>
+        <p style="font-size: 11px;"><strong>3.2 Waiting-Time Calculation Algorithm:</strong></p>
+        <p style="font-size: 11px;">The algorithm is deterministic, transparent, and models real clinic consultation
+          pacing (approx. 5 to 7 minutes per consultation):</p>
+        <ul style="margin-left: 20px; font-size: 11px; line-height: 1.45; margin-bottom: 8px;">
+          <li><strong>1. Calculate Patients Ahead (N):</strong> If a patient searches for Token T: Retrieve all tokens
+            where <code>status == "waiting"</code> and <code>order &lt; T.order</code>. N = count of those waiting
+            tokens.</li>
+          <li><strong>2. Determine Time Range:</strong>
+            <br>• If T.status == "calling": Patients Ahead = <code>0</code>, Time Estimate =
+            <code>"Now being called — please proceed to Room 1"</code>
+            <br>• If N == 0 and T.status == "waiting": Patients Ahead = <code>0</code>, Time Estimate =
+            <code>"Up next (&lt; 5 minutes)"</code>
+            <br>• If N &gt; 0: Min Wait = N × 5 mins, Max Wait = N × 7 mins (rounded to 10-min brackets).
+            <br>• <em>Example for Token 025 (N = 4 patients ahead: 021 calling, 022, 023, 024 waiting):</em> Min = 4 × 5
+            = 20 mins; Max = 4 × 7.5 ≈ 30 mins $\rightarrow$ <strong><code>"20–30 minutes"</code></strong> (exact
+            wireframe match).
+          </li>
+          <li><strong>3. Queue Progress Steps (5 Segments):</strong> Segment 1: Registered (Always lit) | Segment 2:
+            Waiting ($N \le 3$) | Segment 3: Halfway ($N \le 2$) | Segment 4: Next in line ($N == 0$ or $1$) | Segment
+            5: Your turn ($T.status == \text{"calling"}$).</li>
+        </ul>
 
-      <p style="font-size: 11px;"><strong>3.3 Security Rules (firestore.rules):</strong></p>
-      <pre>
+        <p style="font-size: 11px;"><strong>3.3 Security Rules (firestore.rules):</strong></p>
+        <pre>
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
@@ -1310,8 +1576,8 @@ service cloud.firestore {
 }
       </pre>
 
-      <h3 class="sub-heading">## 4. File & Folder Structure</h3>
-      <pre>
+        <h3 class="sub-heading">## 4. File & Folder Structure</h3>
+        <pre>
 product/
 ├── index.html                   # Screen 1: Patient Home (Token input & lookup)
 ├── queue-status.html            # Screen 2: Patient Queue Status & Screen 4: Turn Approaching
@@ -1322,109 +1588,183 @@ product/
 ├── firestore.rules / firebase.json / .gitignore / implementation-plan.md / BUILD_LOG.md / README.md
       </pre>
 
-      <div class="running-footer">
-        <span>Clinic Queue Tracking System — Final Report</span>
-        <span>Vivek Kumar (Roll: 2602028)</span>
+        <div class="running-footer">
+          <span>Clinic Queue Tracking System — Final Report</span>
+          <span>Vivek Kumar (Roll: 2602028)</span>
+        </div>
       </div>
-    </div>
 
-    <!-- ====================================================================
+      <!-- ====================================================================
          PAGE 12: APPENDIX A — ORIGINAL ANTIGRAVITY IMPLEMENTATION PLAN (PART 3)
          ==================================================================== -->
-    <div class="page">
-      <div class="running-header">
-        <span>MSOT • Product Development</span>
-        <span>Appendix A (3 / 3) • Page 12 / 12</span>
+      <div class="page">
+        <div class="running-header">
+          <span>MSOT • Product Development</span>
+          <span>Appendix A (3 / 3) • Page 12 / 12</span>
+        </div>
+
+        <h2 class="section-heading">Appendix A — Original Antigravity Implementation Plan (Part 3)</h2>
+
+        <h3 class="sub-heading">## 5. Phased Implementation Checklist</h3>
+        <p style="font-size: 10.5px; margin-bottom: 6px;">We will execute the development sequentially in 6 structured
+          phases. Each phase will be committed to Git with clear commit messages and documented in BUILD_LOG.md.</p>
+
+        <table style="font-size: 10px; margin-bottom: 8px;">
+          <thead>
+            <tr>
+              <th style="width: 20%;">Phase</th>
+              <th style="width: 80%;">Action Items Defined in Original Plan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Phase 1: Setup</strong></td>
+              <td>[ ] Initialize Git repository in /Users/vivek/product. [ ] Create .gitignore and base structure (css/,
+                js/, seed/). [ ] Initialize BUILD_LOG.md. [ ] Create seed/initial-queue.json for tokens 021-025.</td>
+            </tr>
+            <tr>
+              <td><strong>Phase 2: UI Layouts</strong></td>
+              <td>[ ] Build css/styles.css with wireframe styling. [ ] Build index.html (Patient Home). [ ] Build
+                queue-status.html (Queue Status & Turn Approaching). [ ] Build reception.html (Receptionist Dashboard).
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Phase 3: Firebase</strong></td>
+              <td>[ ] Setup js/firebase-config.js with v10 CDN modules. [ ] Setup firestore.rules. [ ] Create
+                js/seed-data.js to initialize Firestore (021 calling, 022-025 waiting).</td>
+            </tr>
+            <tr>
+              <td><strong>Phase 4: Patient Features</strong></td>
+              <td>[ ] Implement js/patient-home.js (input, demo shortcut, validation, redirect). [ ] Implement
+                js/queue-status.js (query Firestore, calculate wait, render progress bar, turn alert, manual refresh).
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Phase 5: Reception</strong></td>
+              <td>[ ] Implement Firebase Auth in js/reception.js. [ ] Render current token, next token, waiting list. [
+                ] Implement Call Patient progression logic. [ ] Add Reset Demo Queue button.</td>
+            </tr>
+            <tr>
+              <td><strong>Phase 6: Testing</strong></td>
+              <td>[ ] Execute test cases TC-01 to TC-12. [ ] Verify responsive design. [ ] Finalize BUILD_LOG.md. [ ]
+                Provide deployment instructions.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="sub-heading">## 6. Comprehensive Testing Plan</h3>
+        <table style="font-size: 9.5px; margin-bottom: 8px;">
+          <thead>
+            <tr>
+              <th style="width: 10%;">Test ID</th>
+              <th style="width: 25%;">Feature Under Test</th>
+              <th style="width: 30%;">Test Scenario / Action</th>
+              <th style="width: 35%;">Expected Result (Original Blueprint)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TC-01</td>
+              <td>Token Lookup (Valid)</td>
+              <td>Enter 025 and click "Check Queue".</td>
+              <td>Navigates to Queue Status showing Token 025, Status: Waiting.</td>
+            </tr>
+            <tr>
+              <td>TC-02</td>
+              <td>Token Lookup (Demo)</td>
+              <td>Click • Try it out with sample token 025.</td>
+              <td>Input auto-fills with 025 and proceeds to queue status.</td>
+            </tr>
+            <tr>
+              <td>TC-03</td>
+              <td>Token Lookup (Invalid)</td>
+              <td>Enter 999 or letters ABC.</td>
+              <td>Stays on page; shows "Token not found. Please verify your token number...".</td>
+            </tr>
+            <tr>
+              <td>TC-04</td>
+              <td>Queue Status Metrics</td>
+              <td>Inspect Token 025 initial status.</td>
+              <td>Shows Patients ahead of you: 04 and Estimated Waiting Time: 20–30 minutes.</td>
+            </tr>
+            <tr>
+              <td>TC-05</td>
+              <td>Progress Bar Display</td>
+              <td>Inspect 5-step progress bar for 025.</td>
+              <td>Displays registered step lit, progress proportional to position in line.</td>
+            </tr>
+            <tr>
+              <td>TC-06</td>
+              <td>Disclaimer Visibility</td>
+              <td>Inspect Queue Status footer note.</td>
+              <td>Displays note: "This is an estimate and may change depending on queue movement...".</td>
+            </tr>
+            <tr>
+              <td>TC-07</td>
+              <td>Turn Approaching Alert</td>
+              <td>Click "View Turn Status →" or next in line.</td>
+              <td>Displays Screen 4: "Your turn is approaching! Please stay near consultation room 1."</td>
+            </tr>
+            <tr>
+              <td>TC-08</td>
+              <td>Reception Auth Guard</td>
+              <td>Navigate to reception.html without sign-in.</td>
+              <td>Queue controls hidden/locked; login modal prompts for staff credentials.</td>
+            </tr>
+            <tr>
+              <td>TC-09</td>
+              <td>Reception Queue Progression</td>
+              <td>Staff logs in and calls 022.</td>
+              <td>Token 021 completes, 022 becomes current, 023 next, waiting count becomes 3.</td>
+            </tr>
+            <tr>
+              <td>TC-10</td>
+              <td>Live Patient View Update</td>
+              <td>Keep queue-status.html open while 022 called.</td>
+              <td>Token 025 position updates to 3 patients ahead, wait reduces to 15–25 minutes.</td>
+            </tr>
+            <tr>
+              <td>TC-11</td>
+              <td>Security Rules Enforcement</td>
+              <td>Attempt write without auth.</td>
+              <td>Firebase rejects write with permission-denied.</td>
+            </tr>
+            <tr>
+              <td>TC-12</td>
+              <td>Demo Reset Action</td>
+              <td>Staff clicks "Reset Demo Queue".</td>
+              <td>State resets to 021 calling, 022–025 waiting, 4 total waiting.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="sub-heading">## 7. Version Control & Git Commit Strategy</h3>
+        <p style="font-size: 10px; line-height: 1.4;">
+          Every phase will correspond to clear, readable Git commits following conventional commit syntax:<br>
+          1. <code>chore: project initialization, folder structure, and build log</code><br>
+          2.
+          <code>feat(ui): implement responsive patient home, queue status, and reception layouts matching wireframes</code><br>
+          3.
+          <code>feat(firebase): configure firestore schema, security rules, and seed script for tokens 021-025</code><br>
+          4.
+          <code>feat(patient): implement token validation, lookup routing, and dynamic wait-time calculation</code><br>
+          5.
+          <code>feat(reception): implement staff authentication, queue advancement, and demo reset controls</code><br>
+          6. <code>test: verify queue progression, live updates, and test matrix across mobile and desktop</code>
+        </p>
+
+        <div class="info-card" style="margin-top: 10px; font-size: 10.5px;">
+          <em>*This plan is ready for review. Coding will begin upon user confirmation.*</em>
+        </div>
+
+        <div class="running-footer">
+          <span>Clinic Queue Tracking System — Final Report</span>
+          <span>Vivek Kumar (Roll: 2602028)</span>
+        </div>
       </div>
 
-      <h2 class="section-heading">Appendix A — Original Antigravity Implementation Plan (Part 3)</h2>
-
-      <h3 class="sub-heading">## 5. Phased Implementation Checklist</h3>
-      <p style="font-size: 10.5px; margin-bottom: 6px;">We will execute the development sequentially in 6 structured phases. Each phase will be committed to Git with clear commit messages and documented in BUILD_LOG.md.</p>
-
-      <table style="font-size: 10px; margin-bottom: 8px;">
-        <thead>
-          <tr>
-            <th style="width: 20%;">Phase</th>
-            <th style="width: 80%;">Action Items Defined in Original Plan</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Phase 1: Setup</strong></td>
-            <td>[ ] Initialize Git repository in /Users/vivek/product. [ ] Create .gitignore and base structure (css/, js/, seed/). [ ] Initialize BUILD_LOG.md. [ ] Create seed/initial-queue.json for tokens 021-025.</td>
-          </tr>
-          <tr>
-            <td><strong>Phase 2: UI Layouts</strong></td>
-            <td>[ ] Build css/styles.css with wireframe styling. [ ] Build index.html (Patient Home). [ ] Build queue-status.html (Queue Status & Turn Approaching). [ ] Build reception.html (Receptionist Dashboard).</td>
-          </tr>
-          <tr>
-            <td><strong>Phase 3: Firebase</strong></td>
-            <td>[ ] Setup js/firebase-config.js with v10 CDN modules. [ ] Setup firestore.rules. [ ] Create js/seed-data.js to initialize Firestore (021 calling, 022-025 waiting).</td>
-          </tr>
-          <tr>
-            <td><strong>Phase 4: Patient Features</strong></td>
-            <td>[ ] Implement js/patient-home.js (input, demo shortcut, validation, redirect). [ ] Implement js/queue-status.js (query Firestore, calculate wait, render progress bar, turn alert, manual refresh).</td>
-          </tr>
-          <tr>
-            <td><strong>Phase 5: Reception</strong></td>
-            <td>[ ] Implement Firebase Auth in js/reception.js. [ ] Render current token, next token, waiting list. [ ] Implement Call Patient progression logic. [ ] Add Reset Demo Queue button.</td>
-          </tr>
-          <tr>
-            <td><strong>Phase 6: Testing</strong></td>
-            <td>[ ] Execute test cases TC-01 to TC-12. [ ] Verify responsive design. [ ] Finalize BUILD_LOG.md. [ ] Provide deployment instructions.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3 class="sub-heading">## 6. Comprehensive Testing Plan</h3>
-      <table style="font-size: 9.5px; margin-bottom: 8px;">
-        <thead>
-          <tr>
-            <th style="width: 10%;">Test ID</th>
-            <th style="width: 25%;">Feature Under Test</th>
-            <th style="width: 30%;">Test Scenario / Action</th>
-            <th style="width: 35%;">Expected Result (Original Blueprint)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>TC-01</td><td>Token Lookup (Valid)</td><td>Enter 025 and click "Check Queue".</td><td>Navigates to Queue Status showing Token 025, Status: Waiting.</td></tr>
-          <tr><td>TC-02</td><td>Token Lookup (Demo)</td><td>Click • Try it out with sample token 025.</td><td>Input auto-fills with 025 and proceeds to queue status.</td></tr>
-          <tr><td>TC-03</td><td>Token Lookup (Invalid)</td><td>Enter 999 or letters ABC.</td><td>Stays on page; shows "Token not found. Please verify your token number...".</td></tr>
-          <tr><td>TC-04</td><td>Queue Status Metrics</td><td>Inspect Token 025 initial status.</td><td>Shows Patients ahead of you: 04 and Estimated Waiting Time: 20–30 minutes.</td></tr>
-          <tr><td>TC-05</td><td>Progress Bar Display</td><td>Inspect 5-step progress bar for 025.</td><td>Displays registered step lit, progress proportional to position in line.</td></tr>
-          <tr><td>TC-06</td><td>Disclaimer Visibility</td><td>Inspect Queue Status footer note.</td><td>Displays note: "This is an estimate and may change depending on queue movement...".</td></tr>
-          <tr><td>TC-07</td><td>Turn Approaching Alert</td><td>Click "View Turn Status →" or next in line.</td><td>Displays Screen 4: "Your turn is approaching! Please stay near consultation room 1."</td></tr>
-          <tr><td>TC-08</td><td>Reception Auth Guard</td><td>Navigate to reception.html without sign-in.</td><td>Queue controls hidden/locked; login modal prompts for staff credentials.</td></tr>
-          <tr><td>TC-09</td><td>Reception Queue Progression</td><td>Staff logs in and calls 022.</td><td>Token 021 completes, 022 becomes current, 023 next, waiting count becomes 3.</td></tr>
-          <tr><td>TC-10</td><td>Live Patient View Update</td><td>Keep queue-status.html open while 022 called.</td><td>Token 025 position updates to 3 patients ahead, wait reduces to 15–25 minutes.</td></tr>
-          <tr><td>TC-11</td><td>Security Rules Enforcement</td><td>Attempt write without auth.</td><td>Firebase rejects write with permission-denied.</td></tr>
-          <tr><td>TC-12</td><td>Demo Reset Action</td><td>Staff clicks "Reset Demo Queue".</td><td>State resets to 021 calling, 022–025 waiting, 4 total waiting.</td></tr>
-        </tbody>
-      </table>
-
-      <h3 class="sub-heading">## 7. Version Control & Git Commit Strategy</h3>
-      <p style="font-size: 10px; line-height: 1.4;">
-        Every phase will correspond to clear, readable Git commits following conventional commit syntax:<br>
-        1. <code>chore: project initialization, folder structure, and build log</code><br>
-        2. <code>feat(ui): implement responsive patient home, queue status, and reception layouts matching wireframes</code><br>
-        3. <code>feat(firebase): configure firestore schema, security rules, and seed script for tokens 021-025</code><br>
-        4. <code>feat(patient): implement token validation, lookup routing, and dynamic wait-time calculation</code><br>
-        5. <code>feat(reception): implement staff authentication, queue advancement, and demo reset controls</code><br>
-        6. <code>test: verify queue progression, live updates, and test matrix across mobile and desktop</code>
-      </p>
-
-      <div class="info-card" style="margin-top: 10px; font-size: 10.5px;">
-        <em>*This plan is ready for review. Coding will begin upon user confirmation.*</em>
-      </div>
-
-      <div class="running-footer">
-        <span>Clinic Queue Tracking System — Final Report</span>
-        <span>Vivek Kumar (Roll: 2602028)</span>
-      </div>
     </div>
 
-  </div>
-
 </body>
+
 </html>

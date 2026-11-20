@@ -3,87 +3,442 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clinic Queue Tracker - Check Your Status</title>
+  <title>Clinic Queue Tracking System - Live MVP</title>
+  <!-- Base Styles & Wireframe Components -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/patient.css">
+  <link rel="stylesheet" href="css/reception.css">
+  <link rel="stylesheet" href="css/unified.css">
 </head>
-<body>
+<body class="unified-page">
 
-  <!-- Mobile Screen Frame (Matches Wireframe 1: Patient Home) -->
-  <main class="mobile-wrapper" role="main">
+  <!-- ======================================================================
+       Unified Application Wrapper
+       Expands dynamically to 880px when Reception tab is active
+       ====================================================================== -->
+  <main id="unifiedWrapper" class="unified-wrapper" role="main">
     
-    <!-- Top Header Bar -->
-    <header class="clinic-header">
-      <span class="clinic-tag">Outpatient Clinic</span>
-      <span class="system-tag">• Queue tracker</span>
+    <!-- Top Mode Switcher Bar -->
+    <header class="portal-topbar">
+      <div class="portal-brand-block">
+        <span class="portal-clinic-title">Patna Outpatient Clinic</span>
+        <span id="headerLiveTicker" class="portal-live-pill">
+          <span class="portal-pulse-dot"></span> Live Queue: Serving #021
+        </span>
+      </div>
+
+      <!-- Segmented Tab Navigation for Patient vs Receptionist -->
+      <nav class="portal-tabs-group" role="tablist" aria-label="Clinic Queue Mode Switcher">
+        <button 
+          type="button" 
+          role="tab" 
+          id="tabPatient" 
+          class="portal-tab-btn active" 
+          aria-selected="true" 
+          aria-controls="patientViewSection"
+        >
+          <span aria-hidden="true">👤</span> Patient Portal
+        </button>
+        <button 
+          type="button" 
+          role="tab" 
+          id="tabReception" 
+          class="portal-tab-btn" 
+          aria-selected="false" 
+          aria-controls="receptionViewSection"
+        >
+          <span aria-hidden="true">👩‍💼</span> Reception Desk 
+          <span class="portal-badge-staff">Staff</span>
+        </button>
+      </nav>
     </header>
 
-    <!-- Main Card Content -->
-    <section class="card-content">
+    <!-- ======================================================================
+         SECTION 1: PUBLIC PATIENT PORTAL
+         ====================================================================== -->
+    <section id="patientViewSection" class="portal-view active-view" aria-label="Patient Queue Portal">
       
-      <!-- Screen 01 Welcome Tag -->
-      <div class="section-badge">01 / Welcome</div>
-
-      <!-- Main Headings -->
-      <h1 class="page-title">Clinic Queue<br>Tracker</h1>
-      <p class="page-subtitle">Check your waiting status</p>
-
-      <hr class="divider">
-
-      <!-- Form Error Container (Hidden by default) -->
-      <div id="errorAlert" class="alert-box alert-error" role="alert" aria-live="polite">
-        <!-- Error text dynamically populated by JavaScript -->
+      <!-- Top Clinic Header Sub-bar -->
+      <div class="clinic-header">
+        <span class="clinic-tag">Outpatient Clinic</span>
+        <span class="system-tag">• Queue tracker</span>
       </div>
 
-      <!-- Token Lookup Form -->
-      <form id="tokenForm" novalidate>
-        <div class="form-group">
-          <label for="tokenInput" class="form-label">Enter your token number</label>
-          <div class="token-input-wrapper">
-            <input 
-              type="text" 
-              id="tokenInput" 
-              name="tokenNumber" 
-              class="form-input" 
-              placeholder="e.g. 025" 
-              maxlength="6"
-              autocomplete="off"
-              inputmode="numeric"
-              aria-describedby="tokenHelper errorAlert"
-            >
-            <span class="token-input-icon">#</span>
+      <!-- SUBVIEW 1A: Patient Token Lookup (Wireframe Sketch 1) -->
+      <div id="patientLookupSubView" class="patient-subview active-subview card-content">
+        
+        <div class="section-badge">01 / Welcome</div>
+        <h1 class="page-title">Clinic Queue<br>Tracker</h1>
+        <p class="page-subtitle">Check your waiting status</p>
+
+        <hr class="divider">
+
+        <!-- Error Alert -->
+        <div id="errorAlert" class="alert-box alert-error" role="alert" aria-live="polite"></div>
+
+        <!-- Token Lookup Form -->
+        <form id="tokenForm" novalidate>
+          <div class="form-group">
+            <label for="tokenInput" class="form-label">Enter your token number</label>
+            <div class="token-input-wrapper">
+              <input 
+                type="text" 
+                id="tokenInput" 
+                name="tokenNumber" 
+                class="form-input" 
+                placeholder="e.g. 025" 
+                maxlength="6"
+                autocomplete="off"
+                inputmode="numeric"
+                aria-describedby="tokenHelper errorAlert"
+              >
+              <span class="token-input-icon">#</span>
+            </div>
+            <span id="tokenHelper" class="form-helper">You'll find this on your paper registration slip.</span>
           </div>
-          <span id="tokenHelper" class="form-helper">You'll find this on your registration slip.</span>
+
+          <!-- Submit Button -->
+          <button type="submit" id="checkQueueBtn" class="btn-primary btn-wireframe-shaded">
+            <span>Check Queue</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </button>
+        </form>
+
+        <!-- Demo Shortcut Button -->
+        <div class="demo-shortcut-container">
+          <button type="button" id="demoShortcutBtn" class="demo-shortcut-btn">
+            • Try it out with sample token 025
+          </button>
         </div>
 
-        <!-- Primary Call to Action Button -->
-        <button type="submit" id="checkQueueBtn" class="btn-primary btn-wireframe-shaded">
-          <span>Check Queue</span>
-          <span class="btn-arrow" aria-hidden="true">→</span>
-        </button>
-      </form>
+        <!-- Pilot Tokens Guide -->
+        <div class="active-tokens-badge-box">
+          <strong>Today's Pilot Queue:</strong>
+          <span class="active-token-pill calling">#021 (Calling)</span>
+          <span class="active-token-pill">#022</span>
+          <span class="active-token-pill">#023</span>
+          <span class="active-token-pill">#024</span>
+          <span class="active-token-pill">#025</span>
+        </div>
 
-      <!-- Demo Shortcut (Matches Wireframe) -->
-      <div class="demo-shortcut-container">
-        <button type="button" id="demoShortcutBtn" class="demo-shortcut-btn">
-          • Try it out with sample token 025
-        </button>
+        <!-- Bottom Reassurance Note -->
+        <footer class="card-footer">
+          <p class="footer-quote-title">Your time is valuable</p>
+          <p class="footer-quote-sub">We'll help you keep track of it.</p>
+        </footer>
+
       </div>
 
-      <!-- Bottom Reassurance Note -->
-      <footer class="card-footer">
-        <p class="footer-quote-title">Your time is valuable</p>
-        <p class="footer-quote-sub">We'll help you keep track of it.</p>
-        <div style="margin-top: 14px;">
-          <a href="reception.html" style="font-size: 0.72rem; color: #94a3b8; text-decoration: none;">Staff Reception Desk →</a>
+      <!-- SUBVIEW 1B: Patient Live Queue Status (Wireframe Sketch 2) -->
+      <div id="patientStatusSubView" class="patient-subview card-content">
+        
+        <div class="section-badge">02 / Your place in line</div>
+        <h1 class="page-title">Your Queue Status</h1>
+        <p id="queueStatusSubtitle" class="page-subtitle">You're registered. We'll take it from here.</p>
+
+        <!-- Dynamic Inline Alert Banner (Shows when turn is approaching) -->
+        <div id="inlineTurnAlert" class="inline-turn-alert" role="alert" aria-live="polite">
+          <span id="turnAlertIcon" class="turn-alert-icon">🔔</span>
+          <div class="turn-alert-content">
+            <div id="turnAlertTitle" class="turn-alert-title">Your turn is approaching!</div>
+            <div id="turnAlertMsg" class="turn-alert-msg">
+              You are next in line. Please stay near Consultation Room 1.
+            </div>
+          </div>
         </div>
-      </footer>
+
+        <!-- 1. Hero Token Card -->
+        <div class="token-hero-card">
+          <span class="token-hero-label">Token Number</span>
+          <div id="tokenNumberDisplay" class="token-hero-number">---</div>
+          <div id="tokenStatusPill" class="status-pill waiting">
+            <span class="status-dot"></span>
+            <span id="tokenStatusText">Waiting</span>
+          </div>
+        </div>
+
+        <!-- 2. Split Metrics Grid -->
+        <div class="metrics-row">
+          <div class="metric-box">
+            <span class="metric-label">Patients ahead of you</span>
+            <div class="metric-value-container">
+              <span id="patientsAheadDisplay" class="metric-value">--</span>
+            </div>
+          </div>
+
+          <div class="metric-box">
+            <span class="metric-label">
+              Estimated Waiting Time
+              <span class="metric-estimate-tag">*Estimate</span>
+            </span>
+            <div class="metric-value-container">
+              <span id="waitTimeDisplay" class="metric-value">--</span>
+              <span id="waitUnitDisplay" class="metric-unit">minutes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Five-Segment Progress Bar -->
+        <div class="queue-progress-wrapper">
+          <div class="progress-header-row">
+            <span>Queue progress</span>
+            <span id="progressStatusText" class="progress-status-text">You're in line</span>
+          </div>
+          
+          <div class="progress-segments-container" aria-label="Queue progress 5-step indicator">
+            <div id="seg1" class="progress-segment active" title="Step 1: Registered"></div>
+            <div id="seg2" class="progress-segment" title="Step 2: Waiting"></div>
+            <div id="seg3" class="progress-segment" title="Step 3: Mid-queue"></div>
+            <div id="seg4" class="progress-segment" title="Step 4: Next in line"></div>
+            <div id="seg5" class="progress-segment" title="Step 5: Your turn"></div>
+          </div>
+
+          <div class="progress-labels-row">
+            <span>Registered</span>
+            <span>Your turn</span>
+          </div>
+        </div>
+
+        <!-- 4. Action Buttons Group -->
+        <div class="action-buttons-group">
+          <button type="button" id="viewTurnStatusBtn" class="btn-primary btn-wireframe-shaded">
+            <span>View Turn Status</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </button>
+
+          <button type="button" id="backToLookupBtn" class="btn-secondary">
+            ← Look Up Another Token
+          </button>
+        </div>
+
+        <!-- Refresh Button -->
+        <div class="refresh-control-container">
+          <button type="button" id="refreshBtn" class="btn-refresh" title="Check for queue updates">
+            <span aria-hidden="true">↻</span> Refresh queue status
+          </button>
+        </div>
+
+        <!-- Explicit Disclaimer Card -->
+        <div class="disclaimer-card">
+          <strong>*Disclaimer:</strong> Waiting times are approximate estimates only (calculated at ~5–7 mins per consultation) and may vary depending on patient care needs and doctor availability.
+        </div>
+
+        <!-- Reassurance Footer -->
+        <footer class="card-footer">
+          <p class="footer-quote-sub">
+            Estimated times may vary. Thank you for your patience.
+          </p>
+        </footer>
+
+      </div>
+
+      <!-- SUBVIEW 1C: Turn Approaching View (Screen 4 from Wireframe) -->
+      <div id="turnApproachingModal" class="turn-approaching-view" role="dialog" aria-modal="true" aria-labelledby="approachingViewTitle">
+        <div class="clinic-header" style="margin: -24px -24px 20px -24px;">
+          <span class="clinic-tag">Outpatient Clinic</span>
+          <span class="system-tag">• Queue tracker</span>
+        </div>
+
+        <div class="section-badge">03 / Turn Approaching</div>
+        <h2 class="page-title">Turn Status</h2>
+
+        <div class="approaching-banner">
+          <div class="approaching-icon" aria-hidden="true">🔔</div>
+          <h3 id="approachingViewTitle" class="approaching-title">Your Turn is Approaching!</h3>
+          <p id="approachingViewDesc" class="approaching-text">
+            Token <strong id="approachingTokenDisplay" style="font-family: var(--font-mono); font-size: 1.25rem;">025</strong> is close to consultation. Please make your way toward the doctor's room.
+          </p>
+          <div class="room-highlight-box">
+            👉 <span id="approachingRoomDisplay">Consultation Room 1</span>
+          </div>
+        </div>
+
+        <div style="margin-top: auto; padding-top: 24px;">
+          <button type="button" id="closeTurnStatusBtn" class="btn-primary">
+            ← Back to Queue Status
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+         SECTION 2: RECEPTIONIST DESK (STAFF CONTROL)
+         ====================================================================== -->
+    <section id="receptionViewSection" class="portal-view" aria-label="Receptionist Staff Control">
+      
+      <!-- Simulated Window Titlebar (Matches Wireframe Sketch 3 "o o o") -->
+      <div class="window-titlebar">
+        <div class="window-dots" aria-hidden="true">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="window-title-text">Patna Outpatient Clinic — Reception Queue Control</span>
+      </div>
+
+      <!-- SUBVIEW 2A: Staff Authentication Guard -->
+      <div id="receptionAuthBox" class="reception-auth-box">
+        <div class="auth-card" style="margin: 0; box-shadow: none; border: 1px solid var(--border-color);">
+          <h2 id="authTitle" class="auth-title">Staff Sign In</h2>
+          <p class="auth-sub">Sign in with clinic credentials to access the receptionist queue dashboard.</p>
+
+          <!-- Auth Error Alert -->
+          <div id="authErrorAlert" class="alert-box alert-error"></div>
+
+          <form id="staffLoginForm" novalidate>
+            <div class="form-group">
+              <label for="staffEmail" class="form-label">Receptionist Email</label>
+              <input 
+                type="email" 
+                id="staffEmail" 
+                class="form-input" 
+                placeholder="reception@clinic.com"
+                required
+                autocomplete="username"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="staffPassword" class="form-label">Password</label>
+              <input 
+                type="password" 
+                id="staffPassword" 
+                class="form-input" 
+                placeholder="••••••••"
+                required
+                autocomplete="current-password"
+              >
+            </div>
+
+            <button type="submit" id="loginSubmitBtn" class="btn-primary" style="margin-top: 10px;">
+              Sign In to Dashboard
+            </button>
+          </form>
+
+          <div class="auth-demo-hint">
+            <strong>🔒 Security Notice:</strong> Write actions to the queue are restricted to authenticated reception staff.
+            <button type="button" id="autofillDemoBtn" class="btn-autofill-demo">
+              Quick-fill demo credentials (reception@clinic.com)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUBVIEW 2B: Receptionist Live Dashboard (Wireframe Sketch 3) -->
+      <div id="receptionDashboardBox" style="display: none;">
+        
+        <!-- Reception Header -->
+        <header class="reception-header">
+          <div>
+            <span class="clinic-tag" style="font-size: 0.95rem;">Outpatient Clinic</span>
+          </div>
+          <div class="auth-user-bar">
+            <span class="badge-reception-desk">• Reception desk</span>
+            <span id="staffUserEmail" style="font-size: 0.78rem; color: #64748b; font-weight: 600;">reception@clinic.com</span>
+            <button type="button" id="signOutBtn" class="btn-signout">Log Out</button>
+          </div>
+        </header>
+
+        <!-- Main Dashboard Body -->
+        <div class="reception-body">
+          
+          <div class="reception-title-group">
+            <h1 class="reception-title">Receptionist Dashboard</h1>
+            <p class="reception-subtitle">Manage today's patient queue.</p>
+          </div>
+
+          <!-- Status Notification Alert -->
+          <div id="receptionAlert" class="alert-box" style="margin-bottom: 20px;"></div>
+
+          <!-- 1. Three Top Metric Cards (Sketch 3) -->
+          <div class="reception-metrics-grid">
+            <div class="reception-card highlight">
+              <span class="rc-label">Current Token</span>
+              <div id="rcCurrentToken" class="rc-value">021</div>
+              <span class="rc-sub">Now being called</span>
+            </div>
+
+            <div class="reception-card">
+              <span class="rc-label">Next Token</span>
+              <div id="rcNextToken" class="rc-value">022</div>
+              <span class="rc-sub">Next in line</span>
+            </div>
+
+            <div class="reception-card">
+              <span class="rc-label">Total Waiting Patients</span>
+              <div id="rcTotalWaiting" class="rc-value">04</div>
+              <span class="rc-sub">In the waiting area</span>
+            </div>
+          </div>
+
+          <!-- 2. Patient Queue Table Section (Sketch 3) -->
+          <section class="queue-table-section">
+            <div class="table-header-bar">
+              <h2 class="table-title">Patient queue</h2>
+              <span id="rcWaitingBadge" class="waiting-badge">4 waiting</span>
+            </div>
+
+            <table class="patient-table" aria-label="Waiting patients queue table">
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 25%;">Token Number</th>
+                  <th scope="col" style="width: 40%;">Status</th>
+                  <th scope="col" class="col-action" style="width: 35%;">Action</th>
+                </tr>
+              </thead>
+              <tbody id="queueTableBody">
+                <!-- Dynamically populated rows for 022, 023, 024, 025 -->
+              </tbody>
+            </table>
+          </section>
+
+          <!-- 3. Bottom Action Bar (Sketch 3) -->
+          <footer class="reception-footer-bar">
+            <p class="footer-instruction-text">
+              Call the next patient to move the queue forward.
+            </p>
+            
+            <div class="footer-actions-group">
+              <button type="button" id="resetDemoBtn" class="btn-reset-demo" title="Reset sample queue to Token 021 calling and 022-025 waiting">
+                ↺ Reset Demo Queue
+              </button>
+
+              <button type="button" id="updateQueueBtn" class="btn-update-queue">
+                Update Queue
+              </button>
+            </div>
+          </footer>
+
+        </div>
+
+      </div>
 
     </section>
 
   </main>
 
-  <!-- Feature 1 Client Script -->
-  <script src="js/patient-home.js"></script>
+  <!-- ======================================================================
+       Evaluator / Quick Navigation Bar
+       Provides direct links to standalone screens & project resources
+       ====================================================================== -->
+  <footer class="unified-footer-nav" role="contentinfo">
+    <div class="unified-footer-header">
+      <span><strong>Project:</strong> Clinic Queue Tracking System MVP</span>
+      <span><strong>Student:</strong> Vivek Kumar (MSOT Roll: 2602028 | B.Tech CSE)</span>
+    </div>
+    <div class="unified-footer-links">
+      <a href="index.html" title="Current unified application">🏠 Unified Home</a>
+      <a href="queue-status.html?token=025" title="Direct standalone Patient Status screen">📱 Standalone Patient Screen</a>
+      <a href="reception.html" title="Direct standalone Receptionist screen">🖥️ Standalone Reception Screen</a>
+      <a href="Clinic_Queue_Final_MVP_Report.html" target="_blank" title="View final project submission report">📄 Final Submission Report (HTML)</a>
+      <a href="https://github.com/viv90064-star/clinic-queue-tracker" target="_blank" rel="noopener noreferrer" title="View GitHub repository">🐙 GitHub Repository</a>
+    </div>
+  </footer>
+
+  <!-- Application Scripts -->
+  <script src="js/firebase-config.js"></script>
+  <script src="js/queue-service.js"></script>
+  <script src="js/unified-portal.js"></script>
 </body>
 </html>
