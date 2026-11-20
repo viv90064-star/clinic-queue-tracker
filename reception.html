@@ -6,12 +6,34 @@
   <title>Receptionist Dashboard - Clinic Queue System</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/reception.css">
+  <link rel="stylesheet" href="css/unified.css">
 </head>
-<body style="align-items: center; justify-content: flex-start; padding-top: 32px;">
+<body class="unified-page">
 
   <!-- Desktop Window Container (Matches Wireframe Sketch 3) -->
-  <main class="desktop-wrapper" role="main">
+  <main class="desktop-wrapper" role="main" style="max-width: 880px;">
     
+    <!-- Top Mode Switcher Bar -->
+    <header class="portal-topbar">
+      <div class="portal-brand-block">
+        <span class="portal-clinic-title">Patna Outpatient Clinic</span>
+        <span class="portal-live-pill">
+          <span class="portal-pulse-dot"></span> Live Reception Control
+        </span>
+      </div>
+
+      <!-- Segmented Tab Navigation for Patient vs Receptionist -->
+      <nav class="portal-tabs-group" role="tablist" aria-label="Clinic Queue Mode Switcher">
+        <a href="index.html" class="portal-tab-btn" style="text-decoration: none;">
+          <span aria-hidden="true">👤</span> Patient Portal
+        </a>
+        <button type="button" class="portal-tab-btn active" style="cursor: default;">
+          <span aria-hidden="true">👩‍💼</span> Reception Desk 
+          <span class="portal-badge-staff">Staff</span>
+        </button>
+      </nav>
+    </header>
+
     <!-- Desktop Titlebar (Matches Wireframe "o o o") -->
     <div class="window-titlebar">
       <div class="window-dots" aria-hidden="true">
@@ -157,9 +179,10 @@
         </form>
 
         <div class="auth-demo-hint">
-          <strong>🔒 Security Notice:</strong> Write actions to the queue are restricted to authenticated reception staff.
-          <button type="button" id="autofillDemoBtn" class="btn-autofill-demo">
-            Quick-fill demo credentials (reception@clinic.com)
+          <strong>🔒 Staff Demo Credentials:</strong><br>
+          Email: <code style="font-weight: 700; color: #0f172a;">reception@clinic.com</code> | Password: <code style="font-weight: 700; color: #0f172a;">clinic123</code><br>
+          <button type="button" id="autofillDemoBtn" class="btn-autofill-demo" style="margin-top: 8px; display: inline-block;">
+            ⚡ Auto-fill demo credentials
           </button>
         </div>
       </div>

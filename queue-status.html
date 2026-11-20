@@ -6,17 +6,39 @@
   <title>Your Queue Status - Clinic Queue Tracker</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/patient.css">
+  <link rel="stylesheet" href="css/unified.css">
 </head>
-<body>
+<body class="unified-page">
 
   <!-- Mobile Screen Frame (Matches Wireframe Sketch 2) -->
-  <main class="mobile-wrapper" role="main">
+  <main class="unified-wrapper" role="main">
     
+    <!-- Top Mode Switcher Bar -->
+    <header class="portal-topbar">
+      <div class="portal-brand-block">
+        <span class="portal-clinic-title">Patna Outpatient Clinic</span>
+        <span class="portal-live-pill">
+          <span class="portal-pulse-dot"></span> Live Queue Tracker
+        </span>
+      </div>
+
+      <!-- Segmented Tab Navigation for Patient vs Receptionist -->
+      <nav class="portal-tabs-group" role="tablist" aria-label="Clinic Queue Mode Switcher">
+        <a href="index.html" class="portal-tab-btn active" style="text-decoration: none;">
+          <span aria-hidden="true">👤</span> Patient Portal
+        </a>
+        <a href="index.html?tab=reception" class="portal-tab-btn" style="text-decoration: none;">
+          <span aria-hidden="true">👩‍💼</span> Reception Desk 
+          <span class="portal-badge-staff">Staff</span>
+        </a>
+      </nav>
+    </header>
+
     <!-- Top Header Bar -->
-    <header class="clinic-header">
+    <div class="clinic-header">
       <span class="clinic-tag">Outpatient Clinic</span>
       <span class="system-tag">• Queue tracker</span>
-    </header>
+    </div>
 
     <!-- Content Section -->
     <section class="card-content">

@@ -422,6 +422,16 @@ document.addEventListener("DOMContentLoaded", () => {
   tabPatient.addEventListener("click", () => switchTab("patient"));
   tabReception.addEventListener("click", () => switchTab("reception"));
 
+  const cardSwitchToReceptionBtn = document.getElementById("cardSwitchToReceptionBtn");
+  if (cardSwitchToReceptionBtn) {
+    cardSwitchToReceptionBtn.addEventListener("click", () => switchTab("reception"));
+  }
+
+  const statusSwitchToReceptionBtn = document.getElementById("statusSwitchToReceptionBtn");
+  if (statusSwitchToReceptionBtn) {
+    statusSwitchToReceptionBtn.addEventListener("click", () => switchTab("reception"));
+  }
+
   // 2. Patient Form Listeners
   tokenForm.addEventListener("submit", handleTokenSubmit);
   demoShortcutBtn.addEventListener("click", () => {
